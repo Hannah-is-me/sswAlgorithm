@@ -1,0 +1,4018 @@
+set NR:= N2-N0-0 N2-N0-1 N2-N0-2 N2-N3-0 N2-N3-1 N2-N3-2 N2-N4-0 N2-N4-1 N2-N4-2 N2-N1-0 N2-N1-1 N2-N1-2 N8-N10-0 N8-N10-1 N8-N10-2 N2-N7-0 N2-N7-1 N2-N7-2 N2-N8-0 N2-N8-1 N2-N8-2 N2-N5-0 N2-N5-1 N2-N5-2 N2-N6-0 N2-N6-1 N2-N6-2 N2-N9-0 N2-N9-1 N2-N9-2 N1-N10-0 N1-N10-1 N1-N10-2 N7-N0-0 N7-N0-1 N7-N0-2 N7-N1-0 N7-N1-1 N7-N1-2 N7-N6-0 N7-N6-1 N7-N6-2 N7-N8-0 N7-N8-1 N7-N8-2 N7-N9-0 N7-N9-1 N7-N9-2 N7-N2-0 N7-N2-1 N7-N2-2 N7-N3-0 N7-N3-1 N7-N3-2 N7-N4-0 N7-N4-1 N7-N4-2 N7-N5-0 N7-N5-1 N7-N5-2 N3-N10-0 N3-N10-1 N3-N10-2 N4-N2-0 N4-N2-1 N4-N2-2 N4-N1-0 N4-N1-1 N4-N1-2 N4-N0-0 N4-N0-1 N4-N0-2 N4-N10-0 N4-N10-1 N4-N10-2 N4-N6-0 N4-N6-1 N4-N6-2 N4-N5-0 N4-N5-1 N4-N5-2 N4-N3-0 N4-N3-1 N4-N3-2 N4-N9-0 N4-N9-1 N4-N9-2 N4-N8-0 N4-N8-1 N4-N8-2 N4-N7-0 N4-N7-1 N4-N7-2 N6-N10-0 N6-N10-1 N6-N10-2 N9-N1-0 N9-N1-1 N9-N1-2 N10-N1-0 N10-N1-1 N10-N1-2 N9-N0-0 N9-N0-1 N9-N0-2 N10-N0-0 N10-N0-1 N10-N0-2 N9-N3-0 N9-N3-1 N9-N3-2 N9-N2-0 N9-N2-1 N9-N2-2 N10-N5-0 N10-N5-1 N10-N5-2 N10-N4-0 N10-N4-1 N10-N4-2 N10-N3-0 N10-N3-1 N10-N3-2 N10-N2-0 N10-N2-1 N10-N2-2 N10-N9-0 N10-N9-1 N10-N9-2 N9-N8-0 N9-N8-1 N9-N8-2 N10-N8-0 N10-N8-1 N10-N8-2 N10-N7-0 N10-N7-1 N10-N7-2 N10-N6-0 N10-N6-1 N10-N6-2 N1-N2-0 N1-N2-1 N1-N2-2 N9-N5-0 N9-N5-1 N9-N5-2 N1-N3-0 N1-N3-1 N1-N3-2 N9-N4-0 N9-N4-1 N9-N4-2 N1-N0-0 N1-N0-1 N1-N0-2 N9-N7-0 N9-N7-1 N9-N7-2 N9-N6-0 N9-N6-1 N9-N6-2 N1-N6-0 N1-N6-1 N1-N6-2 N1-N7-0 N1-N7-1 N1-N7-2 N1-N4-0 N1-N4-1 N1-N4-2 N1-N5-0 N1-N5-1 N1-N5-2 N1-N8-0 N1-N8-1 N1-N8-2 N1-N9-0 N1-N9-1 N1-N9-2 N6-N0-0 N6-N0-1 N6-N0-2 N6-N5-0 N6-N5-1 N6-N5-2 N6-N7-0 N6-N7-1 N6-N7-2 N6-N8-0 N6-N8-1 N6-N8-2 N6-N1-0 N6-N1-1 N6-N1-2 N6-N2-0 N6-N2-1 N6-N2-2 N6-N3-0 N6-N3-1 N6-N3-2 N6-N4-0 N6-N4-1 N6-N4-2 N6-N9-0 N6-N9-1 N6-N9-2 N0-N10-0 N0-N10-1 N0-N10-2 N9-N10-0 N9-N10-1 N9-N10-2 N3-N1-0 N3-N1-1 N3-N1-2 N3-N0-0 N3-N0-1 N3-N0-2 N3-N5-0 N3-N5-1 N3-N5-2 N3-N4-0 N3-N4-1 N3-N4-2 N3-N2-0 N3-N2-1 N3-N2-2 N3-N9-0 N3-N9-1 N3-N9-2 N3-N8-0 N3-N8-1 N3-N8-2 N3-N7-0 N3-N7-1 N3-N7-2 N3-N6-0 N3-N6-1 N3-N6-2 N2-N10-0 N2-N10-1 N2-N10-2 N8-N0-0 N8-N0-1 N8-N0-2 N8-N2-0 N8-N2-1 N8-N2-2 N8-N1-0 N8-N1-1 N8-N1-2 N8-N7-0 N8-N7-1 N8-N7-2 N8-N9-0 N8-N9-1 N8-N9-2 N8-N4-0 N8-N4-1 N8-N4-2 N8-N3-0 N8-N3-1 N8-N3-2 N0-N2-0 N0-N2-1 N0-N2-2 N8-N6-0 N8-N6-1 N8-N6-2 N0-N1-0 N0-N1-1 N0-N1-2 N8-N5-0 N8-N5-1 N8-N5-2 N0-N4-0 N0-N4-1 N0-N4-2 N0-N3-0 N0-N3-1 N0-N3-2 N0-N6-0 N0-N6-1 N0-N6-2 N0-N5-0 N0-N5-1 N0-N5-2 N0-N8-0 N0-N8-1 N0-N8-2 N0-N7-0 N0-N7-1 N0-N7-2 N0-N9-0 N0-N9-1 N0-N9-2 N5-N10-0 N5-N10-1 N5-N10-2 N5-N3-0 N5-N3-1 N5-N3-2 N5-N2-0 N5-N2-1 N5-N2-2 N5-N1-0 N5-N1-1 N5-N1-2 N5-N0-0 N5-N0-1 N5-N0-2 N5-N7-0 N5-N7-1 N5-N7-2 N5-N6-0 N5-N6-1 N5-N6-2 N5-N4-0 N5-N4-1 N5-N4-2 N5-N9-0 N5-N9-1 N5-N9-2 N5-N8-0 N5-N8-1 N5-N8-2 N7-N10-0 N7-N10-1 N7-N10-2 ;
+
+set P[N2-N0-0] := N2-N0;
+set P[N2-N0-1] := N2-N0;
+set P[N2-N0-2] := N2-N0;
+set P[N2-N3-0] := N2-N3;
+set P[N2-N3-1] := N2-N3;
+set P[N2-N3-2] := N2-N3;
+set P[N2-N4-0] := N2-N5 N5-N4;
+set P[N2-N4-1] := N2-N5 N5-N4;
+set P[N2-N4-2] := N2-N5 N5-N4;
+set P[N2-N1-0] := N2-N1;
+set P[N2-N1-1] := N2-N1;
+set P[N2-N1-2] := N2-N1;
+set P[N8-N10-0] := N8-N10;
+set P[N8-N10-1] := N8-N10;
+set P[N8-N10-2] := N8-N10;
+set P[N2-N7-0] := N2-N1 N1-N7;
+set P[N2-N7-1] := N2-N1 N1-N7;
+set P[N2-N7-2] := N2-N1 N1-N7;
+set P[N2-N8-0] := N2-N5 N5-N8;
+set P[N2-N8-1] := N2-N5 N5-N8;
+set P[N2-N8-2] := N2-N5 N5-N8;
+set P[N2-N5-0] := N2-N5;
+set P[N2-N5-1] := N2-N5;
+set P[N2-N5-2] := N2-N5;
+set P[N2-N6-0] := N2-N5 N5-N6;
+set P[N2-N6-1] := N2-N5 N5-N6;
+set P[N2-N6-2] := N2-N5 N5-N6;
+set P[N2-N9-0] := N2-N5 N5-N6 N6-N9;
+set P[N2-N9-1] := N2-N5 N5-N6 N6-N9;
+set P[N2-N9-2] := N2-N5 N5-N6 N6-N9;
+set P[N1-N10-0] := N1-N7 N7-N10;
+set P[N1-N10-1] := N1-N7 N7-N10;
+set P[N1-N10-2] := N1-N7 N7-N10;
+set P[N7-N0-0] := N7-N1 N1-N0;
+set P[N7-N0-1] := N7-N1 N1-N0;
+set P[N7-N0-2] := N7-N1 N1-N0;
+set P[N7-N1-0] := N7-N1;
+set P[N7-N1-1] := N7-N1;
+set P[N7-N1-2] := N7-N1;
+set P[N7-N6-0] := N7-N4 N4-N5 N5-N6;
+set P[N7-N6-1] := N7-N4 N4-N5 N5-N6;
+set P[N7-N6-2] := N7-N4 N4-N5 N5-N6;
+set P[N7-N8-0] := N7-N4 N4-N5 N5-N8;
+set P[N7-N8-1] := N7-N4 N4-N5 N5-N8;
+set P[N7-N8-2] := N7-N4 N4-N5 N5-N8;
+set P[N7-N9-0] := N7-N4 N4-N5 N5-N6 N6-N9;
+set P[N7-N9-1] := N7-N4 N4-N5 N5-N6 N6-N9;
+set P[N7-N9-2] := N7-N4 N4-N5 N5-N6 N6-N9;
+set P[N7-N2-0] := N7-N1 N1-N2;
+set P[N7-N2-1] := N7-N1 N1-N2;
+set P[N7-N2-2] := N7-N1 N1-N2;
+set P[N7-N3-0] := N7-N4 N4-N5 N5-N6 N6-N3;
+set P[N7-N3-1] := N7-N4 N4-N5 N5-N6 N6-N3;
+set P[N7-N3-2] := N7-N4 N4-N5 N5-N6 N6-N3;
+set P[N7-N4-0] := N7-N4;
+set P[N7-N4-1] := N7-N4;
+set P[N7-N4-2] := N7-N4;
+set P[N7-N5-0] := N7-N4 N4-N5;
+set P[N7-N5-1] := N7-N4 N4-N5;
+set P[N7-N5-2] := N7-N4 N4-N5;
+set P[N3-N10-0] := N3-N6 N6-N9 N9-N10;
+set P[N3-N10-1] := N3-N6 N6-N9 N9-N10;
+set P[N3-N10-2] := N3-N6 N6-N9 N9-N10;
+set P[N4-N2-0] := N4-N5 N5-N2;
+set P[N4-N2-1] := N4-N5 N5-N2;
+set P[N4-N2-2] := N4-N5 N5-N2;
+set P[N4-N1-0] := N4-N1;
+set P[N4-N1-1] := N4-N1;
+set P[N4-N1-2] := N4-N1;
+set P[N4-N0-0] := N4-N1 N1-N0;
+set P[N4-N0-1] := N4-N1 N1-N0;
+set P[N4-N0-2] := N4-N1 N1-N0;
+set P[N4-N10-0] := N4-N10;
+set P[N4-N10-1] := N4-N10;
+set P[N4-N10-2] := N4-N10;
+set P[N4-N6-0] := N4-N5 N5-N6;
+set P[N4-N6-1] := N4-N5 N5-N6;
+set P[N4-N6-2] := N4-N5 N5-N6;
+set P[N4-N5-0] := N4-N5;
+set P[N4-N5-1] := N4-N5;
+set P[N4-N5-2] := N4-N5;
+set P[N4-N3-0] := N4-N5 N5-N6 N6-N3;
+set P[N4-N3-1] := N4-N5 N5-N6 N6-N3;
+set P[N4-N3-2] := N4-N5 N5-N6 N6-N3;
+set P[N4-N9-0] := N4-N5 N5-N6 N6-N9;
+set P[N4-N9-1] := N4-N5 N5-N6 N6-N9;
+set P[N4-N9-2] := N4-N5 N5-N6 N6-N9;
+set P[N4-N8-0] := N4-N5 N5-N8;
+set P[N4-N8-1] := N4-N5 N5-N8;
+set P[N4-N8-2] := N4-N5 N5-N8;
+set P[N4-N7-0] := N4-N7;
+set P[N4-N7-1] := N4-N7;
+set P[N4-N7-2] := N4-N7;
+set P[N6-N10-0] := N6-N9 N9-N10;
+set P[N6-N10-1] := N6-N9 N9-N10;
+set P[N6-N10-2] := N6-N9 N9-N10;
+set P[N9-N1-0] := N9-N6 N6-N5 N5-N4 N4-N1;
+set P[N9-N1-1] := N9-N6 N6-N5 N5-N4 N4-N1;
+set P[N9-N1-2] := N9-N6 N6-N5 N5-N4 N4-N1;
+set P[N10-N1-0] := N10-N7 N7-N1;
+set P[N10-N1-1] := N10-N7 N7-N1;
+set P[N10-N1-2] := N10-N7 N7-N1;
+set P[N9-N0-0] := N9-N6 N6-N0;
+set P[N9-N0-1] := N9-N6 N6-N0;
+set P[N9-N0-2] := N9-N6 N6-N0;
+set P[N10-N0-0] := N10-N9 N9-N6 N6-N0;
+set P[N10-N0-1] := N10-N9 N9-N6 N6-N0;
+set P[N10-N0-2] := N10-N9 N9-N6 N6-N0;
+set P[N9-N3-0] := N9-N6 N6-N3;
+set P[N9-N3-1] := N9-N6 N6-N3;
+set P[N9-N3-2] := N9-N6 N6-N3;
+set P[N9-N2-0] := N9-N6 N6-N5 N5-N2;
+set P[N9-N2-1] := N9-N6 N6-N5 N5-N2;
+set P[N9-N2-2] := N9-N6 N6-N5 N5-N2;
+set P[N10-N5-0] := N10-N8 N8-N5;
+set P[N10-N5-1] := N10-N8 N8-N5;
+set P[N10-N5-2] := N10-N8 N8-N5;
+set P[N10-N4-0] := N10-N4;
+set P[N10-N4-1] := N10-N4;
+set P[N10-N4-2] := N10-N4;
+set P[N10-N3-0] := N10-N9 N9-N6 N6-N3;
+set P[N10-N3-1] := N10-N9 N9-N6 N6-N3;
+set P[N10-N3-2] := N10-N9 N9-N6 N6-N3;
+set P[N10-N2-0] := N10-N8 N8-N5 N5-N2;
+set P[N10-N2-1] := N10-N8 N8-N5 N5-N2;
+set P[N10-N2-2] := N10-N8 N8-N5 N5-N2;
+set P[N10-N9-0] := N10-N9;
+set P[N10-N9-1] := N10-N9;
+set P[N10-N9-2] := N10-N9;
+set P[N9-N8-0] := N9-N8;
+set P[N9-N8-1] := N9-N8;
+set P[N9-N8-2] := N9-N8;
+set P[N10-N8-0] := N10-N8;
+set P[N10-N8-1] := N10-N8;
+set P[N10-N8-2] := N10-N8;
+set P[N10-N7-0] := N10-N7;
+set P[N10-N7-1] := N10-N7;
+set P[N10-N7-2] := N10-N7;
+set P[N10-N6-0] := N10-N9 N9-N6;
+set P[N10-N6-1] := N10-N9 N9-N6;
+set P[N10-N6-2] := N10-N9 N9-N6;
+set P[N1-N2-0] := N1-N2;
+set P[N1-N2-1] := N1-N2;
+set P[N1-N2-2] := N1-N2;
+set P[N9-N5-0] := N9-N6 N6-N5;
+set P[N9-N5-1] := N9-N6 N6-N5;
+set P[N9-N5-2] := N9-N6 N6-N5;
+set P[N1-N3-0] := N1-N2 N2-N3;
+set P[N1-N3-1] := N1-N2 N2-N3;
+set P[N1-N3-2] := N1-N2 N2-N3;
+set P[N9-N4-0] := N9-N6 N6-N5 N5-N4;
+set P[N9-N4-1] := N9-N6 N6-N5 N5-N4;
+set P[N9-N4-2] := N9-N6 N6-N5 N5-N4;
+set P[N1-N0-0] := N1-N0;
+set P[N1-N0-1] := N1-N0;
+set P[N1-N0-2] := N1-N0;
+set P[N9-N7-0] := N9-N6 N6-N5 N5-N4 N4-N7;
+set P[N9-N7-1] := N9-N6 N6-N5 N5-N4 N4-N7;
+set P[N9-N7-2] := N9-N6 N6-N5 N5-N4 N4-N7;
+set P[N9-N6-0] := N9-N6;
+set P[N9-N6-1] := N9-N6;
+set P[N9-N6-2] := N9-N6;
+set P[N1-N6-0] := N1-N4 N4-N5 N5-N6;
+set P[N1-N6-1] := N1-N4 N4-N5 N5-N6;
+set P[N1-N6-2] := N1-N4 N4-N5 N5-N6;
+set P[N1-N7-0] := N1-N7;
+set P[N1-N7-1] := N1-N7;
+set P[N1-N7-2] := N1-N7;
+set P[N1-N4-0] := N1-N4;
+set P[N1-N4-1] := N1-N4;
+set P[N1-N4-2] := N1-N4;
+set P[N1-N5-0] := N1-N4 N4-N5;
+set P[N1-N5-1] := N1-N4 N4-N5;
+set P[N1-N5-2] := N1-N4 N4-N5;
+set P[N1-N8-0] := N1-N4 N4-N5 N5-N8;
+set P[N1-N8-1] := N1-N4 N4-N5 N5-N8;
+set P[N1-N8-2] := N1-N4 N4-N5 N5-N8;
+set P[N1-N9-0] := N1-N4 N4-N5 N5-N6 N6-N9;
+set P[N1-N9-1] := N1-N4 N4-N5 N5-N6 N6-N9;
+set P[N1-N9-2] := N1-N4 N4-N5 N5-N6 N6-N9;
+set P[N6-N0-0] := N6-N0;
+set P[N6-N0-1] := N6-N0;
+set P[N6-N0-2] := N6-N0;
+set P[N6-N5-0] := N6-N5;
+set P[N6-N5-1] := N6-N5;
+set P[N6-N5-2] := N6-N5;
+set P[N6-N7-0] := N6-N5 N5-N4 N4-N7;
+set P[N6-N7-1] := N6-N5 N5-N4 N4-N7;
+set P[N6-N7-2] := N6-N5 N5-N4 N4-N7;
+set P[N6-N8-0] := N6-N8;
+set P[N6-N8-1] := N6-N8;
+set P[N6-N8-2] := N6-N8;
+set P[N6-N1-0] := N6-N5 N5-N4 N4-N1;
+set P[N6-N1-1] := N6-N5 N5-N4 N4-N1;
+set P[N6-N1-2] := N6-N5 N5-N4 N4-N1;
+set P[N6-N2-0] := N6-N5 N5-N2;
+set P[N6-N2-1] := N6-N5 N5-N2;
+set P[N6-N2-2] := N6-N5 N5-N2;
+set P[N6-N3-0] := N6-N3;
+set P[N6-N3-1] := N6-N3;
+set P[N6-N3-2] := N6-N3;
+set P[N6-N4-0] := N6-N5 N5-N4;
+set P[N6-N4-1] := N6-N5 N5-N4;
+set P[N6-N4-2] := N6-N5 N5-N4;
+set P[N6-N9-0] := N6-N9;
+set P[N6-N9-1] := N6-N9;
+set P[N6-N9-2] := N6-N9;
+set P[N0-N10-0] := N0-N6 N6-N9 N9-N10;
+set P[N0-N10-1] := N0-N6 N6-N9 N9-N10;
+set P[N0-N10-2] := N0-N6 N6-N9 N9-N10;
+set P[N9-N10-0] := N9-N10;
+set P[N9-N10-1] := N9-N10;
+set P[N9-N10-2] := N9-N10;
+set P[N3-N1-0] := N3-N2 N2-N1;
+set P[N3-N1-1] := N3-N2 N2-N1;
+set P[N3-N1-2] := N3-N2 N2-N1;
+set P[N3-N0-0] := N3-N0;
+set P[N3-N0-1] := N3-N0;
+set P[N3-N0-2] := N3-N0;
+set P[N3-N5-0] := N3-N6 N6-N5;
+set P[N3-N5-1] := N3-N6 N6-N5;
+set P[N3-N5-2] := N3-N6 N6-N5;
+set P[N3-N4-0] := N3-N6 N6-N5 N5-N4;
+set P[N3-N4-1] := N3-N6 N6-N5 N5-N4;
+set P[N3-N4-2] := N3-N6 N6-N5 N5-N4;
+set P[N3-N2-0] := N3-N2;
+set P[N3-N2-1] := N3-N2;
+set P[N3-N2-2] := N3-N2;
+set P[N3-N9-0] := N3-N6 N6-N9;
+set P[N3-N9-1] := N3-N6 N6-N9;
+set P[N3-N9-2] := N3-N6 N6-N9;
+set P[N3-N8-0] := N3-N6 N6-N8;
+set P[N3-N8-1] := N3-N6 N6-N8;
+set P[N3-N8-2] := N3-N6 N6-N8;
+set P[N3-N7-0] := N3-N6 N6-N5 N5-N4 N4-N7;
+set P[N3-N7-1] := N3-N6 N6-N5 N5-N4 N4-N7;
+set P[N3-N7-2] := N3-N6 N6-N5 N5-N4 N4-N7;
+set P[N3-N6-0] := N3-N6;
+set P[N3-N6-1] := N3-N6;
+set P[N3-N6-2] := N3-N6;
+set P[N2-N10-0] := N2-N5 N5-N8 N8-N10;
+set P[N2-N10-1] := N2-N5 N5-N8 N8-N10;
+set P[N2-N10-2] := N2-N5 N5-N8 N8-N10;
+set P[N8-N0-0] := N8-N6 N6-N0;
+set P[N8-N0-1] := N8-N6 N6-N0;
+set P[N8-N0-2] := N8-N6 N6-N0;
+set P[N8-N2-0] := N8-N5 N5-N2;
+set P[N8-N2-1] := N8-N5 N5-N2;
+set P[N8-N2-2] := N8-N5 N5-N2;
+set P[N8-N1-0] := N8-N5 N5-N4 N4-N1;
+set P[N8-N1-1] := N8-N5 N5-N4 N4-N1;
+set P[N8-N1-2] := N8-N5 N5-N4 N4-N1;
+set P[N8-N7-0] := N8-N5 N5-N4 N4-N7;
+set P[N8-N7-1] := N8-N5 N5-N4 N4-N7;
+set P[N8-N7-2] := N8-N5 N5-N4 N4-N7;
+set P[N8-N9-0] := N8-N9;
+set P[N8-N9-1] := N8-N9;
+set P[N8-N9-2] := N8-N9;
+set P[N8-N4-0] := N8-N5 N5-N4;
+set P[N8-N4-1] := N8-N5 N5-N4;
+set P[N8-N4-2] := N8-N5 N5-N4;
+set P[N8-N3-0] := N8-N6 N6-N3;
+set P[N8-N3-1] := N8-N6 N6-N3;
+set P[N8-N3-2] := N8-N6 N6-N3;
+set P[N0-N2-0] := N0-N2;
+set P[N0-N2-1] := N0-N2;
+set P[N0-N2-2] := N0-N2;
+set P[N8-N6-0] := N8-N6;
+set P[N8-N6-1] := N8-N6;
+set P[N8-N6-2] := N8-N6;
+set P[N0-N1-0] := N0-N1;
+set P[N0-N1-1] := N0-N1;
+set P[N0-N1-2] := N0-N1;
+set P[N8-N5-0] := N8-N5;
+set P[N8-N5-1] := N8-N5;
+set P[N8-N5-2] := N8-N5;
+set P[N0-N4-0] := N0-N1 N1-N4;
+set P[N0-N4-1] := N0-N1 N1-N4;
+set P[N0-N4-2] := N0-N1 N1-N4;
+set P[N0-N3-0] := N0-N3;
+set P[N0-N3-1] := N0-N3;
+set P[N0-N3-2] := N0-N3;
+set P[N0-N6-0] := N0-N6;
+set P[N0-N6-1] := N0-N6;
+set P[N0-N6-2] := N0-N6;
+set P[N0-N5-0] := N0-N2 N2-N5;
+set P[N0-N5-1] := N0-N2 N2-N5;
+set P[N0-N5-2] := N0-N2 N2-N5;
+set P[N0-N8-0] := N0-N6 N6-N8;
+set P[N0-N8-1] := N0-N6 N6-N8;
+set P[N0-N8-2] := N0-N6 N6-N8;
+set P[N0-N7-0] := N0-N1 N1-N7;
+set P[N0-N7-1] := N0-N1 N1-N7;
+set P[N0-N7-2] := N0-N1 N1-N7;
+set P[N0-N9-0] := N0-N6 N6-N9;
+set P[N0-N9-1] := N0-N6 N6-N9;
+set P[N0-N9-2] := N0-N6 N6-N9;
+set P[N5-N10-0] := N5-N8 N8-N10;
+set P[N5-N10-1] := N5-N8 N8-N10;
+set P[N5-N10-2] := N5-N8 N8-N10;
+set P[N5-N3-0] := N5-N6 N6-N3;
+set P[N5-N3-1] := N5-N6 N6-N3;
+set P[N5-N3-2] := N5-N6 N6-N3;
+set P[N5-N2-0] := N5-N2;
+set P[N5-N2-1] := N5-N2;
+set P[N5-N2-2] := N5-N2;
+set P[N5-N1-0] := N5-N4 N4-N1;
+set P[N5-N1-1] := N5-N4 N4-N1;
+set P[N5-N1-2] := N5-N4 N4-N1;
+set P[N5-N0-0] := N5-N2 N2-N0;
+set P[N5-N0-1] := N5-N2 N2-N0;
+set P[N5-N0-2] := N5-N2 N2-N0;
+set P[N5-N7-0] := N5-N4 N4-N7;
+set P[N5-N7-1] := N5-N4 N4-N7;
+set P[N5-N7-2] := N5-N4 N4-N7;
+set P[N5-N6-0] := N5-N6;
+set P[N5-N6-1] := N5-N6;
+set P[N5-N6-2] := N5-N6;
+set P[N5-N4-0] := N5-N4;
+set P[N5-N4-1] := N5-N4;
+set P[N5-N4-2] := N5-N4;
+set P[N5-N9-0] := N5-N6 N6-N9;
+set P[N5-N9-1] := N5-N6 N6-N9;
+set P[N5-N9-2] := N5-N6 N6-N9;
+set P[N5-N8-0] := N5-N8;
+set P[N5-N8-1] := N5-N8;
+set P[N5-N8-2] := N5-N8;
+set P[N7-N10-0] := N7-N10;
+set P[N7-N10-1] := N7-N10;
+set P[N7-N10-2] := N7-N10;
+
+set TW[N2-N0-0] := 4-6 5-7;
+set TW[N2-N0-1] := 4-5 5-6;
+set TW[N2-N0-2] := 4-6;
+set TW[N2-N3-0] := 4-5 5-6;
+set TW[N2-N3-1] := 4-6;
+set TW[N2-N3-2] := 1-2;
+set TW[N2-N4-0] := 4-6;
+set TW[N2-N4-1] := 1-2;
+set TW[N2-N4-2] := 5-6 6-7;
+set TW[N2-N1-0] := 1-2;
+set TW[N2-N1-1] := 5-6 6-7;
+set TW[N2-N1-2] := 5-7 6-8;
+set TW[N8-N10-0] := 5-6 6-7;
+set TW[N8-N10-1] := 5-7 6-8;
+set TW[N8-N10-2] := 3-5;
+set TW[N2-N7-0] := 5-7 6-8;
+set TW[N2-N7-1] := 3-5;
+set TW[N2-N7-2] := 3-4;
+set TW[N2-N8-0] := 3-5;
+set TW[N2-N8-1] := 3-4;
+set TW[N2-N8-2] := 2-4;
+set TW[N2-N5-0] := 3-4;
+set TW[N2-N5-1] := 2-4;
+set TW[N2-N5-2] := 1-3 2-4;
+set TW[N2-N6-0] := 2-4;
+set TW[N2-N6-1] := 1-3 2-4;
+set TW[N2-N6-2] := 3-5;
+set TW[N2-N9-0] := 1-3 2-4;
+set TW[N2-N9-1] := 3-5;
+set TW[N2-N9-2] := 1-2;
+set TW[N1-N10-0] := 3-5;
+set TW[N1-N10-1] := 1-2;
+set TW[N1-N10-2] := 2-3;
+set TW[N7-N0-0] := 1-2;
+set TW[N7-N0-1] := 2-3;
+set TW[N7-N0-2] := 4-6 5-7;
+set TW[N7-N1-0] := 2-3;
+set TW[N7-N1-1] := 4-6 5-7;
+set TW[N7-N1-2] := 2-3 3-4;
+set TW[N7-N6-0] := 4-6 5-7;
+set TW[N7-N6-1] := 2-3 3-4;
+set TW[N7-N6-2] := 1-3;
+set TW[N7-N8-0] := 2-3 3-4;
+set TW[N7-N8-1] := 1-3;
+set TW[N7-N8-2] := 3-5;
+set TW[N7-N9-0] := 1-3;
+set TW[N7-N9-1] := 3-5;
+set TW[N7-N9-2] := 4-5 5-6;
+set TW[N7-N2-0] := 3-5;
+set TW[N7-N2-1] := 4-5 5-6;
+set TW[N7-N2-2] := 1-3;
+set TW[N7-N3-0] := 4-5 5-6;
+set TW[N7-N3-1] := 1-3;
+set TW[N7-N3-2] := 4-6 5-7;
+set TW[N7-N4-0] := 1-3;
+set TW[N7-N4-1] := 4-6 5-7;
+set TW[N7-N4-2] := 1-2;
+set TW[N7-N5-0] := 4-6 5-7;
+set TW[N7-N5-1] := 1-2;
+set TW[N7-N5-2] := 1-2;
+set TW[N3-N10-0] := 1-2;
+set TW[N3-N10-1] := 1-2;
+set TW[N3-N10-2] := 5-7 6-8;
+set TW[N4-N2-0] := 1-2;
+set TW[N4-N2-1] := 5-7 6-8;
+set TW[N4-N2-2] := 5-7;
+set TW[N4-N1-0] := 5-7 6-8;
+set TW[N4-N1-1] := 5-7;
+set TW[N4-N1-2] := 4-6;
+set TW[N4-N0-0] := 5-7;
+set TW[N4-N0-1] := 4-6;
+set TW[N4-N0-2] := 2-3 3-4;
+set TW[N4-N10-0] := 4-6;
+set TW[N4-N10-1] := 2-3 3-4;
+set TW[N4-N10-2] := 1-2;
+set TW[N4-N6-0] := 2-3 3-4;
+set TW[N4-N6-1] := 1-2;
+set TW[N4-N6-2] := 4-5;
+set TW[N4-N5-0] := 1-2;
+set TW[N4-N5-1] := 4-5;
+set TW[N4-N5-2] := 4-5 5-6;
+set TW[N4-N3-0] := 4-5;
+set TW[N4-N3-1] := 4-5 5-6;
+set TW[N4-N3-2] := 4-6 5-7;
+set TW[N4-N9-0] := 4-5 5-6;
+set TW[N4-N9-1] := 4-6 5-7;
+set TW[N4-N9-2] := 4-5 5-6;
+set TW[N4-N8-0] := 4-6 5-7;
+set TW[N4-N8-1] := 4-5 5-6;
+set TW[N4-N8-2] := 5-7 6-8;
+set TW[N4-N7-0] := 4-5 5-6;
+set TW[N4-N7-1] := 5-7 6-8;
+set TW[N4-N7-2] := 5-7 6-8;
+set TW[N6-N10-0] := 5-7 6-8;
+set TW[N6-N10-1] := 5-7 6-8;
+set TW[N6-N10-2] := 5-7;
+set TW[N9-N1-0] := 5-7 6-8;
+set TW[N9-N1-1] := 5-7;
+set TW[N9-N1-2] := 5-7 6-8;
+set TW[N10-N1-0] := 5-7;
+set TW[N10-N1-1] := 5-7 6-8;
+set TW[N10-N1-2] := 2-3;
+set TW[N9-N0-0] := 5-7 6-8;
+set TW[N9-N0-1] := 2-3;
+set TW[N9-N0-2] := 2-3 3-4;
+set TW[N10-N0-0] := 2-3;
+set TW[N10-N0-1] := 2-3 3-4;
+set TW[N10-N0-2] := 1-3 2-4;
+set TW[N9-N3-0] := 2-3 3-4;
+set TW[N9-N3-1] := 1-3 2-4;
+set TW[N9-N3-2] := 3-4;
+set TW[N9-N2-0] := 1-3 2-4;
+set TW[N9-N2-1] := 3-4;
+set TW[N9-N2-2] := 3-4;
+set TW[N10-N5-0] := 3-4;
+set TW[N10-N5-1] := 3-4;
+set TW[N10-N5-2] := 1-3;
+set TW[N10-N4-0] := 3-4;
+set TW[N10-N4-1] := 1-3;
+set TW[N10-N4-2] := 6-7;
+set TW[N10-N3-0] := 1-3;
+set TW[N10-N3-1] := 6-7;
+set TW[N10-N3-2] := 4-6;
+set TW[N10-N2-0] := 6-7;
+set TW[N10-N2-1] := 4-6;
+set TW[N10-N2-2] := 1-3 2-4;
+set TW[N10-N9-0] := 4-6;
+set TW[N10-N9-1] := 1-3 2-4;
+set TW[N10-N9-2] := 6-7;
+set TW[N9-N8-0] := 1-3 2-4;
+set TW[N9-N8-1] := 6-7;
+set TW[N9-N8-2] := 6-7;
+set TW[N10-N8-0] := 6-7;
+set TW[N10-N8-1] := 6-7;
+set TW[N10-N8-2] := 5-6;
+set TW[N10-N7-0] := 6-7;
+set TW[N10-N7-1] := 5-6;
+set TW[N10-N7-2] := 2-4;
+set TW[N10-N6-0] := 5-6;
+set TW[N10-N6-1] := 2-4;
+set TW[N10-N6-2] := 5-7;
+set TW[N1-N2-0] := 2-4;
+set TW[N1-N2-1] := 5-7;
+set TW[N1-N2-2] := 6-8 7-9;
+set TW[N9-N5-0] := 5-7;
+set TW[N9-N5-1] := 6-8 7-9;
+set TW[N9-N5-2] := 5-6;
+set TW[N1-N3-0] := 6-8 7-9;
+set TW[N1-N3-1] := 5-6;
+set TW[N1-N3-2] := 1-3 2-4;
+set TW[N9-N4-0] := 5-6;
+set TW[N9-N4-1] := 1-3 2-4;
+set TW[N9-N4-2] := 5-7 6-8;
+set TW[N1-N0-0] := 1-3 2-4;
+set TW[N1-N0-1] := 5-7 6-8;
+set TW[N1-N0-2] := 1-2;
+set TW[N9-N7-0] := 5-7 6-8;
+set TW[N9-N7-1] := 1-2;
+set TW[N9-N7-2] := 6-8;
+set TW[N9-N6-0] := 1-2;
+set TW[N9-N6-1] := 6-8;
+set TW[N9-N6-2] := 1-3 2-4;
+set TW[N1-N6-0] := 6-8;
+set TW[N1-N6-1] := 1-3 2-4;
+set TW[N1-N6-2] := 3-4;
+set TW[N1-N7-0] := 1-3 2-4;
+set TW[N1-N7-1] := 3-4;
+set TW[N1-N7-2] := 2-4 3-5;
+set TW[N1-N4-0] := 3-4;
+set TW[N1-N4-1] := 2-4 3-5;
+set TW[N1-N4-2] := 4-6 5-7;
+set TW[N1-N5-0] := 2-4 3-5;
+set TW[N1-N5-1] := 4-6 5-7;
+set TW[N1-N5-2] := 6-7 7-8;
+set TW[N1-N8-0] := 4-6 5-7;
+set TW[N1-N8-1] := 6-7 7-8;
+set TW[N1-N8-2] := 1-3;
+set TW[N1-N9-0] := 6-7 7-8;
+set TW[N1-N9-1] := 1-3;
+set TW[N1-N9-2] := 6-8 7-9;
+set TW[N6-N0-0] := 1-3;
+set TW[N6-N0-1] := 6-8 7-9;
+set TW[N6-N0-2] := 3-5;
+set TW[N6-N5-0] := 6-8 7-9;
+set TW[N6-N5-1] := 3-5;
+set TW[N6-N5-2] := 6-7 7-8;
+set TW[N6-N7-0] := 3-5;
+set TW[N6-N7-1] := 6-7 7-8;
+set TW[N6-N7-2] := 3-4;
+set TW[N6-N8-0] := 6-7 7-8;
+set TW[N6-N8-1] := 3-4;
+set TW[N6-N8-2] := 3-5;
+set TW[N6-N1-0] := 3-4;
+set TW[N6-N1-1] := 3-5;
+set TW[N6-N1-2] := 4-5 5-6;
+set TW[N6-N2-0] := 3-5;
+set TW[N6-N2-1] := 4-5 5-6;
+set TW[N6-N2-2] := 2-3 3-4;
+set TW[N6-N3-0] := 4-5 5-6;
+set TW[N6-N3-1] := 2-3 3-4;
+set TW[N6-N3-2] := 3-4;
+set TW[N6-N4-0] := 2-3 3-4;
+set TW[N6-N4-1] := 3-4;
+set TW[N6-N4-2] := 2-4 3-5;
+set TW[N6-N9-0] := 3-4;
+set TW[N6-N9-1] := 2-4 3-5;
+set TW[N6-N9-2] := 2-4 3-5;
+set TW[N0-N10-0] := 2-4 3-5;
+set TW[N0-N10-1] := 2-4 3-5;
+set TW[N0-N10-2] := 3-5 4-6;
+set TW[N9-N10-0] := 2-4 3-5;
+set TW[N9-N10-1] := 3-5 4-6;
+set TW[N9-N10-2] := 6-7 7-8;
+set TW[N3-N1-0] := 3-5 4-6;
+set TW[N3-N1-1] := 6-7 7-8;
+set TW[N3-N1-2] := 4-6;
+set TW[N3-N0-0] := 6-7 7-8;
+set TW[N3-N0-1] := 4-6;
+set TW[N3-N0-2] := 1-3;
+set TW[N3-N5-0] := 4-6;
+set TW[N3-N5-1] := 1-3;
+set TW[N3-N5-2] := 5-6 6-7;
+set TW[N3-N4-0] := 1-3;
+set TW[N3-N4-1] := 5-6 6-7;
+set TW[N3-N4-2] := 2-3;
+set TW[N3-N2-0] := 5-6 6-7;
+set TW[N3-N2-1] := 2-3;
+set TW[N3-N2-2] := 1-2 2-3;
+set TW[N3-N9-0] := 2-3;
+set TW[N3-N9-1] := 1-2 2-3;
+set TW[N3-N9-2] := 1-2 2-3;
+set TW[N3-N8-0] := 1-2 2-3;
+set TW[N3-N8-1] := 1-2 2-3;
+set TW[N3-N8-2] := 5-7;
+set TW[N3-N7-0] := 1-2 2-3;
+set TW[N3-N7-1] := 5-7;
+set TW[N3-N7-2] := 1-2 2-3;
+set TW[N3-N6-0] := 5-7;
+set TW[N3-N6-1] := 1-2 2-3;
+set TW[N3-N6-2] := 6-7 7-8;
+set TW[N2-N10-0] := 1-2 2-3;
+set TW[N2-N10-1] := 6-7 7-8;
+set TW[N2-N10-2] := 5-6 6-7;
+set TW[N8-N0-0] := 6-7 7-8;
+set TW[N8-N0-1] := 5-6 6-7;
+set TW[N8-N0-2] := 2-4 3-5;
+set TW[N8-N2-0] := 5-6 6-7;
+set TW[N8-N2-1] := 2-4 3-5;
+set TW[N8-N2-2] := 3-4 4-5;
+set TW[N8-N1-0] := 2-4 3-5;
+set TW[N8-N1-1] := 3-4 4-5;
+set TW[N8-N1-2] := 4-5 5-6;
+set TW[N8-N7-0] := 3-4 4-5;
+set TW[N8-N7-1] := 4-5 5-6;
+set TW[N8-N7-2] := 6-7;
+set TW[N8-N9-0] := 4-5 5-6;
+set TW[N8-N9-1] := 6-7;
+set TW[N8-N9-2] := 5-6;
+set TW[N8-N4-0] := 6-7;
+set TW[N8-N4-1] := 5-6;
+set TW[N8-N4-2] := 3-4 4-5;
+set TW[N8-N3-0] := 5-6;
+set TW[N8-N3-1] := 3-4 4-5;
+set TW[N8-N3-2] := 6-7;
+set TW[N0-N2-0] := 3-4 4-5;
+set TW[N0-N2-1] := 6-7;
+set TW[N0-N2-2] := 2-3;
+set TW[N8-N6-0] := 6-7;
+set TW[N8-N6-1] := 2-3;
+set TW[N8-N6-2] := 3-5;
+set TW[N0-N1-0] := 2-3;
+set TW[N0-N1-1] := 3-5;
+set TW[N0-N1-2] := 5-7;
+set TW[N8-N5-0] := 3-5;
+set TW[N8-N5-1] := 5-7;
+set TW[N8-N5-2] := 4-5 5-6;
+set TW[N0-N4-0] := 5-7;
+set TW[N0-N4-1] := 4-5 5-6;
+set TW[N0-N4-2] := 5-7;
+set TW[N0-N3-0] := 4-5 5-6;
+set TW[N0-N3-1] := 5-7;
+set TW[N0-N3-2] := 3-5 4-6;
+set TW[N0-N6-0] := 5-7;
+set TW[N0-N6-1] := 3-5 4-6;
+set TW[N0-N6-2] := 3-4;
+set TW[N0-N5-0] := 3-5 4-6;
+set TW[N0-N5-1] := 3-4;
+set TW[N0-N5-2] := 5-7 6-8;
+set TW[N0-N8-0] := 3-4;
+set TW[N0-N8-1] := 5-7 6-8;
+set TW[N0-N8-2] := 6-8;
+set TW[N0-N7-0] := 5-7 6-8;
+set TW[N0-N7-1] := 6-8;
+set TW[N0-N7-2] := 6-8 7-9;
+set TW[N0-N9-0] := 6-8;
+set TW[N0-N9-1] := 6-8 7-9;
+set TW[N0-N9-2] := 5-7 6-8;
+set TW[N5-N10-0] := 6-8 7-9;
+set TW[N5-N10-1] := 5-7 6-8;
+set TW[N5-N10-2] := 4-5 5-6;
+set TW[N5-N3-0] := 5-7 6-8;
+set TW[N5-N3-1] := 4-5 5-6;
+set TW[N5-N3-2] := 1-2 2-3;
+set TW[N5-N2-0] := 4-5 5-6;
+set TW[N5-N2-1] := 1-2 2-3;
+set TW[N5-N2-2] := 1-2 2-3;
+set TW[N5-N1-0] := 1-2 2-3;
+set TW[N5-N1-1] := 1-2 2-3;
+set TW[N5-N1-2] := 1-2;
+set TW[N5-N0-0] := 1-2 2-3;
+set TW[N5-N0-1] := 1-2;
+set TW[N5-N0-2] := 2-4 3-5;
+set TW[N5-N7-0] := 1-2;
+set TW[N5-N7-1] := 2-4 3-5;
+set TW[N5-N7-2] := 5-6;
+set TW[N5-N6-0] := 2-4 3-5;
+set TW[N5-N6-1] := 5-6;
+set TW[N5-N6-2] := 3-5;
+set TW[N5-N4-0] := 5-6;
+set TW[N5-N4-1] := 3-5;
+set TW[N5-N4-2] := 6-7 7-8;
+set TW[N5-N9-0] := 3-5;
+set TW[N5-N9-1] := 6-7 7-8;
+set TW[N5-N9-2] := 4-5 5-6;
+set TW[N5-N8-0] := 6-7 7-8;
+set TW[N5-N8-1] := 4-5 5-6;
+set TW[N5-N8-2] := 2-4 3-5;
+set TW[N7-N10-0] := 4-5 5-6;
+set TW[N7-N10-1] := 2-4 3-5;
+set TW[N7-N10-2] := 3-5 4-6;
+
+set TS[N2-N0-0, 4-6]:= 4 5 6 ;
+set TS[N2-N0-0, 5-7]:= 5 6 7 ;
+set TS[N2-N0-1, 4-5]:= 4 5 ;
+set TS[N2-N0-1, 5-6]:= 5 6 ;
+set TS[N2-N0-2, 4-6]:= 4 5 6 ;
+set TS[N2-N3-0, 4-5]:= 4 5 ;
+set TS[N2-N3-0, 5-6]:= 5 6 ;
+set TS[N2-N3-1, 4-6]:= 4 5 6 ;
+set TS[N2-N3-2, 1-2]:= 1 2 ;
+set TS[N2-N4-0, 4-6]:= 4 5 6 ;
+set TS[N2-N4-1, 1-2]:= 1 2 ;
+set TS[N2-N4-2, 5-6]:= 5 6 ;
+set TS[N2-N4-2, 6-7]:= 6 7 ;
+set TS[N2-N1-0, 1-2]:= 1 2 ;
+set TS[N2-N1-1, 5-6]:= 5 6 ;
+set TS[N2-N1-1, 6-7]:= 6 7 ;
+set TS[N2-N1-2, 5-7]:= 5 6 7 ;
+set TS[N2-N1-2, 6-8]:= 6 7 8 ;
+set TS[N8-N10-0, 5-6]:= 5 6 ;
+set TS[N8-N10-0, 6-7]:= 6 7 ;
+set TS[N8-N10-1, 5-7]:= 5 6 7 ;
+set TS[N8-N10-1, 6-8]:= 6 7 8 ;
+set TS[N8-N10-2, 3-5]:= 3 4 5 ;
+set TS[N2-N7-0, 5-7]:= 5 6 7 ;
+set TS[N2-N7-0, 6-8]:= 6 7 8 ;
+set TS[N2-N7-1, 3-5]:= 3 4 5 ;
+set TS[N2-N7-2, 3-4]:= 3 4 ;
+set TS[N2-N8-0, 3-5]:= 3 4 5 ;
+set TS[N2-N8-1, 3-4]:= 3 4 ;
+set TS[N2-N8-2, 2-4]:= 2 3 4 ;
+set TS[N2-N5-0, 3-4]:= 3 4 ;
+set TS[N2-N5-1, 2-4]:= 2 3 4 ;
+set TS[N2-N5-2, 1-3]:= 1 2 3 ;
+set TS[N2-N5-2, 2-4]:= 2 3 4 ;
+set TS[N2-N6-0, 2-4]:= 2 3 4 ;
+set TS[N2-N6-1, 1-3]:= 1 2 3 ;
+set TS[N2-N6-1, 2-4]:= 2 3 4 ;
+set TS[N2-N6-2, 3-5]:= 3 4 5 ;
+set TS[N2-N9-0, 1-3]:= 1 2 3 ;
+set TS[N2-N9-0, 2-4]:= 2 3 4 ;
+set TS[N2-N9-1, 3-5]:= 3 4 5 ;
+set TS[N2-N9-2, 1-2]:= 1 2 ;
+set TS[N1-N10-0, 3-5]:= 3 4 5 ;
+set TS[N1-N10-1, 1-2]:= 1 2 ;
+set TS[N1-N10-2, 2-3]:= 2 3 ;
+set TS[N7-N0-0, 1-2]:= 1 2 ;
+set TS[N7-N0-1, 2-3]:= 2 3 ;
+set TS[N7-N0-2, 4-6]:= 4 5 6 ;
+set TS[N7-N0-2, 5-7]:= 5 6 7 ;
+set TS[N7-N1-0, 2-3]:= 2 3 ;
+set TS[N7-N1-1, 4-6]:= 4 5 6 ;
+set TS[N7-N1-1, 5-7]:= 5 6 7 ;
+set TS[N7-N1-2, 2-3]:= 2 3 ;
+set TS[N7-N1-2, 3-4]:= 3 4 ;
+set TS[N7-N6-0, 4-6]:= 4 5 6 ;
+set TS[N7-N6-0, 5-7]:= 5 6 7 ;
+set TS[N7-N6-1, 2-3]:= 2 3 ;
+set TS[N7-N6-1, 3-4]:= 3 4 ;
+set TS[N7-N6-2, 1-3]:= 1 2 3 ;
+set TS[N7-N8-0, 2-3]:= 2 3 ;
+set TS[N7-N8-0, 3-4]:= 3 4 ;
+set TS[N7-N8-1, 1-3]:= 1 2 3 ;
+set TS[N7-N8-2, 3-5]:= 3 4 5 ;
+set TS[N7-N9-0, 1-3]:= 1 2 3 ;
+set TS[N7-N9-1, 3-5]:= 3 4 5 ;
+set TS[N7-N9-2, 4-5]:= 4 5 ;
+set TS[N7-N9-2, 5-6]:= 5 6 ;
+set TS[N7-N2-0, 3-5]:= 3 4 5 ;
+set TS[N7-N2-1, 4-5]:= 4 5 ;
+set TS[N7-N2-1, 5-6]:= 5 6 ;
+set TS[N7-N2-2, 1-3]:= 1 2 3 ;
+set TS[N7-N3-0, 4-5]:= 4 5 ;
+set TS[N7-N3-0, 5-6]:= 5 6 ;
+set TS[N7-N3-1, 1-3]:= 1 2 3 ;
+set TS[N7-N3-2, 4-6]:= 4 5 6 ;
+set TS[N7-N3-2, 5-7]:= 5 6 7 ;
+set TS[N7-N4-0, 1-3]:= 1 2 3 ;
+set TS[N7-N4-1, 4-6]:= 4 5 6 ;
+set TS[N7-N4-1, 5-7]:= 5 6 7 ;
+set TS[N7-N4-2, 1-2]:= 1 2 ;
+set TS[N7-N5-0, 4-6]:= 4 5 6 ;
+set TS[N7-N5-0, 5-7]:= 5 6 7 ;
+set TS[N7-N5-1, 1-2]:= 1 2 ;
+set TS[N7-N5-2, 1-2]:= 1 2 ;
+set TS[N3-N10-0, 1-2]:= 1 2 ;
+set TS[N3-N10-1, 1-2]:= 1 2 ;
+set TS[N3-N10-2, 5-7]:= 5 6 7 ;
+set TS[N3-N10-2, 6-8]:= 6 7 8 ;
+set TS[N4-N2-0, 1-2]:= 1 2 ;
+set TS[N4-N2-1, 5-7]:= 5 6 7 ;
+set TS[N4-N2-1, 6-8]:= 6 7 8 ;
+set TS[N4-N2-2, 5-7]:= 5 6 7 ;
+set TS[N4-N1-0, 5-7]:= 5 6 7 ;
+set TS[N4-N1-0, 6-8]:= 6 7 8 ;
+set TS[N4-N1-1, 5-7]:= 5 6 7 ;
+set TS[N4-N1-2, 4-6]:= 4 5 6 ;
+set TS[N4-N0-0, 5-7]:= 5 6 7 ;
+set TS[N4-N0-1, 4-6]:= 4 5 6 ;
+set TS[N4-N0-2, 2-3]:= 2 3 ;
+set TS[N4-N0-2, 3-4]:= 3 4 ;
+set TS[N4-N10-0, 4-6]:= 4 5 6 ;
+set TS[N4-N10-1, 2-3]:= 2 3 ;
+set TS[N4-N10-1, 3-4]:= 3 4 ;
+set TS[N4-N10-2, 1-2]:= 1 2 ;
+set TS[N4-N6-0, 2-3]:= 2 3 ;
+set TS[N4-N6-0, 3-4]:= 3 4 ;
+set TS[N4-N6-1, 1-2]:= 1 2 ;
+set TS[N4-N6-2, 4-5]:= 4 5 ;
+set TS[N4-N5-0, 1-2]:= 1 2 ;
+set TS[N4-N5-1, 4-5]:= 4 5 ;
+set TS[N4-N5-2, 4-5]:= 4 5 ;
+set TS[N4-N5-2, 5-6]:= 5 6 ;
+set TS[N4-N3-0, 4-5]:= 4 5 ;
+set TS[N4-N3-1, 4-5]:= 4 5 ;
+set TS[N4-N3-1, 5-6]:= 5 6 ;
+set TS[N4-N3-2, 4-6]:= 4 5 6 ;
+set TS[N4-N3-2, 5-7]:= 5 6 7 ;
+set TS[N4-N9-0, 4-5]:= 4 5 ;
+set TS[N4-N9-0, 5-6]:= 5 6 ;
+set TS[N4-N9-1, 4-6]:= 4 5 6 ;
+set TS[N4-N9-1, 5-7]:= 5 6 7 ;
+set TS[N4-N9-2, 4-5]:= 4 5 ;
+set TS[N4-N9-2, 5-6]:= 5 6 ;
+set TS[N4-N8-0, 4-6]:= 4 5 6 ;
+set TS[N4-N8-0, 5-7]:= 5 6 7 ;
+set TS[N4-N8-1, 4-5]:= 4 5 ;
+set TS[N4-N8-1, 5-6]:= 5 6 ;
+set TS[N4-N8-2, 5-7]:= 5 6 7 ;
+set TS[N4-N8-2, 6-8]:= 6 7 8 ;
+set TS[N4-N7-0, 4-5]:= 4 5 ;
+set TS[N4-N7-0, 5-6]:= 5 6 ;
+set TS[N4-N7-1, 5-7]:= 5 6 7 ;
+set TS[N4-N7-1, 6-8]:= 6 7 8 ;
+set TS[N4-N7-2, 5-7]:= 5 6 7 ;
+set TS[N4-N7-2, 6-8]:= 6 7 8 ;
+set TS[N6-N10-0, 5-7]:= 5 6 7 ;
+set TS[N6-N10-0, 6-8]:= 6 7 8 ;
+set TS[N6-N10-1, 5-7]:= 5 6 7 ;
+set TS[N6-N10-1, 6-8]:= 6 7 8 ;
+set TS[N6-N10-2, 5-7]:= 5 6 7 ;
+set TS[N9-N1-0, 5-7]:= 5 6 7 ;
+set TS[N9-N1-0, 6-8]:= 6 7 8 ;
+set TS[N9-N1-1, 5-7]:= 5 6 7 ;
+set TS[N9-N1-2, 5-7]:= 5 6 7 ;
+set TS[N9-N1-2, 6-8]:= 6 7 8 ;
+set TS[N10-N1-0, 5-7]:= 5 6 7 ;
+set TS[N10-N1-1, 5-7]:= 5 6 7 ;
+set TS[N10-N1-1, 6-8]:= 6 7 8 ;
+set TS[N10-N1-2, 2-3]:= 2 3 ;
+set TS[N9-N0-0, 5-7]:= 5 6 7 ;
+set TS[N9-N0-0, 6-8]:= 6 7 8 ;
+set TS[N9-N0-1, 2-3]:= 2 3 ;
+set TS[N9-N0-2, 2-3]:= 2 3 ;
+set TS[N9-N0-2, 3-4]:= 3 4 ;
+set TS[N10-N0-0, 2-3]:= 2 3 ;
+set TS[N10-N0-1, 2-3]:= 2 3 ;
+set TS[N10-N0-1, 3-4]:= 3 4 ;
+set TS[N10-N0-2, 1-3]:= 1 2 3 ;
+set TS[N10-N0-2, 2-4]:= 2 3 4 ;
+set TS[N9-N3-0, 2-3]:= 2 3 ;
+set TS[N9-N3-0, 3-4]:= 3 4 ;
+set TS[N9-N3-1, 1-3]:= 1 2 3 ;
+set TS[N9-N3-1, 2-4]:= 2 3 4 ;
+set TS[N9-N3-2, 3-4]:= 3 4 ;
+set TS[N9-N2-0, 1-3]:= 1 2 3 ;
+set TS[N9-N2-0, 2-4]:= 2 3 4 ;
+set TS[N9-N2-1, 3-4]:= 3 4 ;
+set TS[N9-N2-2, 3-4]:= 3 4 ;
+set TS[N10-N5-0, 3-4]:= 3 4 ;
+set TS[N10-N5-1, 3-4]:= 3 4 ;
+set TS[N10-N5-2, 1-3]:= 1 2 3 ;
+set TS[N10-N4-0, 3-4]:= 3 4 ;
+set TS[N10-N4-1, 1-3]:= 1 2 3 ;
+set TS[N10-N4-2, 6-7]:= 6 7 ;
+set TS[N10-N3-0, 1-3]:= 1 2 3 ;
+set TS[N10-N3-1, 6-7]:= 6 7 ;
+set TS[N10-N3-2, 4-6]:= 4 5 6 ;
+set TS[N10-N2-0, 6-7]:= 6 7 ;
+set TS[N10-N2-1, 4-6]:= 4 5 6 ;
+set TS[N10-N2-2, 1-3]:= 1 2 3 ;
+set TS[N10-N2-2, 2-4]:= 2 3 4 ;
+set TS[N10-N9-0, 4-6]:= 4 5 6 ;
+set TS[N10-N9-1, 1-3]:= 1 2 3 ;
+set TS[N10-N9-1, 2-4]:= 2 3 4 ;
+set TS[N10-N9-2, 6-7]:= 6 7 ;
+set TS[N9-N8-0, 1-3]:= 1 2 3 ;
+set TS[N9-N8-0, 2-4]:= 2 3 4 ;
+set TS[N9-N8-1, 6-7]:= 6 7 ;
+set TS[N9-N8-2, 6-7]:= 6 7 ;
+set TS[N10-N8-0, 6-7]:= 6 7 ;
+set TS[N10-N8-1, 6-7]:= 6 7 ;
+set TS[N10-N8-2, 5-6]:= 5 6 ;
+set TS[N10-N7-0, 6-7]:= 6 7 ;
+set TS[N10-N7-1, 5-6]:= 5 6 ;
+set TS[N10-N7-2, 2-4]:= 2 3 4 ;
+set TS[N10-N6-0, 5-6]:= 5 6 ;
+set TS[N10-N6-1, 2-4]:= 2 3 4 ;
+set TS[N10-N6-2, 5-7]:= 5 6 7 ;
+set TS[N1-N2-0, 2-4]:= 2 3 4 ;
+set TS[N1-N2-1, 5-7]:= 5 6 7 ;
+set TS[N1-N2-2, 6-8]:= 6 7 8 ;
+set TS[N1-N2-2, 7-9]:= 7 8 9 ;
+set TS[N9-N5-0, 5-7]:= 5 6 7 ;
+set TS[N9-N5-1, 6-8]:= 6 7 8 ;
+set TS[N9-N5-1, 7-9]:= 7 8 9 ;
+set TS[N9-N5-2, 5-6]:= 5 6 ;
+set TS[N1-N3-0, 6-8]:= 6 7 8 ;
+set TS[N1-N3-0, 7-9]:= 7 8 9 ;
+set TS[N1-N3-1, 5-6]:= 5 6 ;
+set TS[N1-N3-2, 1-3]:= 1 2 3 ;
+set TS[N1-N3-2, 2-4]:= 2 3 4 ;
+set TS[N9-N4-0, 5-6]:= 5 6 ;
+set TS[N9-N4-1, 1-3]:= 1 2 3 ;
+set TS[N9-N4-1, 2-4]:= 2 3 4 ;
+set TS[N9-N4-2, 5-7]:= 5 6 7 ;
+set TS[N9-N4-2, 6-8]:= 6 7 8 ;
+set TS[N1-N0-0, 1-3]:= 1 2 3 ;
+set TS[N1-N0-0, 2-4]:= 2 3 4 ;
+set TS[N1-N0-1, 5-7]:= 5 6 7 ;
+set TS[N1-N0-1, 6-8]:= 6 7 8 ;
+set TS[N1-N0-2, 1-2]:= 1 2 ;
+set TS[N9-N7-0, 5-7]:= 5 6 7 ;
+set TS[N9-N7-0, 6-8]:= 6 7 8 ;
+set TS[N9-N7-1, 1-2]:= 1 2 ;
+set TS[N9-N7-2, 6-8]:= 6 7 8 ;
+set TS[N9-N6-0, 1-2]:= 1 2 ;
+set TS[N9-N6-1, 6-8]:= 6 7 8 ;
+set TS[N9-N6-2, 1-3]:= 1 2 3 ;
+set TS[N9-N6-2, 2-4]:= 2 3 4 ;
+set TS[N1-N6-0, 6-8]:= 6 7 8 ;
+set TS[N1-N6-1, 1-3]:= 1 2 3 ;
+set TS[N1-N6-1, 2-4]:= 2 3 4 ;
+set TS[N1-N6-2, 3-4]:= 3 4 ;
+set TS[N1-N7-0, 1-3]:= 1 2 3 ;
+set TS[N1-N7-0, 2-4]:= 2 3 4 ;
+set TS[N1-N7-1, 3-4]:= 3 4 ;
+set TS[N1-N7-2, 2-4]:= 2 3 4 ;
+set TS[N1-N7-2, 3-5]:= 3 4 5 ;
+set TS[N1-N4-0, 3-4]:= 3 4 ;
+set TS[N1-N4-1, 2-4]:= 2 3 4 ;
+set TS[N1-N4-1, 3-5]:= 3 4 5 ;
+set TS[N1-N4-2, 4-6]:= 4 5 6 ;
+set TS[N1-N4-2, 5-7]:= 5 6 7 ;
+set TS[N1-N5-0, 2-4]:= 2 3 4 ;
+set TS[N1-N5-0, 3-5]:= 3 4 5 ;
+set TS[N1-N5-1, 4-6]:= 4 5 6 ;
+set TS[N1-N5-1, 5-7]:= 5 6 7 ;
+set TS[N1-N5-2, 6-7]:= 6 7 ;
+set TS[N1-N5-2, 7-8]:= 7 8 ;
+set TS[N1-N8-0, 4-6]:= 4 5 6 ;
+set TS[N1-N8-0, 5-7]:= 5 6 7 ;
+set TS[N1-N8-1, 6-7]:= 6 7 ;
+set TS[N1-N8-1, 7-8]:= 7 8 ;
+set TS[N1-N8-2, 1-3]:= 1 2 3 ;
+set TS[N1-N9-0, 6-7]:= 6 7 ;
+set TS[N1-N9-0, 7-8]:= 7 8 ;
+set TS[N1-N9-1, 1-3]:= 1 2 3 ;
+set TS[N1-N9-2, 6-8]:= 6 7 8 ;
+set TS[N1-N9-2, 7-9]:= 7 8 9 ;
+set TS[N6-N0-0, 1-3]:= 1 2 3 ;
+set TS[N6-N0-1, 6-8]:= 6 7 8 ;
+set TS[N6-N0-1, 7-9]:= 7 8 9 ;
+set TS[N6-N0-2, 3-5]:= 3 4 5 ;
+set TS[N6-N5-0, 6-8]:= 6 7 8 ;
+set TS[N6-N5-0, 7-9]:= 7 8 9 ;
+set TS[N6-N5-1, 3-5]:= 3 4 5 ;
+set TS[N6-N5-2, 6-7]:= 6 7 ;
+set TS[N6-N5-2, 7-8]:= 7 8 ;
+set TS[N6-N7-0, 3-5]:= 3 4 5 ;
+set TS[N6-N7-1, 6-7]:= 6 7 ;
+set TS[N6-N7-1, 7-8]:= 7 8 ;
+set TS[N6-N7-2, 3-4]:= 3 4 ;
+set TS[N6-N8-0, 6-7]:= 6 7 ;
+set TS[N6-N8-0, 7-8]:= 7 8 ;
+set TS[N6-N8-1, 3-4]:= 3 4 ;
+set TS[N6-N8-2, 3-5]:= 3 4 5 ;
+set TS[N6-N1-0, 3-4]:= 3 4 ;
+set TS[N6-N1-1, 3-5]:= 3 4 5 ;
+set TS[N6-N1-2, 4-5]:= 4 5 ;
+set TS[N6-N1-2, 5-6]:= 5 6 ;
+set TS[N6-N2-0, 3-5]:= 3 4 5 ;
+set TS[N6-N2-1, 4-5]:= 4 5 ;
+set TS[N6-N2-1, 5-6]:= 5 6 ;
+set TS[N6-N2-2, 2-3]:= 2 3 ;
+set TS[N6-N2-2, 3-4]:= 3 4 ;
+set TS[N6-N3-0, 4-5]:= 4 5 ;
+set TS[N6-N3-0, 5-6]:= 5 6 ;
+set TS[N6-N3-1, 2-3]:= 2 3 ;
+set TS[N6-N3-1, 3-4]:= 3 4 ;
+set TS[N6-N3-2, 3-4]:= 3 4 ;
+set TS[N6-N4-0, 2-3]:= 2 3 ;
+set TS[N6-N4-0, 3-4]:= 3 4 ;
+set TS[N6-N4-1, 3-4]:= 3 4 ;
+set TS[N6-N4-2, 2-4]:= 2 3 4 ;
+set TS[N6-N4-2, 3-5]:= 3 4 5 ;
+set TS[N6-N9-0, 3-4]:= 3 4 ;
+set TS[N6-N9-1, 2-4]:= 2 3 4 ;
+set TS[N6-N9-1, 3-5]:= 3 4 5 ;
+set TS[N6-N9-2, 2-4]:= 2 3 4 ;
+set TS[N6-N9-2, 3-5]:= 3 4 5 ;
+set TS[N0-N10-0, 2-4]:= 2 3 4 ;
+set TS[N0-N10-0, 3-5]:= 3 4 5 ;
+set TS[N0-N10-1, 2-4]:= 2 3 4 ;
+set TS[N0-N10-1, 3-5]:= 3 4 5 ;
+set TS[N0-N10-2, 3-5]:= 3 4 5 ;
+set TS[N0-N10-2, 4-6]:= 4 5 6 ;
+set TS[N9-N10-0, 2-4]:= 2 3 4 ;
+set TS[N9-N10-0, 3-5]:= 3 4 5 ;
+set TS[N9-N10-1, 3-5]:= 3 4 5 ;
+set TS[N9-N10-1, 4-6]:= 4 5 6 ;
+set TS[N9-N10-2, 6-7]:= 6 7 ;
+set TS[N9-N10-2, 7-8]:= 7 8 ;
+set TS[N3-N1-0, 3-5]:= 3 4 5 ;
+set TS[N3-N1-0, 4-6]:= 4 5 6 ;
+set TS[N3-N1-1, 6-7]:= 6 7 ;
+set TS[N3-N1-1, 7-8]:= 7 8 ;
+set TS[N3-N1-2, 4-6]:= 4 5 6 ;
+set TS[N3-N0-0, 6-7]:= 6 7 ;
+set TS[N3-N0-0, 7-8]:= 7 8 ;
+set TS[N3-N0-1, 4-6]:= 4 5 6 ;
+set TS[N3-N0-2, 1-3]:= 1 2 3 ;
+set TS[N3-N5-0, 4-6]:= 4 5 6 ;
+set TS[N3-N5-1, 1-3]:= 1 2 3 ;
+set TS[N3-N5-2, 5-6]:= 5 6 ;
+set TS[N3-N5-2, 6-7]:= 6 7 ;
+set TS[N3-N4-0, 1-3]:= 1 2 3 ;
+set TS[N3-N4-1, 5-6]:= 5 6 ;
+set TS[N3-N4-1, 6-7]:= 6 7 ;
+set TS[N3-N4-2, 2-3]:= 2 3 ;
+set TS[N3-N2-0, 5-6]:= 5 6 ;
+set TS[N3-N2-0, 6-7]:= 6 7 ;
+set TS[N3-N2-1, 2-3]:= 2 3 ;
+set TS[N3-N2-2, 1-2]:= 1 2 ;
+set TS[N3-N2-2, 2-3]:= 2 3 ;
+set TS[N3-N9-0, 2-3]:= 2 3 ;
+set TS[N3-N9-1, 1-2]:= 1 2 ;
+set TS[N3-N9-1, 2-3]:= 2 3 ;
+set TS[N3-N9-2, 1-2]:= 1 2 ;
+set TS[N3-N9-2, 2-3]:= 2 3 ;
+set TS[N3-N8-0, 1-2]:= 1 2 ;
+set TS[N3-N8-0, 2-3]:= 2 3 ;
+set TS[N3-N8-1, 1-2]:= 1 2 ;
+set TS[N3-N8-1, 2-3]:= 2 3 ;
+set TS[N3-N8-2, 5-7]:= 5 6 7 ;
+set TS[N3-N7-0, 1-2]:= 1 2 ;
+set TS[N3-N7-0, 2-3]:= 2 3 ;
+set TS[N3-N7-1, 5-7]:= 5 6 7 ;
+set TS[N3-N7-2, 1-2]:= 1 2 ;
+set TS[N3-N7-2, 2-3]:= 2 3 ;
+set TS[N3-N6-0, 5-7]:= 5 6 7 ;
+set TS[N3-N6-1, 1-2]:= 1 2 ;
+set TS[N3-N6-1, 2-3]:= 2 3 ;
+set TS[N3-N6-2, 6-7]:= 6 7 ;
+set TS[N3-N6-2, 7-8]:= 7 8 ;
+set TS[N2-N10-0, 1-2]:= 1 2 ;
+set TS[N2-N10-0, 2-3]:= 2 3 ;
+set TS[N2-N10-1, 6-7]:= 6 7 ;
+set TS[N2-N10-1, 7-8]:= 7 8 ;
+set TS[N2-N10-2, 5-6]:= 5 6 ;
+set TS[N2-N10-2, 6-7]:= 6 7 ;
+set TS[N8-N0-0, 6-7]:= 6 7 ;
+set TS[N8-N0-0, 7-8]:= 7 8 ;
+set TS[N8-N0-1, 5-6]:= 5 6 ;
+set TS[N8-N0-1, 6-7]:= 6 7 ;
+set TS[N8-N0-2, 2-4]:= 2 3 4 ;
+set TS[N8-N0-2, 3-5]:= 3 4 5 ;
+set TS[N8-N2-0, 5-6]:= 5 6 ;
+set TS[N8-N2-0, 6-7]:= 6 7 ;
+set TS[N8-N2-1, 2-4]:= 2 3 4 ;
+set TS[N8-N2-1, 3-5]:= 3 4 5 ;
+set TS[N8-N2-2, 3-4]:= 3 4 ;
+set TS[N8-N2-2, 4-5]:= 4 5 ;
+set TS[N8-N1-0, 2-4]:= 2 3 4 ;
+set TS[N8-N1-0, 3-5]:= 3 4 5 ;
+set TS[N8-N1-1, 3-4]:= 3 4 ;
+set TS[N8-N1-1, 4-5]:= 4 5 ;
+set TS[N8-N1-2, 4-5]:= 4 5 ;
+set TS[N8-N1-2, 5-6]:= 5 6 ;
+set TS[N8-N7-0, 3-4]:= 3 4 ;
+set TS[N8-N7-0, 4-5]:= 4 5 ;
+set TS[N8-N7-1, 4-5]:= 4 5 ;
+set TS[N8-N7-1, 5-6]:= 5 6 ;
+set TS[N8-N7-2, 6-7]:= 6 7 ;
+set TS[N8-N9-0, 4-5]:= 4 5 ;
+set TS[N8-N9-0, 5-6]:= 5 6 ;
+set TS[N8-N9-1, 6-7]:= 6 7 ;
+set TS[N8-N9-2, 5-6]:= 5 6 ;
+set TS[N8-N4-0, 6-7]:= 6 7 ;
+set TS[N8-N4-1, 5-6]:= 5 6 ;
+set TS[N8-N4-2, 3-4]:= 3 4 ;
+set TS[N8-N4-2, 4-5]:= 4 5 ;
+set TS[N8-N3-0, 5-6]:= 5 6 ;
+set TS[N8-N3-1, 3-4]:= 3 4 ;
+set TS[N8-N3-1, 4-5]:= 4 5 ;
+set TS[N8-N3-2, 6-7]:= 6 7 ;
+set TS[N0-N2-0, 3-4]:= 3 4 ;
+set TS[N0-N2-0, 4-5]:= 4 5 ;
+set TS[N0-N2-1, 6-7]:= 6 7 ;
+set TS[N0-N2-2, 2-3]:= 2 3 ;
+set TS[N8-N6-0, 6-7]:= 6 7 ;
+set TS[N8-N6-1, 2-3]:= 2 3 ;
+set TS[N8-N6-2, 3-5]:= 3 4 5 ;
+set TS[N0-N1-0, 2-3]:= 2 3 ;
+set TS[N0-N1-1, 3-5]:= 3 4 5 ;
+set TS[N0-N1-2, 5-7]:= 5 6 7 ;
+set TS[N8-N5-0, 3-5]:= 3 4 5 ;
+set TS[N8-N5-1, 5-7]:= 5 6 7 ;
+set TS[N8-N5-2, 4-5]:= 4 5 ;
+set TS[N8-N5-2, 5-6]:= 5 6 ;
+set TS[N0-N4-0, 5-7]:= 5 6 7 ;
+set TS[N0-N4-1, 4-5]:= 4 5 ;
+set TS[N0-N4-1, 5-6]:= 5 6 ;
+set TS[N0-N4-2, 5-7]:= 5 6 7 ;
+set TS[N0-N3-0, 4-5]:= 4 5 ;
+set TS[N0-N3-0, 5-6]:= 5 6 ;
+set TS[N0-N3-1, 5-7]:= 5 6 7 ;
+set TS[N0-N3-2, 3-5]:= 3 4 5 ;
+set TS[N0-N3-2, 4-6]:= 4 5 6 ;
+set TS[N0-N6-0, 5-7]:= 5 6 7 ;
+set TS[N0-N6-1, 3-5]:= 3 4 5 ;
+set TS[N0-N6-1, 4-6]:= 4 5 6 ;
+set TS[N0-N6-2, 3-4]:= 3 4 ;
+set TS[N0-N5-0, 3-5]:= 3 4 5 ;
+set TS[N0-N5-0, 4-6]:= 4 5 6 ;
+set TS[N0-N5-1, 3-4]:= 3 4 ;
+set TS[N0-N5-2, 5-7]:= 5 6 7 ;
+set TS[N0-N5-2, 6-8]:= 6 7 8 ;
+set TS[N0-N8-0, 3-4]:= 3 4 ;
+set TS[N0-N8-1, 5-7]:= 5 6 7 ;
+set TS[N0-N8-1, 6-8]:= 6 7 8 ;
+set TS[N0-N8-2, 6-8]:= 6 7 8 ;
+set TS[N0-N7-0, 5-7]:= 5 6 7 ;
+set TS[N0-N7-0, 6-8]:= 6 7 8 ;
+set TS[N0-N7-1, 6-8]:= 6 7 8 ;
+set TS[N0-N7-2, 6-8]:= 6 7 8 ;
+set TS[N0-N7-2, 7-9]:= 7 8 9 ;
+set TS[N0-N9-0, 6-8]:= 6 7 8 ;
+set TS[N0-N9-1, 6-8]:= 6 7 8 ;
+set TS[N0-N9-1, 7-9]:= 7 8 9 ;
+set TS[N0-N9-2, 5-7]:= 5 6 7 ;
+set TS[N0-N9-2, 6-8]:= 6 7 8 ;
+set TS[N5-N10-0, 6-8]:= 6 7 8 ;
+set TS[N5-N10-0, 7-9]:= 7 8 9 ;
+set TS[N5-N10-1, 5-7]:= 5 6 7 ;
+set TS[N5-N10-1, 6-8]:= 6 7 8 ;
+set TS[N5-N10-2, 4-5]:= 4 5 ;
+set TS[N5-N10-2, 5-6]:= 5 6 ;
+set TS[N5-N3-0, 5-7]:= 5 6 7 ;
+set TS[N5-N3-0, 6-8]:= 6 7 8 ;
+set TS[N5-N3-1, 4-5]:= 4 5 ;
+set TS[N5-N3-1, 5-6]:= 5 6 ;
+set TS[N5-N3-2, 1-2]:= 1 2 ;
+set TS[N5-N3-2, 2-3]:= 2 3 ;
+set TS[N5-N2-0, 4-5]:= 4 5 ;
+set TS[N5-N2-0, 5-6]:= 5 6 ;
+set TS[N5-N2-1, 1-2]:= 1 2 ;
+set TS[N5-N2-1, 2-3]:= 2 3 ;
+set TS[N5-N2-2, 1-2]:= 1 2 ;
+set TS[N5-N2-2, 2-3]:= 2 3 ;
+set TS[N5-N1-0, 1-2]:= 1 2 ;
+set TS[N5-N1-0, 2-3]:= 2 3 ;
+set TS[N5-N1-1, 1-2]:= 1 2 ;
+set TS[N5-N1-1, 2-3]:= 2 3 ;
+set TS[N5-N1-2, 1-2]:= 1 2 ;
+set TS[N5-N0-0, 1-2]:= 1 2 ;
+set TS[N5-N0-0, 2-3]:= 2 3 ;
+set TS[N5-N0-1, 1-2]:= 1 2 ;
+set TS[N5-N0-2, 2-4]:= 2 3 4 ;
+set TS[N5-N0-2, 3-5]:= 3 4 5 ;
+set TS[N5-N7-0, 1-2]:= 1 2 ;
+set TS[N5-N7-1, 2-4]:= 2 3 4 ;
+set TS[N5-N7-1, 3-5]:= 3 4 5 ;
+set TS[N5-N7-2, 5-6]:= 5 6 ;
+set TS[N5-N6-0, 2-4]:= 2 3 4 ;
+set TS[N5-N6-0, 3-5]:= 3 4 5 ;
+set TS[N5-N6-1, 5-6]:= 5 6 ;
+set TS[N5-N6-2, 3-5]:= 3 4 5 ;
+set TS[N5-N4-0, 5-6]:= 5 6 ;
+set TS[N5-N4-1, 3-5]:= 3 4 5 ;
+set TS[N5-N4-2, 6-7]:= 6 7 ;
+set TS[N5-N4-2, 7-8]:= 7 8 ;
+set TS[N5-N9-0, 3-5]:= 3 4 5 ;
+set TS[N5-N9-1, 6-7]:= 6 7 ;
+set TS[N5-N9-1, 7-8]:= 7 8 ;
+set TS[N5-N9-2, 4-5]:= 4 5 ;
+set TS[N5-N9-2, 5-6]:= 5 6 ;
+set TS[N5-N8-0, 6-7]:= 6 7 ;
+set TS[N5-N8-0, 7-8]:= 7 8 ;
+set TS[N5-N8-1, 4-5]:= 4 5 ;
+set TS[N5-N8-1, 5-6]:= 5 6 ;
+set TS[N5-N8-2, 2-4]:= 2 3 4 ;
+set TS[N5-N8-2, 3-5]:= 3 4 5 ;
+set TS[N7-N10-0, 4-5]:= 4 5 ;
+set TS[N7-N10-0, 5-6]:= 5 6 ;
+set TS[N7-N10-1, 2-4]:= 2 3 4 ;
+set TS[N7-N10-1, 3-5]:= 3 4 5 ;
+set TS[N7-N10-2, 3-5]:= 3 4 5 ;
+set TS[N7-N10-2, 4-6]:= 4 5 6 ;
+
+param d :=
+N2-N0-0 4
+N2-N0-1 8
+N2-N0-2 5
+N2-N3-0 8
+N2-N3-1 5
+N2-N3-2 6
+N2-N4-0 5
+N2-N4-1 6
+N2-N4-2 8
+N2-N1-0 6
+N2-N1-1 8
+N2-N1-2 3
+N8-N10-0 8
+N8-N10-1 3
+N8-N10-2 3
+N2-N7-0 3
+N2-N7-1 3
+N2-N7-2 1
+N2-N8-0 3
+N2-N8-1 1
+N2-N8-2 3
+N2-N5-0 1
+N2-N5-1 3
+N2-N5-2 3
+N2-N6-0 3
+N2-N6-1 3
+N2-N6-2 8
+N2-N9-0 3
+N2-N9-1 8
+N2-N9-2 8
+N1-N10-0 8
+N1-N10-1 8
+N1-N10-2 8
+N7-N0-0 8
+N7-N0-1 8
+N7-N0-2 1
+N7-N1-0 8
+N7-N1-1 1
+N7-N1-2 2
+N7-N6-0 1
+N7-N6-1 2
+N7-N6-2 6
+N7-N8-0 2
+N7-N8-1 6
+N7-N8-2 8
+N7-N9-0 6
+N7-N9-1 8
+N7-N9-2 1
+N7-N2-0 8
+N7-N2-1 1
+N7-N2-2 7
+N7-N3-0 1
+N7-N3-1 7
+N7-N3-2 8
+N7-N4-0 7
+N7-N4-1 8
+N7-N4-2 3
+N7-N5-0 8
+N7-N5-1 3
+N7-N5-2 8
+N3-N10-0 3
+N3-N10-1 8
+N3-N10-2 3
+N4-N2-0 8
+N4-N2-1 3
+N4-N2-2 1
+N4-N1-0 3
+N4-N1-1 1
+N4-N1-2 5
+N4-N0-0 1
+N4-N0-1 5
+N4-N0-2 2
+N4-N10-0 5
+N4-N10-1 2
+N4-N10-2 7
+N4-N6-0 2
+N4-N6-1 7
+N4-N6-2 3
+N4-N5-0 7
+N4-N5-1 3
+N4-N5-2 3
+N4-N3-0 3
+N4-N3-1 3
+N4-N3-2 3
+N4-N9-0 3
+N4-N9-1 3
+N4-N9-2 3
+N4-N8-0 3
+N4-N8-1 3
+N4-N8-2 2
+N4-N7-0 3
+N4-N7-1 2
+N4-N7-2 4
+N6-N10-0 2
+N6-N10-1 4
+N6-N10-2 8
+N9-N1-0 4
+N9-N1-1 8
+N9-N1-2 4
+N10-N1-0 8
+N10-N1-1 4
+N10-N1-2 8
+N9-N0-0 4
+N9-N0-1 8
+N9-N0-2 3
+N10-N0-0 8
+N10-N0-1 3
+N10-N0-2 4
+N9-N3-0 3
+N9-N3-1 4
+N9-N3-2 2
+N9-N2-0 4
+N9-N2-1 2
+N9-N2-2 6
+N10-N5-0 2
+N10-N5-1 6
+N10-N5-2 2
+N10-N4-0 6
+N10-N4-1 2
+N10-N4-2 7
+N10-N3-0 2
+N10-N3-1 7
+N10-N3-2 5
+N10-N2-0 7
+N10-N2-1 5
+N10-N2-2 4
+N10-N9-0 5
+N10-N9-1 4
+N10-N9-2 5
+N9-N8-0 4
+N9-N8-1 5
+N9-N8-2 7
+N10-N8-0 5
+N10-N8-1 7
+N10-N8-2 3
+N10-N7-0 7
+N10-N7-1 3
+N10-N7-2 8
+N10-N6-0 3
+N10-N6-1 8
+N10-N6-2 2
+N1-N2-0 8
+N1-N2-1 2
+N1-N2-2 8
+N9-N5-0 2
+N9-N5-1 8
+N9-N5-2 3
+N1-N3-0 8
+N1-N3-1 3
+N1-N3-2 6
+N9-N4-0 3
+N9-N4-1 6
+N9-N4-2 6
+N1-N0-0 6
+N1-N0-1 6
+N1-N0-2 8
+N9-N7-0 6
+N9-N7-1 8
+N9-N7-2 3
+N9-N6-0 8
+N9-N6-1 3
+N9-N6-2 6
+N1-N6-0 3
+N1-N6-1 6
+N1-N6-2 6
+N1-N7-0 6
+N1-N7-1 6
+N1-N7-2 1
+N1-N4-0 6
+N1-N4-1 1
+N1-N4-2 8
+N1-N5-0 1
+N1-N5-1 8
+N1-N5-2 2
+N1-N8-0 8
+N1-N8-1 2
+N1-N8-2 7
+N1-N9-0 2
+N1-N9-1 7
+N1-N9-2 7
+N6-N0-0 7
+N6-N0-1 7
+N6-N0-2 1
+N6-N5-0 7
+N6-N5-1 1
+N6-N5-2 4
+N6-N7-0 1
+N6-N7-1 4
+N6-N7-2 1
+N6-N8-0 4
+N6-N8-1 1
+N6-N8-2 4
+N6-N1-0 1
+N6-N1-1 4
+N6-N1-2 6
+N6-N2-0 4
+N6-N2-1 6
+N6-N2-2 7
+N6-N3-0 6
+N6-N3-1 7
+N6-N3-2 3
+N6-N4-0 7
+N6-N4-1 3
+N6-N4-2 2
+N6-N9-0 3
+N6-N9-1 2
+N6-N9-2 2
+N0-N10-0 2
+N0-N10-1 2
+N0-N10-2 7
+N9-N10-0 2
+N9-N10-1 7
+N9-N10-2 8
+N3-N1-0 7
+N3-N1-1 8
+N3-N1-2 2
+N3-N0-0 8
+N3-N0-1 2
+N3-N0-2 7
+N3-N5-0 2
+N3-N5-1 7
+N3-N5-2 5
+N3-N4-0 7
+N3-N4-1 5
+N3-N4-2 5
+N3-N2-0 5
+N3-N2-1 5
+N3-N2-2 7
+N3-N9-0 5
+N3-N9-1 7
+N3-N9-2 2
+N3-N8-0 7
+N3-N8-1 2
+N3-N8-2 7
+N3-N7-0 2
+N3-N7-1 7
+N3-N7-2 7
+N3-N6-0 7
+N3-N6-1 7
+N3-N6-2 2
+N2-N10-0 7
+N2-N10-1 2
+N2-N10-2 2
+N8-N0-0 2
+N8-N0-1 2
+N8-N0-2 6
+N8-N2-0 2
+N8-N2-1 6
+N8-N2-2 8
+N8-N1-0 6
+N8-N1-1 8
+N8-N1-2 4
+N8-N7-0 8
+N8-N7-1 4
+N8-N7-2 1
+N8-N9-0 4
+N8-N9-1 1
+N8-N9-2 4
+N8-N4-0 1
+N8-N4-1 4
+N8-N4-2 8
+N8-N3-0 4
+N8-N3-1 8
+N8-N3-2 5
+N0-N2-0 8
+N0-N2-1 5
+N0-N2-2 4
+N8-N6-0 5
+N8-N6-1 4
+N8-N6-2 7
+N0-N1-0 4
+N0-N1-1 7
+N0-N1-2 7
+N8-N5-0 7
+N8-N5-1 7
+N8-N5-2 7
+N0-N4-0 7
+N0-N4-1 7
+N0-N4-2 5
+N0-N3-0 7
+N0-N3-1 5
+N0-N3-2 8
+N0-N6-0 5
+N0-N6-1 8
+N0-N6-2 6
+N0-N5-0 8
+N0-N5-1 6
+N0-N5-2 3
+N0-N8-0 6
+N0-N8-1 3
+N0-N8-2 6
+N0-N7-0 3
+N0-N7-1 6
+N0-N7-2 4
+N0-N9-0 6
+N0-N9-1 4
+N0-N9-2 6
+N5-N10-0 4
+N5-N10-1 6
+N5-N10-2 7
+N5-N3-0 6
+N5-N3-1 7
+N5-N3-2 4
+N5-N2-0 7
+N5-N2-1 4
+N5-N2-2 1
+N5-N1-0 4
+N5-N1-1 1
+N5-N1-2 7
+N5-N0-0 1
+N5-N0-1 7
+N5-N0-2 8
+N5-N7-0 7
+N5-N7-1 8
+N5-N7-2 4
+N5-N6-0 8
+N5-N6-1 4
+N5-N6-2 1
+N5-N4-0 4
+N5-N4-1 1
+N5-N4-2 2
+N5-N9-0 1
+N5-N9-1 2
+N5-N9-2 8
+N5-N8-0 2
+N5-N8-1 8
+N5-N8-2 8
+N7-N10-0 8
+N7-N10-1 8
+N7-N10-2 5
+;
+
+param Rr :=
+6,C1,N2-N0-0, N2-N0, 4
+6,C1,N2-N0-1, N2-N0, 8
+6,C1,N2-N0-2, N2-N0, 5
+6,C1,N2-N3-0, N2-N3, 8
+6,C1,N2-N3-1, N2-N3, 5
+6,C1,N2-N3-2, N2-N3, 6
+6,C1,N2-N4-0, N2-N5, 5
+6,C1,N2-N4-0, N5-N4, 5
+6,C1,N2-N4-1, N2-N5, 6
+6,C1,N2-N4-1, N5-N4, 6
+6,C1,N2-N4-2, N2-N5, 8
+6,C1,N2-N4-2, N5-N4, 8
+6,C1,N2-N1-0, N2-N1, 6
+6,C1,N2-N1-1, N2-N1, 8
+6,C1,N2-N1-2, N2-N1, 3
+6,C1,N8-N10-0, N8-N10, 8
+6,C1,N8-N10-1, N8-N10, 3
+6,C1,N8-N10-2, N8-N10, 3
+6,C1,N2-N7-0, N2-N1, 3
+6,C1,N2-N7-0, N1-N7, 3
+6,C1,N2-N7-1, N2-N1, 3
+6,C1,N2-N7-1, N1-N7, 3
+6,C1,N2-N7-2, N2-N1, 1
+6,C1,N2-N7-2, N1-N7, 1
+6,C1,N2-N8-0, N2-N5, 3
+6,C1,N2-N8-0, N5-N8, 3
+6,C1,N2-N8-1, N2-N5, 1
+6,C1,N2-N8-1, N5-N8, 1
+6,C1,N2-N8-2, N2-N5, 3
+6,C1,N2-N8-2, N5-N8, 3
+6,C1,N2-N5-0, N2-N5, 1
+6,C1,N2-N5-1, N2-N5, 3
+6,C1,N2-N5-2, N2-N5, 3
+6,C1,N2-N6-0, N2-N5, 3
+6,C1,N2-N6-0, N5-N6, 3
+6,C1,N2-N6-1, N2-N5, 3
+6,C1,N2-N6-1, N5-N6, 3
+6,C1,N2-N6-2, N2-N5, 8
+6,C1,N2-N6-2, N5-N6, 8
+6,C1,N2-N9-0, N2-N5, 3
+6,C1,N2-N9-0, N5-N6, 3
+6,C1,N2-N9-0, N6-N9, 3
+6,C1,N2-N9-1, N2-N5, 8
+6,C1,N2-N9-1, N5-N6, 8
+6,C1,N2-N9-1, N6-N9, 8
+6,C1,N2-N9-2, N2-N5, 8
+6,C1,N2-N9-2, N5-N6, 8
+6,C1,N2-N9-2, N6-N9, 8
+6,C1,N1-N10-0, N1-N7, 8
+6,C1,N1-N10-0, N7-N10, 8
+6,C1,N1-N10-1, N1-N7, 8
+6,C1,N1-N10-1, N7-N10, 8
+6,C1,N1-N10-2, N1-N7, 8
+6,C1,N1-N10-2, N7-N10, 8
+6,C1,N7-N0-0, N7-N1, 8
+6,C1,N7-N0-0, N1-N0, 8
+6,C1,N7-N0-1, N7-N1, 8
+6,C1,N7-N0-1, N1-N0, 8
+6,C1,N7-N0-2, N7-N1, 1
+6,C1,N7-N0-2, N1-N0, 1
+6,C1,N7-N1-0, N7-N1, 8
+6,C1,N7-N1-1, N7-N1, 1
+6,C1,N7-N1-2, N7-N1, 2
+6,C1,N7-N6-0, N7-N4, 1
+6,C1,N7-N6-0, N4-N5, 1
+6,C1,N7-N6-0, N5-N6, 1
+6,C1,N7-N6-1, N7-N4, 2
+6,C1,N7-N6-1, N4-N5, 2
+6,C1,N7-N6-1, N5-N6, 2
+6,C1,N7-N6-2, N7-N4, 6
+6,C1,N7-N6-2, N4-N5, 6
+6,C1,N7-N6-2, N5-N6, 6
+6,C1,N7-N8-0, N7-N4, 2
+6,C1,N7-N8-0, N4-N5, 2
+6,C1,N7-N8-0, N5-N8, 2
+6,C1,N7-N8-1, N7-N4, 6
+6,C1,N7-N8-1, N4-N5, 6
+6,C1,N7-N8-1, N5-N8, 6
+6,C1,N7-N8-2, N7-N4, 8
+6,C1,N7-N8-2, N4-N5, 8
+6,C1,N7-N8-2, N5-N8, 8
+6,C1,N7-N9-0, N7-N4, 6
+6,C1,N7-N9-0, N4-N5, 6
+6,C1,N7-N9-0, N5-N6, 6
+6,C1,N7-N9-0, N6-N9, 6
+6,C1,N7-N9-1, N7-N4, 8
+6,C1,N7-N9-1, N4-N5, 8
+6,C1,N7-N9-1, N5-N6, 8
+6,C1,N7-N9-1, N6-N9, 8
+6,C1,N7-N9-2, N7-N4, 1
+6,C1,N7-N9-2, N4-N5, 1
+6,C1,N7-N9-2, N5-N6, 1
+6,C1,N7-N9-2, N6-N9, 1
+6,C1,N7-N2-0, N7-N1, 8
+6,C1,N7-N2-0, N1-N2, 8
+6,C1,N7-N2-1, N7-N1, 1
+6,C1,N7-N2-1, N1-N2, 1
+6,C1,N7-N2-2, N7-N1, 7
+6,C1,N7-N2-2, N1-N2, 7
+6,C1,N7-N3-0, N7-N4, 1
+6,C1,N7-N3-0, N4-N5, 1
+6,C1,N7-N3-0, N5-N6, 1
+6,C1,N7-N3-0, N6-N3, 1
+6,C1,N7-N3-1, N7-N4, 7
+6,C1,N7-N3-1, N4-N5, 7
+6,C1,N7-N3-1, N5-N6, 7
+6,C1,N7-N3-1, N6-N3, 7
+6,C1,N7-N3-2, N7-N4, 8
+6,C1,N7-N3-2, N4-N5, 8
+6,C1,N7-N3-2, N5-N6, 8
+6,C1,N7-N3-2, N6-N3, 8
+6,C1,N7-N4-0, N7-N4, 7
+6,C1,N7-N4-1, N7-N4, 8
+6,C1,N7-N4-2, N7-N4, 3
+6,C1,N7-N5-0, N7-N4, 8
+6,C1,N7-N5-0, N4-N5, 8
+6,C1,N7-N5-1, N7-N4, 3
+6,C1,N7-N5-1, N4-N5, 3
+6,C1,N7-N5-2, N7-N4, 8
+6,C1,N7-N5-2, N4-N5, 8
+6,C1,N3-N10-0, N3-N6, 3
+6,C1,N3-N10-0, N6-N9, 3
+6,C1,N3-N10-0, N9-N10, 3
+6,C1,N3-N10-1, N3-N6, 8
+6,C1,N3-N10-1, N6-N9, 8
+6,C1,N3-N10-1, N9-N10, 8
+6,C1,N3-N10-2, N3-N6, 3
+6,C1,N3-N10-2, N6-N9, 3
+6,C1,N3-N10-2, N9-N10, 3
+6,C1,N4-N2-0, N4-N5, 8
+6,C1,N4-N2-0, N5-N2, 8
+6,C1,N4-N2-1, N4-N5, 3
+6,C1,N4-N2-1, N5-N2, 3
+6,C1,N4-N2-2, N4-N5, 1
+6,C1,N4-N2-2, N5-N2, 1
+6,C1,N4-N1-0, N4-N1, 3
+6,C1,N4-N1-1, N4-N1, 1
+6,C1,N4-N1-2, N4-N1, 5
+6,C1,N4-N0-0, N4-N1, 1
+6,C1,N4-N0-0, N1-N0, 1
+6,C1,N4-N0-1, N4-N1, 5
+6,C1,N4-N0-1, N1-N0, 5
+6,C1,N4-N0-2, N4-N1, 2
+6,C1,N4-N0-2, N1-N0, 2
+6,C1,N4-N10-0, N4-N10, 5
+6,C1,N4-N10-1, N4-N10, 2
+6,C1,N4-N10-2, N4-N10, 7
+6,C1,N4-N6-0, N4-N5, 2
+6,C1,N4-N6-0, N5-N6, 2
+6,C1,N4-N6-1, N4-N5, 7
+6,C1,N4-N6-1, N5-N6, 7
+6,C1,N4-N6-2, N4-N5, 3
+6,C1,N4-N6-2, N5-N6, 3
+6,C1,N4-N5-0, N4-N5, 7
+6,C1,N4-N5-1, N4-N5, 3
+6,C1,N4-N5-2, N4-N5, 3
+6,C1,N4-N3-0, N4-N5, 3
+6,C1,N4-N3-0, N5-N6, 3
+6,C1,N4-N3-0, N6-N3, 3
+6,C1,N4-N3-1, N4-N5, 3
+6,C1,N4-N3-1, N5-N6, 3
+6,C1,N4-N3-1, N6-N3, 3
+6,C1,N4-N3-2, N4-N5, 3
+6,C1,N4-N3-2, N5-N6, 3
+6,C1,N4-N3-2, N6-N3, 3
+6,C1,N4-N9-0, N4-N5, 3
+6,C1,N4-N9-0, N5-N6, 3
+6,C1,N4-N9-0, N6-N9, 3
+6,C1,N4-N9-1, N4-N5, 3
+6,C1,N4-N9-1, N5-N6, 3
+6,C1,N4-N9-1, N6-N9, 3
+6,C1,N4-N9-2, N4-N5, 3
+6,C1,N4-N9-2, N5-N6, 3
+6,C1,N4-N9-2, N6-N9, 3
+6,C1,N4-N8-0, N4-N5, 3
+6,C1,N4-N8-0, N5-N8, 3
+6,C1,N4-N8-1, N4-N5, 3
+6,C1,N4-N8-1, N5-N8, 3
+6,C1,N4-N8-2, N4-N5, 2
+6,C1,N4-N8-2, N5-N8, 2
+6,C1,N4-N7-0, N4-N7, 3
+6,C1,N4-N7-1, N4-N7, 2
+6,C1,N4-N7-2, N4-N7, 4
+6,C1,N6-N10-0, N6-N9, 2
+6,C1,N6-N10-0, N9-N10, 2
+6,C1,N6-N10-1, N6-N9, 4
+6,C1,N6-N10-1, N9-N10, 4
+6,C1,N6-N10-2, N6-N9, 8
+6,C1,N6-N10-2, N9-N10, 8
+6,C1,N9-N1-0, N9-N6, 4
+6,C1,N9-N1-0, N6-N5, 4
+6,C1,N9-N1-0, N5-N4, 4
+6,C1,N9-N1-0, N4-N1, 4
+6,C1,N9-N1-1, N9-N6, 8
+6,C1,N9-N1-1, N6-N5, 8
+6,C1,N9-N1-1, N5-N4, 8
+6,C1,N9-N1-1, N4-N1, 8
+6,C1,N9-N1-2, N9-N6, 4
+6,C1,N9-N1-2, N6-N5, 4
+6,C1,N9-N1-2, N5-N4, 4
+6,C1,N9-N1-2, N4-N1, 4
+6,C1,N10-N1-0, N10-N7, 8
+6,C1,N10-N1-0, N7-N1, 8
+6,C1,N10-N1-1, N10-N7, 4
+6,C1,N10-N1-1, N7-N1, 4
+6,C1,N10-N1-2, N10-N7, 8
+6,C1,N10-N1-2, N7-N1, 8
+6,C1,N9-N0-0, N9-N6, 4
+6,C1,N9-N0-0, N6-N0, 4
+6,C1,N9-N0-1, N9-N6, 8
+6,C1,N9-N0-1, N6-N0, 8
+6,C1,N9-N0-2, N9-N6, 3
+6,C1,N9-N0-2, N6-N0, 3
+6,C1,N10-N0-0, N10-N9, 8
+6,C1,N10-N0-0, N9-N6, 8
+6,C1,N10-N0-0, N6-N0, 8
+6,C1,N10-N0-1, N10-N9, 3
+6,C1,N10-N0-1, N9-N6, 3
+6,C1,N10-N0-1, N6-N0, 3
+6,C1,N10-N0-2, N10-N9, 4
+6,C1,N10-N0-2, N9-N6, 4
+6,C1,N10-N0-2, N6-N0, 4
+6,C1,N9-N3-0, N9-N6, 3
+6,C1,N9-N3-0, N6-N3, 3
+6,C1,N9-N3-1, N9-N6, 4
+6,C1,N9-N3-1, N6-N3, 4
+6,C1,N9-N3-2, N9-N6, 2
+6,C1,N9-N3-2, N6-N3, 2
+6,C1,N9-N2-0, N9-N6, 4
+6,C1,N9-N2-0, N6-N5, 4
+6,C1,N9-N2-0, N5-N2, 4
+6,C1,N9-N2-1, N9-N6, 2
+6,C1,N9-N2-1, N6-N5, 2
+6,C1,N9-N2-1, N5-N2, 2
+6,C1,N9-N2-2, N9-N6, 6
+6,C1,N9-N2-2, N6-N5, 6
+6,C1,N9-N2-2, N5-N2, 6
+6,C1,N10-N5-0, N10-N8, 2
+6,C1,N10-N5-0, N8-N5, 2
+6,C1,N10-N5-1, N10-N8, 6
+6,C1,N10-N5-1, N8-N5, 6
+6,C1,N10-N5-2, N10-N8, 2
+6,C1,N10-N5-2, N8-N5, 2
+6,C1,N10-N4-0, N10-N4, 6
+6,C1,N10-N4-1, N10-N4, 2
+6,C1,N10-N4-2, N10-N4, 7
+6,C1,N10-N3-0, N10-N9, 2
+6,C1,N10-N3-0, N9-N6, 2
+6,C1,N10-N3-0, N6-N3, 2
+6,C1,N10-N3-1, N10-N9, 7
+6,C1,N10-N3-1, N9-N6, 7
+6,C1,N10-N3-1, N6-N3, 7
+6,C1,N10-N3-2, N10-N9, 5
+6,C1,N10-N3-2, N9-N6, 5
+6,C1,N10-N3-2, N6-N3, 5
+6,C1,N10-N2-0, N10-N8, 7
+6,C1,N10-N2-0, N8-N5, 7
+6,C1,N10-N2-0, N5-N2, 7
+6,C1,N10-N2-1, N10-N8, 5
+6,C1,N10-N2-1, N8-N5, 5
+6,C1,N10-N2-1, N5-N2, 5
+6,C1,N10-N2-2, N10-N8, 4
+6,C1,N10-N2-2, N8-N5, 4
+6,C1,N10-N2-2, N5-N2, 4
+6,C1,N10-N9-0, N10-N9, 5
+6,C1,N10-N9-1, N10-N9, 4
+6,C1,N10-N9-2, N10-N9, 5
+6,C1,N9-N8-0, N9-N8, 4
+6,C1,N9-N8-1, N9-N8, 5
+6,C1,N9-N8-2, N9-N8, 7
+6,C1,N10-N8-0, N10-N8, 5
+6,C1,N10-N8-1, N10-N8, 7
+6,C1,N10-N8-2, N10-N8, 3
+6,C1,N10-N7-0, N10-N7, 7
+6,C1,N10-N7-1, N10-N7, 3
+6,C1,N10-N7-2, N10-N7, 8
+6,C1,N10-N6-0, N10-N9, 3
+6,C1,N10-N6-0, N9-N6, 3
+6,C1,N10-N6-1, N10-N9, 8
+6,C1,N10-N6-1, N9-N6, 8
+6,C1,N10-N6-2, N10-N9, 2
+6,C1,N10-N6-2, N9-N6, 2
+6,C1,N1-N2-0, N1-N2, 8
+6,C1,N1-N2-1, N1-N2, 2
+6,C1,N1-N2-2, N1-N2, 8
+6,C1,N9-N5-0, N9-N6, 2
+6,C1,N9-N5-0, N6-N5, 2
+6,C1,N9-N5-1, N9-N6, 8
+6,C1,N9-N5-1, N6-N5, 8
+6,C1,N9-N5-2, N9-N6, 3
+6,C1,N9-N5-2, N6-N5, 3
+6,C1,N1-N3-0, N1-N2, 8
+6,C1,N1-N3-0, N2-N3, 8
+6,C1,N1-N3-1, N1-N2, 3
+6,C1,N1-N3-1, N2-N3, 3
+6,C1,N1-N3-2, N1-N2, 6
+6,C1,N1-N3-2, N2-N3, 6
+6,C1,N9-N4-0, N9-N6, 3
+6,C1,N9-N4-0, N6-N5, 3
+6,C1,N9-N4-0, N5-N4, 3
+6,C1,N9-N4-1, N9-N6, 6
+6,C1,N9-N4-1, N6-N5, 6
+6,C1,N9-N4-1, N5-N4, 6
+6,C1,N9-N4-2, N9-N6, 6
+6,C1,N9-N4-2, N6-N5, 6
+6,C1,N9-N4-2, N5-N4, 6
+6,C1,N1-N0-0, N1-N0, 6
+6,C1,N1-N0-1, N1-N0, 6
+6,C1,N1-N0-2, N1-N0, 8
+6,C1,N9-N7-0, N9-N6, 6
+6,C1,N9-N7-0, N6-N5, 6
+6,C1,N9-N7-0, N5-N4, 6
+6,C1,N9-N7-0, N4-N7, 6
+6,C1,N9-N7-1, N9-N6, 8
+6,C1,N9-N7-1, N6-N5, 8
+6,C1,N9-N7-1, N5-N4, 8
+6,C1,N9-N7-1, N4-N7, 8
+6,C1,N9-N7-2, N9-N6, 3
+6,C1,N9-N7-2, N6-N5, 3
+6,C1,N9-N7-2, N5-N4, 3
+6,C1,N9-N7-2, N4-N7, 3
+6,C1,N9-N6-0, N9-N6, 8
+6,C1,N9-N6-1, N9-N6, 3
+6,C1,N9-N6-2, N9-N6, 6
+6,C1,N1-N6-0, N1-N4, 3
+6,C1,N1-N6-0, N4-N5, 3
+6,C1,N1-N6-0, N5-N6, 3
+6,C1,N1-N6-1, N1-N4, 6
+6,C1,N1-N6-1, N4-N5, 6
+6,C1,N1-N6-1, N5-N6, 6
+6,C1,N1-N6-2, N1-N4, 6
+6,C1,N1-N6-2, N4-N5, 6
+6,C1,N1-N6-2, N5-N6, 6
+6,C1,N1-N7-0, N1-N7, 6
+6,C1,N1-N7-1, N1-N7, 6
+6,C1,N1-N7-2, N1-N7, 1
+6,C1,N1-N4-0, N1-N4, 6
+6,C1,N1-N4-1, N1-N4, 1
+6,C1,N1-N4-2, N1-N4, 8
+6,C1,N1-N5-0, N1-N4, 1
+6,C1,N1-N5-0, N4-N5, 1
+6,C1,N1-N5-1, N1-N4, 8
+6,C1,N1-N5-1, N4-N5, 8
+6,C1,N1-N5-2, N1-N4, 2
+6,C1,N1-N5-2, N4-N5, 2
+6,C1,N1-N8-0, N1-N4, 8
+6,C1,N1-N8-0, N4-N5, 8
+6,C1,N1-N8-0, N5-N8, 8
+6,C1,N1-N8-1, N1-N4, 2
+6,C1,N1-N8-1, N4-N5, 2
+6,C1,N1-N8-1, N5-N8, 2
+6,C1,N1-N8-2, N1-N4, 7
+6,C1,N1-N8-2, N4-N5, 7
+6,C1,N1-N8-2, N5-N8, 7
+6,C1,N1-N9-0, N1-N4, 2
+6,C1,N1-N9-0, N4-N5, 2
+6,C1,N1-N9-0, N5-N6, 2
+6,C1,N1-N9-0, N6-N9, 2
+6,C1,N1-N9-1, N1-N4, 7
+6,C1,N1-N9-1, N4-N5, 7
+6,C1,N1-N9-1, N5-N6, 7
+6,C1,N1-N9-1, N6-N9, 7
+6,C1,N1-N9-2, N1-N4, 7
+6,C1,N1-N9-2, N4-N5, 7
+6,C1,N1-N9-2, N5-N6, 7
+6,C1,N1-N9-2, N6-N9, 7
+6,C1,N6-N0-0, N6-N0, 7
+6,C1,N6-N0-1, N6-N0, 7
+6,C1,N6-N0-2, N6-N0, 1
+6,C1,N6-N5-0, N6-N5, 7
+6,C1,N6-N5-1, N6-N5, 1
+6,C1,N6-N5-2, N6-N5, 4
+6,C1,N6-N7-0, N6-N5, 1
+6,C1,N6-N7-0, N5-N4, 1
+6,C1,N6-N7-0, N4-N7, 1
+6,C1,N6-N7-1, N6-N5, 4
+6,C1,N6-N7-1, N5-N4, 4
+6,C1,N6-N7-1, N4-N7, 4
+6,C1,N6-N7-2, N6-N5, 1
+6,C1,N6-N7-2, N5-N4, 1
+6,C1,N6-N7-2, N4-N7, 1
+6,C1,N6-N8-0, N6-N8, 4
+6,C1,N6-N8-1, N6-N8, 1
+6,C1,N6-N8-2, N6-N8, 4
+6,C1,N6-N1-0, N6-N5, 1
+6,C1,N6-N1-0, N5-N4, 1
+6,C1,N6-N1-0, N4-N1, 1
+6,C1,N6-N1-1, N6-N5, 4
+6,C1,N6-N1-1, N5-N4, 4
+6,C1,N6-N1-1, N4-N1, 4
+6,C1,N6-N1-2, N6-N5, 6
+6,C1,N6-N1-2, N5-N4, 6
+6,C1,N6-N1-2, N4-N1, 6
+6,C1,N6-N2-0, N6-N5, 4
+6,C1,N6-N2-0, N5-N2, 4
+6,C1,N6-N2-1, N6-N5, 6
+6,C1,N6-N2-1, N5-N2, 6
+6,C1,N6-N2-2, N6-N5, 7
+6,C1,N6-N2-2, N5-N2, 7
+6,C1,N6-N3-0, N6-N3, 6
+6,C1,N6-N3-1, N6-N3, 7
+6,C1,N6-N3-2, N6-N3, 3
+6,C1,N6-N4-0, N6-N5, 7
+6,C1,N6-N4-0, N5-N4, 7
+6,C1,N6-N4-1, N6-N5, 3
+6,C1,N6-N4-1, N5-N4, 3
+6,C1,N6-N4-2, N6-N5, 2
+6,C1,N6-N4-2, N5-N4, 2
+6,C1,N6-N9-0, N6-N9, 3
+6,C1,N6-N9-1, N6-N9, 2
+6,C1,N6-N9-2, N6-N9, 2
+6,C1,N0-N10-0, N0-N6, 2
+6,C1,N0-N10-0, N6-N9, 2
+6,C1,N0-N10-0, N9-N10, 2
+6,C1,N0-N10-1, N0-N6, 2
+6,C1,N0-N10-1, N6-N9, 2
+6,C1,N0-N10-1, N9-N10, 2
+6,C1,N0-N10-2, N0-N6, 7
+6,C1,N0-N10-2, N6-N9, 7
+6,C1,N0-N10-2, N9-N10, 7
+6,C1,N9-N10-0, N9-N10, 2
+6,C1,N9-N10-1, N9-N10, 7
+6,C1,N9-N10-2, N9-N10, 8
+6,C1,N3-N1-0, N3-N2, 7
+6,C1,N3-N1-0, N2-N1, 7
+6,C1,N3-N1-1, N3-N2, 8
+6,C1,N3-N1-1, N2-N1, 8
+6,C1,N3-N1-2, N3-N2, 2
+6,C1,N3-N1-2, N2-N1, 2
+6,C1,N3-N0-0, N3-N0, 8
+6,C1,N3-N0-1, N3-N0, 2
+6,C1,N3-N0-2, N3-N0, 7
+6,C1,N3-N5-0, N3-N6, 2
+6,C1,N3-N5-0, N6-N5, 2
+6,C1,N3-N5-1, N3-N6, 7
+6,C1,N3-N5-1, N6-N5, 7
+6,C1,N3-N5-2, N3-N6, 5
+6,C1,N3-N5-2, N6-N5, 5
+6,C1,N3-N4-0, N3-N6, 7
+6,C1,N3-N4-0, N6-N5, 7
+6,C1,N3-N4-0, N5-N4, 7
+6,C1,N3-N4-1, N3-N6, 5
+6,C1,N3-N4-1, N6-N5, 5
+6,C1,N3-N4-1, N5-N4, 5
+6,C1,N3-N4-2, N3-N6, 5
+6,C1,N3-N4-2, N6-N5, 5
+6,C1,N3-N4-2, N5-N4, 5
+6,C1,N3-N2-0, N3-N2, 5
+6,C1,N3-N2-1, N3-N2, 5
+6,C1,N3-N2-2, N3-N2, 7
+6,C1,N3-N9-0, N3-N6, 5
+6,C1,N3-N9-0, N6-N9, 5
+6,C1,N3-N9-1, N3-N6, 7
+6,C1,N3-N9-1, N6-N9, 7
+6,C1,N3-N9-2, N3-N6, 2
+6,C1,N3-N9-2, N6-N9, 2
+6,C1,N3-N8-0, N3-N6, 7
+6,C1,N3-N8-0, N6-N8, 7
+6,C1,N3-N8-1, N3-N6, 2
+6,C1,N3-N8-1, N6-N8, 2
+6,C1,N3-N8-2, N3-N6, 7
+6,C1,N3-N8-2, N6-N8, 7
+6,C1,N3-N7-0, N3-N6, 2
+6,C1,N3-N7-0, N6-N5, 2
+6,C1,N3-N7-0, N5-N4, 2
+6,C1,N3-N7-0, N4-N7, 2
+6,C1,N3-N7-1, N3-N6, 7
+6,C1,N3-N7-1, N6-N5, 7
+6,C1,N3-N7-1, N5-N4, 7
+6,C1,N3-N7-1, N4-N7, 7
+6,C1,N3-N7-2, N3-N6, 7
+6,C1,N3-N7-2, N6-N5, 7
+6,C1,N3-N7-2, N5-N4, 7
+6,C1,N3-N7-2, N4-N7, 7
+6,C1,N3-N6-0, N3-N6, 7
+6,C1,N3-N6-1, N3-N6, 7
+6,C1,N3-N6-2, N3-N6, 2
+6,C1,N2-N10-0, N2-N5, 7
+6,C1,N2-N10-0, N5-N8, 7
+6,C1,N2-N10-0, N8-N10, 7
+6,C1,N2-N10-1, N2-N5, 2
+6,C1,N2-N10-1, N5-N8, 2
+6,C1,N2-N10-1, N8-N10, 2
+6,C1,N2-N10-2, N2-N5, 2
+6,C1,N2-N10-2, N5-N8, 2
+6,C1,N2-N10-2, N8-N10, 2
+6,C1,N8-N0-0, N8-N6, 2
+6,C1,N8-N0-0, N6-N0, 2
+6,C1,N8-N0-1, N8-N6, 2
+6,C1,N8-N0-1, N6-N0, 2
+6,C1,N8-N0-2, N8-N6, 6
+6,C1,N8-N0-2, N6-N0, 6
+6,C1,N8-N2-0, N8-N5, 2
+6,C1,N8-N2-0, N5-N2, 2
+6,C1,N8-N2-1, N8-N5, 6
+6,C1,N8-N2-1, N5-N2, 6
+6,C1,N8-N2-2, N8-N5, 8
+6,C1,N8-N2-2, N5-N2, 8
+6,C1,N8-N1-0, N8-N5, 6
+6,C1,N8-N1-0, N5-N4, 6
+6,C1,N8-N1-0, N4-N1, 6
+6,C1,N8-N1-1, N8-N5, 8
+6,C1,N8-N1-1, N5-N4, 8
+6,C1,N8-N1-1, N4-N1, 8
+6,C1,N8-N1-2, N8-N5, 4
+6,C1,N8-N1-2, N5-N4, 4
+6,C1,N8-N1-2, N4-N1, 4
+6,C1,N8-N7-0, N8-N5, 8
+6,C1,N8-N7-0, N5-N4, 8
+6,C1,N8-N7-0, N4-N7, 8
+6,C1,N8-N7-1, N8-N5, 4
+6,C1,N8-N7-1, N5-N4, 4
+6,C1,N8-N7-1, N4-N7, 4
+6,C1,N8-N7-2, N8-N5, 1
+6,C1,N8-N7-2, N5-N4, 1
+6,C1,N8-N7-2, N4-N7, 1
+6,C1,N8-N9-0, N8-N9, 4
+6,C1,N8-N9-1, N8-N9, 1
+6,C1,N8-N9-2, N8-N9, 4
+6,C1,N8-N4-0, N8-N5, 1
+6,C1,N8-N4-0, N5-N4, 1
+6,C1,N8-N4-1, N8-N5, 4
+6,C1,N8-N4-1, N5-N4, 4
+6,C1,N8-N4-2, N8-N5, 8
+6,C1,N8-N4-2, N5-N4, 8
+6,C1,N8-N3-0, N8-N6, 4
+6,C1,N8-N3-0, N6-N3, 4
+6,C1,N8-N3-1, N8-N6, 8
+6,C1,N8-N3-1, N6-N3, 8
+6,C1,N8-N3-2, N8-N6, 5
+6,C1,N8-N3-2, N6-N3, 5
+6,C1,N0-N2-0, N0-N2, 8
+6,C1,N0-N2-1, N0-N2, 5
+6,C1,N0-N2-2, N0-N2, 4
+6,C1,N8-N6-0, N8-N6, 5
+6,C1,N8-N6-1, N8-N6, 4
+6,C1,N8-N6-2, N8-N6, 7
+6,C1,N0-N1-0, N0-N1, 4
+6,C1,N0-N1-1, N0-N1, 7
+6,C1,N0-N1-2, N0-N1, 7
+6,C1,N8-N5-0, N8-N5, 7
+6,C1,N8-N5-1, N8-N5, 7
+6,C1,N8-N5-2, N8-N5, 7
+6,C1,N0-N4-0, N0-N1, 7
+6,C1,N0-N4-0, N1-N4, 7
+6,C1,N0-N4-1, N0-N1, 7
+6,C1,N0-N4-1, N1-N4, 7
+6,C1,N0-N4-2, N0-N1, 5
+6,C1,N0-N4-2, N1-N4, 5
+6,C1,N0-N3-0, N0-N3, 7
+6,C1,N0-N3-1, N0-N3, 5
+6,C1,N0-N3-2, N0-N3, 8
+6,C1,N0-N6-0, N0-N6, 5
+6,C1,N0-N6-1, N0-N6, 8
+6,C1,N0-N6-2, N0-N6, 6
+6,C1,N0-N5-0, N0-N2, 8
+6,C1,N0-N5-0, N2-N5, 8
+6,C1,N0-N5-1, N0-N2, 6
+6,C1,N0-N5-1, N2-N5, 6
+6,C1,N0-N5-2, N0-N2, 3
+6,C1,N0-N5-2, N2-N5, 3
+6,C1,N0-N8-0, N0-N6, 6
+6,C1,N0-N8-0, N6-N8, 6
+6,C1,N0-N8-1, N0-N6, 3
+6,C1,N0-N8-1, N6-N8, 3
+6,C1,N0-N8-2, N0-N6, 6
+6,C1,N0-N8-2, N6-N8, 6
+6,C1,N0-N7-0, N0-N1, 3
+6,C1,N0-N7-0, N1-N7, 3
+6,C1,N0-N7-1, N0-N1, 6
+6,C1,N0-N7-1, N1-N7, 6
+6,C1,N0-N7-2, N0-N1, 4
+6,C1,N0-N7-2, N1-N7, 4
+6,C1,N0-N9-0, N0-N6, 6
+6,C1,N0-N9-0, N6-N9, 6
+6,C1,N0-N9-1, N0-N6, 4
+6,C1,N0-N9-1, N6-N9, 4
+6,C1,N0-N9-2, N0-N6, 6
+6,C1,N0-N9-2, N6-N9, 6
+6,C1,N5-N10-0, N5-N8, 4
+6,C1,N5-N10-0, N8-N10, 4
+6,C1,N5-N10-1, N5-N8, 6
+6,C1,N5-N10-1, N8-N10, 6
+6,C1,N5-N10-2, N5-N8, 7
+6,C1,N5-N10-2, N8-N10, 7
+6,C1,N5-N3-0, N5-N6, 6
+6,C1,N5-N3-0, N6-N3, 6
+6,C1,N5-N3-1, N5-N6, 7
+6,C1,N5-N3-1, N6-N3, 7
+6,C1,N5-N3-2, N5-N6, 4
+6,C1,N5-N3-2, N6-N3, 4
+6,C1,N5-N2-0, N5-N2, 7
+6,C1,N5-N2-1, N5-N2, 4
+6,C1,N5-N2-2, N5-N2, 1
+6,C1,N5-N1-0, N5-N4, 4
+6,C1,N5-N1-0, N4-N1, 4
+6,C1,N5-N1-1, N5-N4, 1
+6,C1,N5-N1-1, N4-N1, 1
+6,C1,N5-N1-2, N5-N4, 7
+6,C1,N5-N1-2, N4-N1, 7
+6,C1,N5-N0-0, N5-N2, 1
+6,C1,N5-N0-0, N2-N0, 1
+6,C1,N5-N0-1, N5-N2, 7
+6,C1,N5-N0-1, N2-N0, 7
+6,C1,N5-N0-2, N5-N2, 8
+6,C1,N5-N0-2, N2-N0, 8
+6,C1,N5-N7-0, N5-N4, 7
+6,C1,N5-N7-0, N4-N7, 7
+6,C1,N5-N7-1, N5-N4, 8
+6,C1,N5-N7-1, N4-N7, 8
+6,C1,N5-N7-2, N5-N4, 4
+6,C1,N5-N7-2, N4-N7, 4
+6,C1,N5-N6-0, N5-N6, 8
+6,C1,N5-N6-1, N5-N6, 4
+6,C1,N5-N6-2, N5-N6, 1
+6,C1,N5-N4-0, N5-N4, 4
+6,C1,N5-N4-1, N5-N4, 1
+6,C1,N5-N4-2, N5-N4, 2
+6,C1,N5-N9-0, N5-N6, 1
+6,C1,N5-N9-0, N6-N9, 1
+6,C1,N5-N9-1, N5-N6, 2
+6,C1,N5-N9-1, N6-N9, 2
+6,C1,N5-N9-2, N5-N6, 8
+6,C1,N5-N9-2, N6-N9, 8
+6,C1,N5-N8-0, N5-N8, 2
+6,C1,N5-N8-1, N5-N8, 8
+6,C1,N5-N8-2, N5-N8, 8
+6,C1,N7-N10-0, N7-N10, 8
+6,C1,N7-N10-1, N7-N10, 8
+6,C1,N7-N10-2, N7-N10, 5
+6,C2,N2-N0-0, N2-N0, 2
+6,C2,N2-N0-1, N2-N0, 4
+6,C2,N2-N0-2, N2-N0, 3
+6,C2,N2-N3-0, N2-N3, 4
+6,C2,N2-N3-1, N2-N3, 3
+6,C2,N2-N3-2, N2-N3, 3
+6,C2,N2-N4-0, N2-N5, 3
+6,C2,N2-N4-0, N5-N4, 3
+6,C2,N2-N4-1, N2-N5, 3
+6,C2,N2-N4-1, N5-N4, 3
+6,C2,N2-N4-2, N2-N5, 4
+6,C2,N2-N4-2, N5-N4, 4
+6,C2,N2-N1-0, N2-N1, 3
+6,C2,N2-N1-1, N2-N1, 4
+6,C2,N2-N1-2, N2-N1, 2
+6,C2,N8-N10-0, N8-N10, 4
+6,C2,N8-N10-1, N8-N10, 2
+6,C2,N8-N10-2, N8-N10, 2
+6,C2,N2-N7-0, N2-N1, 2
+6,C2,N2-N7-0, N1-N7, 2
+6,C2,N2-N7-1, N2-N1, 2
+6,C2,N2-N7-1, N1-N7, 2
+6,C2,N2-N7-2, N2-N1, 1
+6,C2,N2-N7-2, N1-N7, 1
+6,C2,N2-N8-0, N2-N5, 2
+6,C2,N2-N8-0, N5-N8, 2
+6,C2,N2-N8-1, N2-N5, 1
+6,C2,N2-N8-1, N5-N8, 1
+6,C2,N2-N8-2, N2-N5, 2
+6,C2,N2-N8-2, N5-N8, 2
+6,C2,N2-N5-0, N2-N5, 1
+6,C2,N2-N5-1, N2-N5, 2
+6,C2,N2-N5-2, N2-N5, 2
+6,C2,N2-N6-0, N2-N5, 2
+6,C2,N2-N6-0, N5-N6, 2
+6,C2,N2-N6-1, N2-N5, 2
+6,C2,N2-N6-1, N5-N6, 2
+6,C2,N2-N6-2, N2-N5, 4
+6,C2,N2-N6-2, N5-N6, 4
+6,C2,N2-N9-0, N2-N5, 2
+6,C2,N2-N9-0, N5-N6, 2
+6,C2,N2-N9-0, N6-N9, 2
+6,C2,N2-N9-1, N2-N5, 4
+6,C2,N2-N9-1, N5-N6, 4
+6,C2,N2-N9-1, N6-N9, 4
+6,C2,N2-N9-2, N2-N5, 4
+6,C2,N2-N9-2, N5-N6, 4
+6,C2,N2-N9-2, N6-N9, 4
+6,C2,N1-N10-0, N1-N7, 4
+6,C2,N1-N10-0, N7-N10, 4
+6,C2,N1-N10-1, N1-N7, 4
+6,C2,N1-N10-1, N7-N10, 4
+6,C2,N1-N10-2, N1-N7, 4
+6,C2,N1-N10-2, N7-N10, 4
+6,C2,N7-N0-0, N7-N1, 4
+6,C2,N7-N0-0, N1-N0, 4
+6,C2,N7-N0-1, N7-N1, 4
+6,C2,N7-N0-1, N1-N0, 4
+6,C2,N7-N0-2, N7-N1, 1
+6,C2,N7-N0-2, N1-N0, 1
+6,C2,N7-N1-0, N7-N1, 4
+6,C2,N7-N1-1, N7-N1, 1
+6,C2,N7-N1-2, N7-N1, 1
+6,C2,N7-N6-0, N7-N4, 1
+6,C2,N7-N6-0, N4-N5, 1
+6,C2,N7-N6-0, N5-N6, 1
+6,C2,N7-N6-1, N7-N4, 1
+6,C2,N7-N6-1, N4-N5, 1
+6,C2,N7-N6-1, N5-N6, 1
+6,C2,N7-N6-2, N7-N4, 3
+6,C2,N7-N6-2, N4-N5, 3
+6,C2,N7-N6-2, N5-N6, 3
+6,C2,N7-N8-0, N7-N4, 1
+6,C2,N7-N8-0, N4-N5, 1
+6,C2,N7-N8-0, N5-N8, 1
+6,C2,N7-N8-1, N7-N4, 3
+6,C2,N7-N8-1, N4-N5, 3
+6,C2,N7-N8-1, N5-N8, 3
+6,C2,N7-N8-2, N7-N4, 4
+6,C2,N7-N8-2, N4-N5, 4
+6,C2,N7-N8-2, N5-N8, 4
+6,C2,N7-N9-0, N7-N4, 3
+6,C2,N7-N9-0, N4-N5, 3
+6,C2,N7-N9-0, N5-N6, 3
+6,C2,N7-N9-0, N6-N9, 3
+6,C2,N7-N9-1, N7-N4, 4
+6,C2,N7-N9-1, N4-N5, 4
+6,C2,N7-N9-1, N5-N6, 4
+6,C2,N7-N9-1, N6-N9, 4
+6,C2,N7-N9-2, N7-N4, 1
+6,C2,N7-N9-2, N4-N5, 1
+6,C2,N7-N9-2, N5-N6, 1
+6,C2,N7-N9-2, N6-N9, 1
+6,C2,N7-N2-0, N7-N1, 4
+6,C2,N7-N2-0, N1-N2, 4
+6,C2,N7-N2-1, N7-N1, 1
+6,C2,N7-N2-1, N1-N2, 1
+6,C2,N7-N2-2, N7-N1, 4
+6,C2,N7-N2-2, N1-N2, 4
+6,C2,N7-N3-0, N7-N4, 1
+6,C2,N7-N3-0, N4-N5, 1
+6,C2,N7-N3-0, N5-N6, 1
+6,C2,N7-N3-0, N6-N3, 1
+6,C2,N7-N3-1, N7-N4, 4
+6,C2,N7-N3-1, N4-N5, 4
+6,C2,N7-N3-1, N5-N6, 4
+6,C2,N7-N3-1, N6-N3, 4
+6,C2,N7-N3-2, N7-N4, 4
+6,C2,N7-N3-2, N4-N5, 4
+6,C2,N7-N3-2, N5-N6, 4
+6,C2,N7-N3-2, N6-N3, 4
+6,C2,N7-N4-0, N7-N4, 4
+6,C2,N7-N4-1, N7-N4, 4
+6,C2,N7-N4-2, N7-N4, 2
+6,C2,N7-N5-0, N7-N4, 4
+6,C2,N7-N5-0, N4-N5, 4
+6,C2,N7-N5-1, N7-N4, 2
+6,C2,N7-N5-1, N4-N5, 2
+6,C2,N7-N5-2, N7-N4, 4
+6,C2,N7-N5-2, N4-N5, 4
+6,C2,N3-N10-0, N3-N6, 2
+6,C2,N3-N10-0, N6-N9, 2
+6,C2,N3-N10-0, N9-N10, 2
+6,C2,N3-N10-1, N3-N6, 4
+6,C2,N3-N10-1, N6-N9, 4
+6,C2,N3-N10-1, N9-N10, 4
+6,C2,N3-N10-2, N3-N6, 2
+6,C2,N3-N10-2, N6-N9, 2
+6,C2,N3-N10-2, N9-N10, 2
+6,C2,N4-N2-0, N4-N5, 4
+6,C2,N4-N2-0, N5-N2, 4
+6,C2,N4-N2-1, N4-N5, 2
+6,C2,N4-N2-1, N5-N2, 2
+6,C2,N4-N2-2, N4-N5, 1
+6,C2,N4-N2-2, N5-N2, 1
+6,C2,N4-N1-0, N4-N1, 2
+6,C2,N4-N1-1, N4-N1, 1
+6,C2,N4-N1-2, N4-N1, 3
+6,C2,N4-N0-0, N4-N1, 1
+6,C2,N4-N0-0, N1-N0, 1
+6,C2,N4-N0-1, N4-N1, 3
+6,C2,N4-N0-1, N1-N0, 3
+6,C2,N4-N0-2, N4-N1, 1
+6,C2,N4-N0-2, N1-N0, 1
+6,C2,N4-N10-0, N4-N10, 3
+6,C2,N4-N10-1, N4-N10, 1
+6,C2,N4-N10-2, N4-N10, 4
+6,C2,N4-N6-0, N4-N5, 1
+6,C2,N4-N6-0, N5-N6, 1
+6,C2,N4-N6-1, N4-N5, 4
+6,C2,N4-N6-1, N5-N6, 4
+6,C2,N4-N6-2, N4-N5, 2
+6,C2,N4-N6-2, N5-N6, 2
+6,C2,N4-N5-0, N4-N5, 4
+6,C2,N4-N5-1, N4-N5, 2
+6,C2,N4-N5-2, N4-N5, 2
+6,C2,N4-N3-0, N4-N5, 2
+6,C2,N4-N3-0, N5-N6, 2
+6,C2,N4-N3-0, N6-N3, 2
+6,C2,N4-N3-1, N4-N5, 2
+6,C2,N4-N3-1, N5-N6, 2
+6,C2,N4-N3-1, N6-N3, 2
+6,C2,N4-N3-2, N4-N5, 2
+6,C2,N4-N3-2, N5-N6, 2
+6,C2,N4-N3-2, N6-N3, 2
+6,C2,N4-N9-0, N4-N5, 2
+6,C2,N4-N9-0, N5-N6, 2
+6,C2,N4-N9-0, N6-N9, 2
+6,C2,N4-N9-1, N4-N5, 2
+6,C2,N4-N9-1, N5-N6, 2
+6,C2,N4-N9-1, N6-N9, 2
+6,C2,N4-N9-2, N4-N5, 2
+6,C2,N4-N9-2, N5-N6, 2
+6,C2,N4-N9-2, N6-N9, 2
+6,C2,N4-N8-0, N4-N5, 2
+6,C2,N4-N8-0, N5-N8, 2
+6,C2,N4-N8-1, N4-N5, 2
+6,C2,N4-N8-1, N5-N8, 2
+6,C2,N4-N8-2, N4-N5, 1
+6,C2,N4-N8-2, N5-N8, 1
+6,C2,N4-N7-0, N4-N7, 2
+6,C2,N4-N7-1, N4-N7, 1
+6,C2,N4-N7-2, N4-N7, 2
+6,C2,N6-N10-0, N6-N9, 1
+6,C2,N6-N10-0, N9-N10, 1
+6,C2,N6-N10-1, N6-N9, 2
+6,C2,N6-N10-1, N9-N10, 2
+6,C2,N6-N10-2, N6-N9, 4
+6,C2,N6-N10-2, N9-N10, 4
+6,C2,N9-N1-0, N9-N6, 2
+6,C2,N9-N1-0, N6-N5, 2
+6,C2,N9-N1-0, N5-N4, 2
+6,C2,N9-N1-0, N4-N1, 2
+6,C2,N9-N1-1, N9-N6, 4
+6,C2,N9-N1-1, N6-N5, 4
+6,C2,N9-N1-1, N5-N4, 4
+6,C2,N9-N1-1, N4-N1, 4
+6,C2,N9-N1-2, N9-N6, 2
+6,C2,N9-N1-2, N6-N5, 2
+6,C2,N9-N1-2, N5-N4, 2
+6,C2,N9-N1-2, N4-N1, 2
+6,C2,N10-N1-0, N10-N7, 4
+6,C2,N10-N1-0, N7-N1, 4
+6,C2,N10-N1-1, N10-N7, 2
+6,C2,N10-N1-1, N7-N1, 2
+6,C2,N10-N1-2, N10-N7, 4
+6,C2,N10-N1-2, N7-N1, 4
+6,C2,N9-N0-0, N9-N6, 2
+6,C2,N9-N0-0, N6-N0, 2
+6,C2,N9-N0-1, N9-N6, 4
+6,C2,N9-N0-1, N6-N0, 4
+6,C2,N9-N0-2, N9-N6, 2
+6,C2,N9-N0-2, N6-N0, 2
+6,C2,N10-N0-0, N10-N9, 4
+6,C2,N10-N0-0, N9-N6, 4
+6,C2,N10-N0-0, N6-N0, 4
+6,C2,N10-N0-1, N10-N9, 2
+6,C2,N10-N0-1, N9-N6, 2
+6,C2,N10-N0-1, N6-N0, 2
+6,C2,N10-N0-2, N10-N9, 2
+6,C2,N10-N0-2, N9-N6, 2
+6,C2,N10-N0-2, N6-N0, 2
+6,C2,N9-N3-0, N9-N6, 2
+6,C2,N9-N3-0, N6-N3, 2
+6,C2,N9-N3-1, N9-N6, 2
+6,C2,N9-N3-1, N6-N3, 2
+6,C2,N9-N3-2, N9-N6, 1
+6,C2,N9-N3-2, N6-N3, 1
+6,C2,N9-N2-0, N9-N6, 2
+6,C2,N9-N2-0, N6-N5, 2
+6,C2,N9-N2-0, N5-N2, 2
+6,C2,N9-N2-1, N9-N6, 1
+6,C2,N9-N2-1, N6-N5, 1
+6,C2,N9-N2-1, N5-N2, 1
+6,C2,N9-N2-2, N9-N6, 3
+6,C2,N9-N2-2, N6-N5, 3
+6,C2,N9-N2-2, N5-N2, 3
+6,C2,N10-N5-0, N10-N8, 1
+6,C2,N10-N5-0, N8-N5, 1
+6,C2,N10-N5-1, N10-N8, 3
+6,C2,N10-N5-1, N8-N5, 3
+6,C2,N10-N5-2, N10-N8, 1
+6,C2,N10-N5-2, N8-N5, 1
+6,C2,N10-N4-0, N10-N4, 3
+6,C2,N10-N4-1, N10-N4, 1
+6,C2,N10-N4-2, N10-N4, 4
+6,C2,N10-N3-0, N10-N9, 1
+6,C2,N10-N3-0, N9-N6, 1
+6,C2,N10-N3-0, N6-N3, 1
+6,C2,N10-N3-1, N10-N9, 4
+6,C2,N10-N3-1, N9-N6, 4
+6,C2,N10-N3-1, N6-N3, 4
+6,C2,N10-N3-2, N10-N9, 3
+6,C2,N10-N3-2, N9-N6, 3
+6,C2,N10-N3-2, N6-N3, 3
+6,C2,N10-N2-0, N10-N8, 4
+6,C2,N10-N2-0, N8-N5, 4
+6,C2,N10-N2-0, N5-N2, 4
+6,C2,N10-N2-1, N10-N8, 3
+6,C2,N10-N2-1, N8-N5, 3
+6,C2,N10-N2-1, N5-N2, 3
+6,C2,N10-N2-2, N10-N8, 2
+6,C2,N10-N2-2, N8-N5, 2
+6,C2,N10-N2-2, N5-N2, 2
+6,C2,N10-N9-0, N10-N9, 3
+6,C2,N10-N9-1, N10-N9, 2
+6,C2,N10-N9-2, N10-N9, 3
+6,C2,N9-N8-0, N9-N8, 2
+6,C2,N9-N8-1, N9-N8, 3
+6,C2,N9-N8-2, N9-N8, 4
+6,C2,N10-N8-0, N10-N8, 3
+6,C2,N10-N8-1, N10-N8, 4
+6,C2,N10-N8-2, N10-N8, 2
+6,C2,N10-N7-0, N10-N7, 4
+6,C2,N10-N7-1, N10-N7, 2
+6,C2,N10-N7-2, N10-N7, 4
+6,C2,N10-N6-0, N10-N9, 2
+6,C2,N10-N6-0, N9-N6, 2
+6,C2,N10-N6-1, N10-N9, 4
+6,C2,N10-N6-1, N9-N6, 4
+6,C2,N10-N6-2, N10-N9, 1
+6,C2,N10-N6-2, N9-N6, 1
+6,C2,N1-N2-0, N1-N2, 4
+6,C2,N1-N2-1, N1-N2, 1
+6,C2,N1-N2-2, N1-N2, 4
+6,C2,N9-N5-0, N9-N6, 1
+6,C2,N9-N5-0, N6-N5, 1
+6,C2,N9-N5-1, N9-N6, 4
+6,C2,N9-N5-1, N6-N5, 4
+6,C2,N9-N5-2, N9-N6, 2
+6,C2,N9-N5-2, N6-N5, 2
+6,C2,N1-N3-0, N1-N2, 4
+6,C2,N1-N3-0, N2-N3, 4
+6,C2,N1-N3-1, N1-N2, 2
+6,C2,N1-N3-1, N2-N3, 2
+6,C2,N1-N3-2, N1-N2, 3
+6,C2,N1-N3-2, N2-N3, 3
+6,C2,N9-N4-0, N9-N6, 2
+6,C2,N9-N4-0, N6-N5, 2
+6,C2,N9-N4-0, N5-N4, 2
+6,C2,N9-N4-1, N9-N6, 3
+6,C2,N9-N4-1, N6-N5, 3
+6,C2,N9-N4-1, N5-N4, 3
+6,C2,N9-N4-2, N9-N6, 3
+6,C2,N9-N4-2, N6-N5, 3
+6,C2,N9-N4-2, N5-N4, 3
+6,C2,N1-N0-0, N1-N0, 3
+6,C2,N1-N0-1, N1-N0, 3
+6,C2,N1-N0-2, N1-N0, 4
+6,C2,N9-N7-0, N9-N6, 3
+6,C2,N9-N7-0, N6-N5, 3
+6,C2,N9-N7-0, N5-N4, 3
+6,C2,N9-N7-0, N4-N7, 3
+6,C2,N9-N7-1, N9-N6, 4
+6,C2,N9-N7-1, N6-N5, 4
+6,C2,N9-N7-1, N5-N4, 4
+6,C2,N9-N7-1, N4-N7, 4
+6,C2,N9-N7-2, N9-N6, 2
+6,C2,N9-N7-2, N6-N5, 2
+6,C2,N9-N7-2, N5-N4, 2
+6,C2,N9-N7-2, N4-N7, 2
+6,C2,N9-N6-0, N9-N6, 4
+6,C2,N9-N6-1, N9-N6, 2
+6,C2,N9-N6-2, N9-N6, 3
+6,C2,N1-N6-0, N1-N4, 2
+6,C2,N1-N6-0, N4-N5, 2
+6,C2,N1-N6-0, N5-N6, 2
+6,C2,N1-N6-1, N1-N4, 3
+6,C2,N1-N6-1, N4-N5, 3
+6,C2,N1-N6-1, N5-N6, 3
+6,C2,N1-N6-2, N1-N4, 3
+6,C2,N1-N6-2, N4-N5, 3
+6,C2,N1-N6-2, N5-N6, 3
+6,C2,N1-N7-0, N1-N7, 3
+6,C2,N1-N7-1, N1-N7, 3
+6,C2,N1-N7-2, N1-N7, 1
+6,C2,N1-N4-0, N1-N4, 3
+6,C2,N1-N4-1, N1-N4, 1
+6,C2,N1-N4-2, N1-N4, 4
+6,C2,N1-N5-0, N1-N4, 1
+6,C2,N1-N5-0, N4-N5, 1
+6,C2,N1-N5-1, N1-N4, 4
+6,C2,N1-N5-1, N4-N5, 4
+6,C2,N1-N5-2, N1-N4, 1
+6,C2,N1-N5-2, N4-N5, 1
+6,C2,N1-N8-0, N1-N4, 4
+6,C2,N1-N8-0, N4-N5, 4
+6,C2,N1-N8-0, N5-N8, 4
+6,C2,N1-N8-1, N1-N4, 1
+6,C2,N1-N8-1, N4-N5, 1
+6,C2,N1-N8-1, N5-N8, 1
+6,C2,N1-N8-2, N1-N4, 4
+6,C2,N1-N8-2, N4-N5, 4
+6,C2,N1-N8-2, N5-N8, 4
+6,C2,N1-N9-0, N1-N4, 1
+6,C2,N1-N9-0, N4-N5, 1
+6,C2,N1-N9-0, N5-N6, 1
+6,C2,N1-N9-0, N6-N9, 1
+6,C2,N1-N9-1, N1-N4, 4
+6,C2,N1-N9-1, N4-N5, 4
+6,C2,N1-N9-1, N5-N6, 4
+6,C2,N1-N9-1, N6-N9, 4
+6,C2,N1-N9-2, N1-N4, 4
+6,C2,N1-N9-2, N4-N5, 4
+6,C2,N1-N9-2, N5-N6, 4
+6,C2,N1-N9-2, N6-N9, 4
+6,C2,N6-N0-0, N6-N0, 4
+6,C2,N6-N0-1, N6-N0, 4
+6,C2,N6-N0-2, N6-N0, 1
+6,C2,N6-N5-0, N6-N5, 4
+6,C2,N6-N5-1, N6-N5, 1
+6,C2,N6-N5-2, N6-N5, 2
+6,C2,N6-N7-0, N6-N5, 1
+6,C2,N6-N7-0, N5-N4, 1
+6,C2,N6-N7-0, N4-N7, 1
+6,C2,N6-N7-1, N6-N5, 2
+6,C2,N6-N7-1, N5-N4, 2
+6,C2,N6-N7-1, N4-N7, 2
+6,C2,N6-N7-2, N6-N5, 1
+6,C2,N6-N7-2, N5-N4, 1
+6,C2,N6-N7-2, N4-N7, 1
+6,C2,N6-N8-0, N6-N8, 2
+6,C2,N6-N8-1, N6-N8, 1
+6,C2,N6-N8-2, N6-N8, 2
+6,C2,N6-N1-0, N6-N5, 1
+6,C2,N6-N1-0, N5-N4, 1
+6,C2,N6-N1-0, N4-N1, 1
+6,C2,N6-N1-1, N6-N5, 2
+6,C2,N6-N1-1, N5-N4, 2
+6,C2,N6-N1-1, N4-N1, 2
+6,C2,N6-N1-2, N6-N5, 3
+6,C2,N6-N1-2, N5-N4, 3
+6,C2,N6-N1-2, N4-N1, 3
+6,C2,N6-N2-0, N6-N5, 2
+6,C2,N6-N2-0, N5-N2, 2
+6,C2,N6-N2-1, N6-N5, 3
+6,C2,N6-N2-1, N5-N2, 3
+6,C2,N6-N2-2, N6-N5, 4
+6,C2,N6-N2-2, N5-N2, 4
+6,C2,N6-N3-0, N6-N3, 3
+6,C2,N6-N3-1, N6-N3, 4
+6,C2,N6-N3-2, N6-N3, 2
+6,C2,N6-N4-0, N6-N5, 4
+6,C2,N6-N4-0, N5-N4, 4
+6,C2,N6-N4-1, N6-N5, 2
+6,C2,N6-N4-1, N5-N4, 2
+6,C2,N6-N4-2, N6-N5, 1
+6,C2,N6-N4-2, N5-N4, 1
+6,C2,N6-N9-0, N6-N9, 2
+6,C2,N6-N9-1, N6-N9, 1
+6,C2,N6-N9-2, N6-N9, 1
+6,C2,N0-N10-0, N0-N6, 1
+6,C2,N0-N10-0, N6-N9, 1
+6,C2,N0-N10-0, N9-N10, 1
+6,C2,N0-N10-1, N0-N6, 1
+6,C2,N0-N10-1, N6-N9, 1
+6,C2,N0-N10-1, N9-N10, 1
+6,C2,N0-N10-2, N0-N6, 4
+6,C2,N0-N10-2, N6-N9, 4
+6,C2,N0-N10-2, N9-N10, 4
+6,C2,N9-N10-0, N9-N10, 1
+6,C2,N9-N10-1, N9-N10, 4
+6,C2,N9-N10-2, N9-N10, 4
+6,C2,N3-N1-0, N3-N2, 4
+6,C2,N3-N1-0, N2-N1, 4
+6,C2,N3-N1-1, N3-N2, 4
+6,C2,N3-N1-1, N2-N1, 4
+6,C2,N3-N1-2, N3-N2, 1
+6,C2,N3-N1-2, N2-N1, 1
+6,C2,N3-N0-0, N3-N0, 4
+6,C2,N3-N0-1, N3-N0, 1
+6,C2,N3-N0-2, N3-N0, 4
+6,C2,N3-N5-0, N3-N6, 1
+6,C2,N3-N5-0, N6-N5, 1
+6,C2,N3-N5-1, N3-N6, 4
+6,C2,N3-N5-1, N6-N5, 4
+6,C2,N3-N5-2, N3-N6, 3
+6,C2,N3-N5-2, N6-N5, 3
+6,C2,N3-N4-0, N3-N6, 4
+6,C2,N3-N4-0, N6-N5, 4
+6,C2,N3-N4-0, N5-N4, 4
+6,C2,N3-N4-1, N3-N6, 3
+6,C2,N3-N4-1, N6-N5, 3
+6,C2,N3-N4-1, N5-N4, 3
+6,C2,N3-N4-2, N3-N6, 3
+6,C2,N3-N4-2, N6-N5, 3
+6,C2,N3-N4-2, N5-N4, 3
+6,C2,N3-N2-0, N3-N2, 3
+6,C2,N3-N2-1, N3-N2, 3
+6,C2,N3-N2-2, N3-N2, 4
+6,C2,N3-N9-0, N3-N6, 3
+6,C2,N3-N9-0, N6-N9, 3
+6,C2,N3-N9-1, N3-N6, 4
+6,C2,N3-N9-1, N6-N9, 4
+6,C2,N3-N9-2, N3-N6, 1
+6,C2,N3-N9-2, N6-N9, 1
+6,C2,N3-N8-0, N3-N6, 4
+6,C2,N3-N8-0, N6-N8, 4
+6,C2,N3-N8-1, N3-N6, 1
+6,C2,N3-N8-1, N6-N8, 1
+6,C2,N3-N8-2, N3-N6, 4
+6,C2,N3-N8-2, N6-N8, 4
+6,C2,N3-N7-0, N3-N6, 1
+6,C2,N3-N7-0, N6-N5, 1
+6,C2,N3-N7-0, N5-N4, 1
+6,C2,N3-N7-0, N4-N7, 1
+6,C2,N3-N7-1, N3-N6, 4
+6,C2,N3-N7-1, N6-N5, 4
+6,C2,N3-N7-1, N5-N4, 4
+6,C2,N3-N7-1, N4-N7, 4
+6,C2,N3-N7-2, N3-N6, 4
+6,C2,N3-N7-2, N6-N5, 4
+6,C2,N3-N7-2, N5-N4, 4
+6,C2,N3-N7-2, N4-N7, 4
+6,C2,N3-N6-0, N3-N6, 4
+6,C2,N3-N6-1, N3-N6, 4
+6,C2,N3-N6-2, N3-N6, 1
+6,C2,N2-N10-0, N2-N5, 4
+6,C2,N2-N10-0, N5-N8, 4
+6,C2,N2-N10-0, N8-N10, 4
+6,C2,N2-N10-1, N2-N5, 1
+6,C2,N2-N10-1, N5-N8, 1
+6,C2,N2-N10-1, N8-N10, 1
+6,C2,N2-N10-2, N2-N5, 1
+6,C2,N2-N10-2, N5-N8, 1
+6,C2,N2-N10-2, N8-N10, 1
+6,C2,N8-N0-0, N8-N6, 1
+6,C2,N8-N0-0, N6-N0, 1
+6,C2,N8-N0-1, N8-N6, 1
+6,C2,N8-N0-1, N6-N0, 1
+6,C2,N8-N0-2, N8-N6, 3
+6,C2,N8-N0-2, N6-N0, 3
+6,C2,N8-N2-0, N8-N5, 1
+6,C2,N8-N2-0, N5-N2, 1
+6,C2,N8-N2-1, N8-N5, 3
+6,C2,N8-N2-1, N5-N2, 3
+6,C2,N8-N2-2, N8-N5, 4
+6,C2,N8-N2-2, N5-N2, 4
+6,C2,N8-N1-0, N8-N5, 3
+6,C2,N8-N1-0, N5-N4, 3
+6,C2,N8-N1-0, N4-N1, 3
+6,C2,N8-N1-1, N8-N5, 4
+6,C2,N8-N1-1, N5-N4, 4
+6,C2,N8-N1-1, N4-N1, 4
+6,C2,N8-N1-2, N8-N5, 2
+6,C2,N8-N1-2, N5-N4, 2
+6,C2,N8-N1-2, N4-N1, 2
+6,C2,N8-N7-0, N8-N5, 4
+6,C2,N8-N7-0, N5-N4, 4
+6,C2,N8-N7-0, N4-N7, 4
+6,C2,N8-N7-1, N8-N5, 2
+6,C2,N8-N7-1, N5-N4, 2
+6,C2,N8-N7-1, N4-N7, 2
+6,C2,N8-N7-2, N8-N5, 1
+6,C2,N8-N7-2, N5-N4, 1
+6,C2,N8-N7-2, N4-N7, 1
+6,C2,N8-N9-0, N8-N9, 2
+6,C2,N8-N9-1, N8-N9, 1
+6,C2,N8-N9-2, N8-N9, 2
+6,C2,N8-N4-0, N8-N5, 1
+6,C2,N8-N4-0, N5-N4, 1
+6,C2,N8-N4-1, N8-N5, 2
+6,C2,N8-N4-1, N5-N4, 2
+6,C2,N8-N4-2, N8-N5, 4
+6,C2,N8-N4-2, N5-N4, 4
+6,C2,N8-N3-0, N8-N6, 2
+6,C2,N8-N3-0, N6-N3, 2
+6,C2,N8-N3-1, N8-N6, 4
+6,C2,N8-N3-1, N6-N3, 4
+6,C2,N8-N3-2, N8-N6, 3
+6,C2,N8-N3-2, N6-N3, 3
+6,C2,N0-N2-0, N0-N2, 4
+6,C2,N0-N2-1, N0-N2, 3
+6,C2,N0-N2-2, N0-N2, 2
+6,C2,N8-N6-0, N8-N6, 3
+6,C2,N8-N6-1, N8-N6, 2
+6,C2,N8-N6-2, N8-N6, 4
+6,C2,N0-N1-0, N0-N1, 2
+6,C2,N0-N1-1, N0-N1, 4
+6,C2,N0-N1-2, N0-N1, 4
+6,C2,N8-N5-0, N8-N5, 4
+6,C2,N8-N5-1, N8-N5, 4
+6,C2,N8-N5-2, N8-N5, 4
+6,C2,N0-N4-0, N0-N1, 4
+6,C2,N0-N4-0, N1-N4, 4
+6,C2,N0-N4-1, N0-N1, 4
+6,C2,N0-N4-1, N1-N4, 4
+6,C2,N0-N4-2, N0-N1, 3
+6,C2,N0-N4-2, N1-N4, 3
+6,C2,N0-N3-0, N0-N3, 4
+6,C2,N0-N3-1, N0-N3, 3
+6,C2,N0-N3-2, N0-N3, 4
+6,C2,N0-N6-0, N0-N6, 3
+6,C2,N0-N6-1, N0-N6, 4
+6,C2,N0-N6-2, N0-N6, 3
+6,C2,N0-N5-0, N0-N2, 4
+6,C2,N0-N5-0, N2-N5, 4
+6,C2,N0-N5-1, N0-N2, 3
+6,C2,N0-N5-1, N2-N5, 3
+6,C2,N0-N5-2, N0-N2, 2
+6,C2,N0-N5-2, N2-N5, 2
+6,C2,N0-N8-0, N0-N6, 3
+6,C2,N0-N8-0, N6-N8, 3
+6,C2,N0-N8-1, N0-N6, 2
+6,C2,N0-N8-1, N6-N8, 2
+6,C2,N0-N8-2, N0-N6, 3
+6,C2,N0-N8-2, N6-N8, 3
+6,C2,N0-N7-0, N0-N1, 2
+6,C2,N0-N7-0, N1-N7, 2
+6,C2,N0-N7-1, N0-N1, 3
+6,C2,N0-N7-1, N1-N7, 3
+6,C2,N0-N7-2, N0-N1, 2
+6,C2,N0-N7-2, N1-N7, 2
+6,C2,N0-N9-0, N0-N6, 3
+6,C2,N0-N9-0, N6-N9, 3
+6,C2,N0-N9-1, N0-N6, 2
+6,C2,N0-N9-1, N6-N9, 2
+6,C2,N0-N9-2, N0-N6, 3
+6,C2,N0-N9-2, N6-N9, 3
+6,C2,N5-N10-0, N5-N8, 2
+6,C2,N5-N10-0, N8-N10, 2
+6,C2,N5-N10-1, N5-N8, 3
+6,C2,N5-N10-1, N8-N10, 3
+6,C2,N5-N10-2, N5-N8, 4
+6,C2,N5-N10-2, N8-N10, 4
+6,C2,N5-N3-0, N5-N6, 3
+6,C2,N5-N3-0, N6-N3, 3
+6,C2,N5-N3-1, N5-N6, 4
+6,C2,N5-N3-1, N6-N3, 4
+6,C2,N5-N3-2, N5-N6, 2
+6,C2,N5-N3-2, N6-N3, 2
+6,C2,N5-N2-0, N5-N2, 4
+6,C2,N5-N2-1, N5-N2, 2
+6,C2,N5-N2-2, N5-N2, 1
+6,C2,N5-N1-0, N5-N4, 2
+6,C2,N5-N1-0, N4-N1, 2
+6,C2,N5-N1-1, N5-N4, 1
+6,C2,N5-N1-1, N4-N1, 1
+6,C2,N5-N1-2, N5-N4, 4
+6,C2,N5-N1-2, N4-N1, 4
+6,C2,N5-N0-0, N5-N2, 1
+6,C2,N5-N0-0, N2-N0, 1
+6,C2,N5-N0-1, N5-N2, 4
+6,C2,N5-N0-1, N2-N0, 4
+6,C2,N5-N0-2, N5-N2, 4
+6,C2,N5-N0-2, N2-N0, 4
+6,C2,N5-N7-0, N5-N4, 4
+6,C2,N5-N7-0, N4-N7, 4
+6,C2,N5-N7-1, N5-N4, 4
+6,C2,N5-N7-1, N4-N7, 4
+6,C2,N5-N7-2, N5-N4, 2
+6,C2,N5-N7-2, N4-N7, 2
+6,C2,N5-N6-0, N5-N6, 4
+6,C2,N5-N6-1, N5-N6, 2
+6,C2,N5-N6-2, N5-N6, 1
+6,C2,N5-N4-0, N5-N4, 2
+6,C2,N5-N4-1, N5-N4, 1
+6,C2,N5-N4-2, N5-N4, 1
+6,C2,N5-N9-0, N5-N6, 1
+6,C2,N5-N9-0, N6-N9, 1
+6,C2,N5-N9-1, N5-N6, 1
+6,C2,N5-N9-1, N6-N9, 1
+6,C2,N5-N9-2, N5-N6, 4
+6,C2,N5-N9-2, N6-N9, 4
+6,C2,N5-N8-0, N5-N8, 1
+6,C2,N5-N8-1, N5-N8, 4
+6,C2,N5-N8-2, N5-N8, 4
+6,C2,N7-N10-0, N7-N10, 4
+6,C2,N7-N10-1, N7-N10, 4
+6,C2,N7-N10-2, N7-N10, 3
+6,C3,N2-N0-0, N2-N0, 2
+6,C3,N2-N0-1, N2-N0, 3
+6,C3,N2-N0-2, N2-N0, 2
+6,C3,N2-N3-0, N2-N3, 3
+6,C3,N2-N3-1, N2-N3, 2
+6,C3,N2-N3-2, N2-N3, 2
+6,C3,N2-N4-0, N2-N5, 2
+6,C3,N2-N4-0, N5-N4, 2
+6,C3,N2-N4-1, N2-N5, 2
+6,C3,N2-N4-1, N5-N4, 2
+6,C3,N2-N4-2, N2-N5, 3
+6,C3,N2-N4-2, N5-N4, 3
+6,C3,N2-N1-0, N2-N1, 2
+6,C3,N2-N1-1, N2-N1, 3
+6,C3,N2-N1-2, N2-N1, 1
+6,C3,N8-N10-0, N8-N10, 3
+6,C3,N8-N10-1, N8-N10, 1
+6,C3,N8-N10-2, N8-N10, 1
+6,C3,N2-N7-0, N2-N1, 1
+6,C3,N2-N7-0, N1-N7, 1
+6,C3,N2-N7-1, N2-N1, 1
+6,C3,N2-N7-1, N1-N7, 1
+6,C3,N2-N7-2, N2-N1, 1
+6,C3,N2-N7-2, N1-N7, 1
+6,C3,N2-N8-0, N2-N5, 1
+6,C3,N2-N8-0, N5-N8, 1
+6,C3,N2-N8-1, N2-N5, 1
+6,C3,N2-N8-1, N5-N8, 1
+6,C3,N2-N8-2, N2-N5, 1
+6,C3,N2-N8-2, N5-N8, 1
+6,C3,N2-N5-0, N2-N5, 1
+6,C3,N2-N5-1, N2-N5, 1
+6,C3,N2-N5-2, N2-N5, 1
+6,C3,N2-N6-0, N2-N5, 1
+6,C3,N2-N6-0, N5-N6, 1
+6,C3,N2-N6-1, N2-N5, 1
+6,C3,N2-N6-1, N5-N6, 1
+6,C3,N2-N6-2, N2-N5, 3
+6,C3,N2-N6-2, N5-N6, 3
+6,C3,N2-N9-0, N2-N5, 1
+6,C3,N2-N9-0, N5-N6, 1
+6,C3,N2-N9-0, N6-N9, 1
+6,C3,N2-N9-1, N2-N5, 3
+6,C3,N2-N9-1, N5-N6, 3
+6,C3,N2-N9-1, N6-N9, 3
+6,C3,N2-N9-2, N2-N5, 3
+6,C3,N2-N9-2, N5-N6, 3
+6,C3,N2-N9-2, N6-N9, 3
+6,C3,N1-N10-0, N1-N7, 3
+6,C3,N1-N10-0, N7-N10, 3
+6,C3,N1-N10-1, N1-N7, 3
+6,C3,N1-N10-1, N7-N10, 3
+6,C3,N1-N10-2, N1-N7, 3
+6,C3,N1-N10-2, N7-N10, 3
+6,C3,N7-N0-0, N7-N1, 3
+6,C3,N7-N0-0, N1-N0, 3
+6,C3,N7-N0-1, N7-N1, 3
+6,C3,N7-N0-1, N1-N0, 3
+6,C3,N7-N0-2, N7-N1, 1
+6,C3,N7-N0-2, N1-N0, 1
+6,C3,N7-N1-0, N7-N1, 3
+6,C3,N7-N1-1, N7-N1, 1
+6,C3,N7-N1-2, N7-N1, 1
+6,C3,N7-N6-0, N7-N4, 1
+6,C3,N7-N6-0, N4-N5, 1
+6,C3,N7-N6-0, N5-N6, 1
+6,C3,N7-N6-1, N7-N4, 1
+6,C3,N7-N6-1, N4-N5, 1
+6,C3,N7-N6-1, N5-N6, 1
+6,C3,N7-N6-2, N7-N4, 2
+6,C3,N7-N6-2, N4-N5, 2
+6,C3,N7-N6-2, N5-N6, 2
+6,C3,N7-N8-0, N7-N4, 1
+6,C3,N7-N8-0, N4-N5, 1
+6,C3,N7-N8-0, N5-N8, 1
+6,C3,N7-N8-1, N7-N4, 2
+6,C3,N7-N8-1, N4-N5, 2
+6,C3,N7-N8-1, N5-N8, 2
+6,C3,N7-N8-2, N7-N4, 3
+6,C3,N7-N8-2, N4-N5, 3
+6,C3,N7-N8-2, N5-N8, 3
+6,C3,N7-N9-0, N7-N4, 2
+6,C3,N7-N9-0, N4-N5, 2
+6,C3,N7-N9-0, N5-N6, 2
+6,C3,N7-N9-0, N6-N9, 2
+6,C3,N7-N9-1, N7-N4, 3
+6,C3,N7-N9-1, N4-N5, 3
+6,C3,N7-N9-1, N5-N6, 3
+6,C3,N7-N9-1, N6-N9, 3
+6,C3,N7-N9-2, N7-N4, 1
+6,C3,N7-N9-2, N4-N5, 1
+6,C3,N7-N9-2, N5-N6, 1
+6,C3,N7-N9-2, N6-N9, 1
+6,C3,N7-N2-0, N7-N1, 3
+6,C3,N7-N2-0, N1-N2, 3
+6,C3,N7-N2-1, N7-N1, 1
+6,C3,N7-N2-1, N1-N2, 1
+6,C3,N7-N2-2, N7-N1, 3
+6,C3,N7-N2-2, N1-N2, 3
+6,C3,N7-N3-0, N7-N4, 1
+6,C3,N7-N3-0, N4-N5, 1
+6,C3,N7-N3-0, N5-N6, 1
+6,C3,N7-N3-0, N6-N3, 1
+6,C3,N7-N3-1, N7-N4, 3
+6,C3,N7-N3-1, N4-N5, 3
+6,C3,N7-N3-1, N5-N6, 3
+6,C3,N7-N3-1, N6-N3, 3
+6,C3,N7-N3-2, N7-N4, 3
+6,C3,N7-N3-2, N4-N5, 3
+6,C3,N7-N3-2, N5-N6, 3
+6,C3,N7-N3-2, N6-N3, 3
+6,C3,N7-N4-0, N7-N4, 3
+6,C3,N7-N4-1, N7-N4, 3
+6,C3,N7-N4-2, N7-N4, 1
+6,C3,N7-N5-0, N7-N4, 3
+6,C3,N7-N5-0, N4-N5, 3
+6,C3,N7-N5-1, N7-N4, 1
+6,C3,N7-N5-1, N4-N5, 1
+6,C3,N7-N5-2, N7-N4, 3
+6,C3,N7-N5-2, N4-N5, 3
+6,C3,N3-N10-0, N3-N6, 1
+6,C3,N3-N10-0, N6-N9, 1
+6,C3,N3-N10-0, N9-N10, 1
+6,C3,N3-N10-1, N3-N6, 3
+6,C3,N3-N10-1, N6-N9, 3
+6,C3,N3-N10-1, N9-N10, 3
+6,C3,N3-N10-2, N3-N6, 1
+6,C3,N3-N10-2, N6-N9, 1
+6,C3,N3-N10-2, N9-N10, 1
+6,C3,N4-N2-0, N4-N5, 3
+6,C3,N4-N2-0, N5-N2, 3
+6,C3,N4-N2-1, N4-N5, 1
+6,C3,N4-N2-1, N5-N2, 1
+6,C3,N4-N2-2, N4-N5, 1
+6,C3,N4-N2-2, N5-N2, 1
+6,C3,N4-N1-0, N4-N1, 1
+6,C3,N4-N1-1, N4-N1, 1
+6,C3,N4-N1-2, N4-N1, 2
+6,C3,N4-N0-0, N4-N1, 1
+6,C3,N4-N0-0, N1-N0, 1
+6,C3,N4-N0-1, N4-N1, 2
+6,C3,N4-N0-1, N1-N0, 2
+6,C3,N4-N0-2, N4-N1, 1
+6,C3,N4-N0-2, N1-N0, 1
+6,C3,N4-N10-0, N4-N10, 2
+6,C3,N4-N10-1, N4-N10, 1
+6,C3,N4-N10-2, N4-N10, 3
+6,C3,N4-N6-0, N4-N5, 1
+6,C3,N4-N6-0, N5-N6, 1
+6,C3,N4-N6-1, N4-N5, 3
+6,C3,N4-N6-1, N5-N6, 3
+6,C3,N4-N6-2, N4-N5, 1
+6,C3,N4-N6-2, N5-N6, 1
+6,C3,N4-N5-0, N4-N5, 3
+6,C3,N4-N5-1, N4-N5, 1
+6,C3,N4-N5-2, N4-N5, 1
+6,C3,N4-N3-0, N4-N5, 1
+6,C3,N4-N3-0, N5-N6, 1
+6,C3,N4-N3-0, N6-N3, 1
+6,C3,N4-N3-1, N4-N5, 1
+6,C3,N4-N3-1, N5-N6, 1
+6,C3,N4-N3-1, N6-N3, 1
+6,C3,N4-N3-2, N4-N5, 1
+6,C3,N4-N3-2, N5-N6, 1
+6,C3,N4-N3-2, N6-N3, 1
+6,C3,N4-N9-0, N4-N5, 1
+6,C3,N4-N9-0, N5-N6, 1
+6,C3,N4-N9-0, N6-N9, 1
+6,C3,N4-N9-1, N4-N5, 1
+6,C3,N4-N9-1, N5-N6, 1
+6,C3,N4-N9-1, N6-N9, 1
+6,C3,N4-N9-2, N4-N5, 1
+6,C3,N4-N9-2, N5-N6, 1
+6,C3,N4-N9-2, N6-N9, 1
+6,C3,N4-N8-0, N4-N5, 1
+6,C3,N4-N8-0, N5-N8, 1
+6,C3,N4-N8-1, N4-N5, 1
+6,C3,N4-N8-1, N5-N8, 1
+6,C3,N4-N8-2, N4-N5, 1
+6,C3,N4-N8-2, N5-N8, 1
+6,C3,N4-N7-0, N4-N7, 1
+6,C3,N4-N7-1, N4-N7, 1
+6,C3,N4-N7-2, N4-N7, 2
+6,C3,N6-N10-0, N6-N9, 1
+6,C3,N6-N10-0, N9-N10, 1
+6,C3,N6-N10-1, N6-N9, 2
+6,C3,N6-N10-1, N9-N10, 2
+6,C3,N6-N10-2, N6-N9, 3
+6,C3,N6-N10-2, N9-N10, 3
+6,C3,N9-N1-0, N9-N6, 2
+6,C3,N9-N1-0, N6-N5, 2
+6,C3,N9-N1-0, N5-N4, 2
+6,C3,N9-N1-0, N4-N1, 2
+6,C3,N9-N1-1, N9-N6, 3
+6,C3,N9-N1-1, N6-N5, 3
+6,C3,N9-N1-1, N5-N4, 3
+6,C3,N9-N1-1, N4-N1, 3
+6,C3,N9-N1-2, N9-N6, 2
+6,C3,N9-N1-2, N6-N5, 2
+6,C3,N9-N1-2, N5-N4, 2
+6,C3,N9-N1-2, N4-N1, 2
+6,C3,N10-N1-0, N10-N7, 3
+6,C3,N10-N1-0, N7-N1, 3
+6,C3,N10-N1-1, N10-N7, 2
+6,C3,N10-N1-1, N7-N1, 2
+6,C3,N10-N1-2, N10-N7, 3
+6,C3,N10-N1-2, N7-N1, 3
+6,C3,N9-N0-0, N9-N6, 2
+6,C3,N9-N0-0, N6-N0, 2
+6,C3,N9-N0-1, N9-N6, 3
+6,C3,N9-N0-1, N6-N0, 3
+6,C3,N9-N0-2, N9-N6, 1
+6,C3,N9-N0-2, N6-N0, 1
+6,C3,N10-N0-0, N10-N9, 3
+6,C3,N10-N0-0, N9-N6, 3
+6,C3,N10-N0-0, N6-N0, 3
+6,C3,N10-N0-1, N10-N9, 1
+6,C3,N10-N0-1, N9-N6, 1
+6,C3,N10-N0-1, N6-N0, 1
+6,C3,N10-N0-2, N10-N9, 2
+6,C3,N10-N0-2, N9-N6, 2
+6,C3,N10-N0-2, N6-N0, 2
+6,C3,N9-N3-0, N9-N6, 1
+6,C3,N9-N3-0, N6-N3, 1
+6,C3,N9-N3-1, N9-N6, 2
+6,C3,N9-N3-1, N6-N3, 2
+6,C3,N9-N3-2, N9-N6, 1
+6,C3,N9-N3-2, N6-N3, 1
+6,C3,N9-N2-0, N9-N6, 2
+6,C3,N9-N2-0, N6-N5, 2
+6,C3,N9-N2-0, N5-N2, 2
+6,C3,N9-N2-1, N9-N6, 1
+6,C3,N9-N2-1, N6-N5, 1
+6,C3,N9-N2-1, N5-N2, 1
+6,C3,N9-N2-2, N9-N6, 2
+6,C3,N9-N2-2, N6-N5, 2
+6,C3,N9-N2-2, N5-N2, 2
+6,C3,N10-N5-0, N10-N8, 1
+6,C3,N10-N5-0, N8-N5, 1
+6,C3,N10-N5-1, N10-N8, 2
+6,C3,N10-N5-1, N8-N5, 2
+6,C3,N10-N5-2, N10-N8, 1
+6,C3,N10-N5-2, N8-N5, 1
+6,C3,N10-N4-0, N10-N4, 2
+6,C3,N10-N4-1, N10-N4, 1
+6,C3,N10-N4-2, N10-N4, 3
+6,C3,N10-N3-0, N10-N9, 1
+6,C3,N10-N3-0, N9-N6, 1
+6,C3,N10-N3-0, N6-N3, 1
+6,C3,N10-N3-1, N10-N9, 3
+6,C3,N10-N3-1, N9-N6, 3
+6,C3,N10-N3-1, N6-N3, 3
+6,C3,N10-N3-2, N10-N9, 2
+6,C3,N10-N3-2, N9-N6, 2
+6,C3,N10-N3-2, N6-N3, 2
+6,C3,N10-N2-0, N10-N8, 3
+6,C3,N10-N2-0, N8-N5, 3
+6,C3,N10-N2-0, N5-N2, 3
+6,C3,N10-N2-1, N10-N8, 2
+6,C3,N10-N2-1, N8-N5, 2
+6,C3,N10-N2-1, N5-N2, 2
+6,C3,N10-N2-2, N10-N8, 2
+6,C3,N10-N2-2, N8-N5, 2
+6,C3,N10-N2-2, N5-N2, 2
+6,C3,N10-N9-0, N10-N9, 2
+6,C3,N10-N9-1, N10-N9, 2
+6,C3,N10-N9-2, N10-N9, 2
+6,C3,N9-N8-0, N9-N8, 2
+6,C3,N9-N8-1, N9-N8, 2
+6,C3,N9-N8-2, N9-N8, 3
+6,C3,N10-N8-0, N10-N8, 2
+6,C3,N10-N8-1, N10-N8, 3
+6,C3,N10-N8-2, N10-N8, 1
+6,C3,N10-N7-0, N10-N7, 3
+6,C3,N10-N7-1, N10-N7, 1
+6,C3,N10-N7-2, N10-N7, 3
+6,C3,N10-N6-0, N10-N9, 1
+6,C3,N10-N6-0, N9-N6, 1
+6,C3,N10-N6-1, N10-N9, 3
+6,C3,N10-N6-1, N9-N6, 3
+6,C3,N10-N6-2, N10-N9, 1
+6,C3,N10-N6-2, N9-N6, 1
+6,C3,N1-N2-0, N1-N2, 3
+6,C3,N1-N2-1, N1-N2, 1
+6,C3,N1-N2-2, N1-N2, 3
+6,C3,N9-N5-0, N9-N6, 1
+6,C3,N9-N5-0, N6-N5, 1
+6,C3,N9-N5-1, N9-N6, 3
+6,C3,N9-N5-1, N6-N5, 3
+6,C3,N9-N5-2, N9-N6, 1
+6,C3,N9-N5-2, N6-N5, 1
+6,C3,N1-N3-0, N1-N2, 3
+6,C3,N1-N3-0, N2-N3, 3
+6,C3,N1-N3-1, N1-N2, 1
+6,C3,N1-N3-1, N2-N3, 1
+6,C3,N1-N3-2, N1-N2, 2
+6,C3,N1-N3-2, N2-N3, 2
+6,C3,N9-N4-0, N9-N6, 1
+6,C3,N9-N4-0, N6-N5, 1
+6,C3,N9-N4-0, N5-N4, 1
+6,C3,N9-N4-1, N9-N6, 2
+6,C3,N9-N4-1, N6-N5, 2
+6,C3,N9-N4-1, N5-N4, 2
+6,C3,N9-N4-2, N9-N6, 2
+6,C3,N9-N4-2, N6-N5, 2
+6,C3,N9-N4-2, N5-N4, 2
+6,C3,N1-N0-0, N1-N0, 2
+6,C3,N1-N0-1, N1-N0, 2
+6,C3,N1-N0-2, N1-N0, 3
+6,C3,N9-N7-0, N9-N6, 2
+6,C3,N9-N7-0, N6-N5, 2
+6,C3,N9-N7-0, N5-N4, 2
+6,C3,N9-N7-0, N4-N7, 2
+6,C3,N9-N7-1, N9-N6, 3
+6,C3,N9-N7-1, N6-N5, 3
+6,C3,N9-N7-1, N5-N4, 3
+6,C3,N9-N7-1, N4-N7, 3
+6,C3,N9-N7-2, N9-N6, 1
+6,C3,N9-N7-2, N6-N5, 1
+6,C3,N9-N7-2, N5-N4, 1
+6,C3,N9-N7-2, N4-N7, 1
+6,C3,N9-N6-0, N9-N6, 3
+6,C3,N9-N6-1, N9-N6, 1
+6,C3,N9-N6-2, N9-N6, 2
+6,C3,N1-N6-0, N1-N4, 1
+6,C3,N1-N6-0, N4-N5, 1
+6,C3,N1-N6-0, N5-N6, 1
+6,C3,N1-N6-1, N1-N4, 2
+6,C3,N1-N6-1, N4-N5, 2
+6,C3,N1-N6-1, N5-N6, 2
+6,C3,N1-N6-2, N1-N4, 2
+6,C3,N1-N6-2, N4-N5, 2
+6,C3,N1-N6-2, N5-N6, 2
+6,C3,N1-N7-0, N1-N7, 2
+6,C3,N1-N7-1, N1-N7, 2
+6,C3,N1-N7-2, N1-N7, 1
+6,C3,N1-N4-0, N1-N4, 2
+6,C3,N1-N4-1, N1-N4, 1
+6,C3,N1-N4-2, N1-N4, 3
+6,C3,N1-N5-0, N1-N4, 1
+6,C3,N1-N5-0, N4-N5, 1
+6,C3,N1-N5-1, N1-N4, 3
+6,C3,N1-N5-1, N4-N5, 3
+6,C3,N1-N5-2, N1-N4, 1
+6,C3,N1-N5-2, N4-N5, 1
+6,C3,N1-N8-0, N1-N4, 3
+6,C3,N1-N8-0, N4-N5, 3
+6,C3,N1-N8-0, N5-N8, 3
+6,C3,N1-N8-1, N1-N4, 1
+6,C3,N1-N8-1, N4-N5, 1
+6,C3,N1-N8-1, N5-N8, 1
+6,C3,N1-N8-2, N1-N4, 3
+6,C3,N1-N8-2, N4-N5, 3
+6,C3,N1-N8-2, N5-N8, 3
+6,C3,N1-N9-0, N1-N4, 1
+6,C3,N1-N9-0, N4-N5, 1
+6,C3,N1-N9-0, N5-N6, 1
+6,C3,N1-N9-0, N6-N9, 1
+6,C3,N1-N9-1, N1-N4, 3
+6,C3,N1-N9-1, N4-N5, 3
+6,C3,N1-N9-1, N5-N6, 3
+6,C3,N1-N9-1, N6-N9, 3
+6,C3,N1-N9-2, N1-N4, 3
+6,C3,N1-N9-2, N4-N5, 3
+6,C3,N1-N9-2, N5-N6, 3
+6,C3,N1-N9-2, N6-N9, 3
+6,C3,N6-N0-0, N6-N0, 3
+6,C3,N6-N0-1, N6-N0, 3
+6,C3,N6-N0-2, N6-N0, 1
+6,C3,N6-N5-0, N6-N5, 3
+6,C3,N6-N5-1, N6-N5, 1
+6,C3,N6-N5-2, N6-N5, 2
+6,C3,N6-N7-0, N6-N5, 1
+6,C3,N6-N7-0, N5-N4, 1
+6,C3,N6-N7-0, N4-N7, 1
+6,C3,N6-N7-1, N6-N5, 2
+6,C3,N6-N7-1, N5-N4, 2
+6,C3,N6-N7-1, N4-N7, 2
+6,C3,N6-N7-2, N6-N5, 1
+6,C3,N6-N7-2, N5-N4, 1
+6,C3,N6-N7-2, N4-N7, 1
+6,C3,N6-N8-0, N6-N8, 2
+6,C3,N6-N8-1, N6-N8, 1
+6,C3,N6-N8-2, N6-N8, 2
+6,C3,N6-N1-0, N6-N5, 1
+6,C3,N6-N1-0, N5-N4, 1
+6,C3,N6-N1-0, N4-N1, 1
+6,C3,N6-N1-1, N6-N5, 2
+6,C3,N6-N1-1, N5-N4, 2
+6,C3,N6-N1-1, N4-N1, 2
+6,C3,N6-N1-2, N6-N5, 2
+6,C3,N6-N1-2, N5-N4, 2
+6,C3,N6-N1-2, N4-N1, 2
+6,C3,N6-N2-0, N6-N5, 2
+6,C3,N6-N2-0, N5-N2, 2
+6,C3,N6-N2-1, N6-N5, 2
+6,C3,N6-N2-1, N5-N2, 2
+6,C3,N6-N2-2, N6-N5, 3
+6,C3,N6-N2-2, N5-N2, 3
+6,C3,N6-N3-0, N6-N3, 2
+6,C3,N6-N3-1, N6-N3, 3
+6,C3,N6-N3-2, N6-N3, 1
+6,C3,N6-N4-0, N6-N5, 3
+6,C3,N6-N4-0, N5-N4, 3
+6,C3,N6-N4-1, N6-N5, 1
+6,C3,N6-N4-1, N5-N4, 1
+6,C3,N6-N4-2, N6-N5, 1
+6,C3,N6-N4-2, N5-N4, 1
+6,C3,N6-N9-0, N6-N9, 1
+6,C3,N6-N9-1, N6-N9, 1
+6,C3,N6-N9-2, N6-N9, 1
+6,C3,N0-N10-0, N0-N6, 1
+6,C3,N0-N10-0, N6-N9, 1
+6,C3,N0-N10-0, N9-N10, 1
+6,C3,N0-N10-1, N0-N6, 1
+6,C3,N0-N10-1, N6-N9, 1
+6,C3,N0-N10-1, N9-N10, 1
+6,C3,N0-N10-2, N0-N6, 3
+6,C3,N0-N10-2, N6-N9, 3
+6,C3,N0-N10-2, N9-N10, 3
+6,C3,N9-N10-0, N9-N10, 1
+6,C3,N9-N10-1, N9-N10, 3
+6,C3,N9-N10-2, N9-N10, 3
+6,C3,N3-N1-0, N3-N2, 3
+6,C3,N3-N1-0, N2-N1, 3
+6,C3,N3-N1-1, N3-N2, 3
+6,C3,N3-N1-1, N2-N1, 3
+6,C3,N3-N1-2, N3-N2, 1
+6,C3,N3-N1-2, N2-N1, 1
+6,C3,N3-N0-0, N3-N0, 3
+6,C3,N3-N0-1, N3-N0, 1
+6,C3,N3-N0-2, N3-N0, 3
+6,C3,N3-N5-0, N3-N6, 1
+6,C3,N3-N5-0, N6-N5, 1
+6,C3,N3-N5-1, N3-N6, 3
+6,C3,N3-N5-1, N6-N5, 3
+6,C3,N3-N5-2, N3-N6, 2
+6,C3,N3-N5-2, N6-N5, 2
+6,C3,N3-N4-0, N3-N6, 3
+6,C3,N3-N4-0, N6-N5, 3
+6,C3,N3-N4-0, N5-N4, 3
+6,C3,N3-N4-1, N3-N6, 2
+6,C3,N3-N4-1, N6-N5, 2
+6,C3,N3-N4-1, N5-N4, 2
+6,C3,N3-N4-2, N3-N6, 2
+6,C3,N3-N4-2, N6-N5, 2
+6,C3,N3-N4-2, N5-N4, 2
+6,C3,N3-N2-0, N3-N2, 2
+6,C3,N3-N2-1, N3-N2, 2
+6,C3,N3-N2-2, N3-N2, 3
+6,C3,N3-N9-0, N3-N6, 2
+6,C3,N3-N9-0, N6-N9, 2
+6,C3,N3-N9-1, N3-N6, 3
+6,C3,N3-N9-1, N6-N9, 3
+6,C3,N3-N9-2, N3-N6, 1
+6,C3,N3-N9-2, N6-N9, 1
+6,C3,N3-N8-0, N3-N6, 3
+6,C3,N3-N8-0, N6-N8, 3
+6,C3,N3-N8-1, N3-N6, 1
+6,C3,N3-N8-1, N6-N8, 1
+6,C3,N3-N8-2, N3-N6, 3
+6,C3,N3-N8-2, N6-N8, 3
+6,C3,N3-N7-0, N3-N6, 1
+6,C3,N3-N7-0, N6-N5, 1
+6,C3,N3-N7-0, N5-N4, 1
+6,C3,N3-N7-0, N4-N7, 1
+6,C3,N3-N7-1, N3-N6, 3
+6,C3,N3-N7-1, N6-N5, 3
+6,C3,N3-N7-1, N5-N4, 3
+6,C3,N3-N7-1, N4-N7, 3
+6,C3,N3-N7-2, N3-N6, 3
+6,C3,N3-N7-2, N6-N5, 3
+6,C3,N3-N7-2, N5-N4, 3
+6,C3,N3-N7-2, N4-N7, 3
+6,C3,N3-N6-0, N3-N6, 3
+6,C3,N3-N6-1, N3-N6, 3
+6,C3,N3-N6-2, N3-N6, 1
+6,C3,N2-N10-0, N2-N5, 3
+6,C3,N2-N10-0, N5-N8, 3
+6,C3,N2-N10-0, N8-N10, 3
+6,C3,N2-N10-1, N2-N5, 1
+6,C3,N2-N10-1, N5-N8, 1
+6,C3,N2-N10-1, N8-N10, 1
+6,C3,N2-N10-2, N2-N5, 1
+6,C3,N2-N10-2, N5-N8, 1
+6,C3,N2-N10-2, N8-N10, 1
+6,C3,N8-N0-0, N8-N6, 1
+6,C3,N8-N0-0, N6-N0, 1
+6,C3,N8-N0-1, N8-N6, 1
+6,C3,N8-N0-1, N6-N0, 1
+6,C3,N8-N0-2, N8-N6, 2
+6,C3,N8-N0-2, N6-N0, 2
+6,C3,N8-N2-0, N8-N5, 1
+6,C3,N8-N2-0, N5-N2, 1
+6,C3,N8-N2-1, N8-N5, 2
+6,C3,N8-N2-1, N5-N2, 2
+6,C3,N8-N2-2, N8-N5, 3
+6,C3,N8-N2-2, N5-N2, 3
+6,C3,N8-N1-0, N8-N5, 2
+6,C3,N8-N1-0, N5-N4, 2
+6,C3,N8-N1-0, N4-N1, 2
+6,C3,N8-N1-1, N8-N5, 3
+6,C3,N8-N1-1, N5-N4, 3
+6,C3,N8-N1-1, N4-N1, 3
+6,C3,N8-N1-2, N8-N5, 2
+6,C3,N8-N1-2, N5-N4, 2
+6,C3,N8-N1-2, N4-N1, 2
+6,C3,N8-N7-0, N8-N5, 3
+6,C3,N8-N7-0, N5-N4, 3
+6,C3,N8-N7-0, N4-N7, 3
+6,C3,N8-N7-1, N8-N5, 2
+6,C3,N8-N7-1, N5-N4, 2
+6,C3,N8-N7-1, N4-N7, 2
+6,C3,N8-N7-2, N8-N5, 1
+6,C3,N8-N7-2, N5-N4, 1
+6,C3,N8-N7-2, N4-N7, 1
+6,C3,N8-N9-0, N8-N9, 2
+6,C3,N8-N9-1, N8-N9, 1
+6,C3,N8-N9-2, N8-N9, 2
+6,C3,N8-N4-0, N8-N5, 1
+6,C3,N8-N4-0, N5-N4, 1
+6,C3,N8-N4-1, N8-N5, 2
+6,C3,N8-N4-1, N5-N4, 2
+6,C3,N8-N4-2, N8-N5, 3
+6,C3,N8-N4-2, N5-N4, 3
+6,C3,N8-N3-0, N8-N6, 2
+6,C3,N8-N3-0, N6-N3, 2
+6,C3,N8-N3-1, N8-N6, 3
+6,C3,N8-N3-1, N6-N3, 3
+6,C3,N8-N3-2, N8-N6, 2
+6,C3,N8-N3-2, N6-N3, 2
+6,C3,N0-N2-0, N0-N2, 3
+6,C3,N0-N2-1, N0-N2, 2
+6,C3,N0-N2-2, N0-N2, 2
+6,C3,N8-N6-0, N8-N6, 2
+6,C3,N8-N6-1, N8-N6, 2
+6,C3,N8-N6-2, N8-N6, 3
+6,C3,N0-N1-0, N0-N1, 2
+6,C3,N0-N1-1, N0-N1, 3
+6,C3,N0-N1-2, N0-N1, 3
+6,C3,N8-N5-0, N8-N5, 3
+6,C3,N8-N5-1, N8-N5, 3
+6,C3,N8-N5-2, N8-N5, 3
+6,C3,N0-N4-0, N0-N1, 3
+6,C3,N0-N4-0, N1-N4, 3
+6,C3,N0-N4-1, N0-N1, 3
+6,C3,N0-N4-1, N1-N4, 3
+6,C3,N0-N4-2, N0-N1, 2
+6,C3,N0-N4-2, N1-N4, 2
+6,C3,N0-N3-0, N0-N3, 3
+6,C3,N0-N3-1, N0-N3, 2
+6,C3,N0-N3-2, N0-N3, 3
+6,C3,N0-N6-0, N0-N6, 2
+6,C3,N0-N6-1, N0-N6, 3
+6,C3,N0-N6-2, N0-N6, 2
+6,C3,N0-N5-0, N0-N2, 3
+6,C3,N0-N5-0, N2-N5, 3
+6,C3,N0-N5-1, N0-N2, 2
+6,C3,N0-N5-1, N2-N5, 2
+6,C3,N0-N5-2, N0-N2, 1
+6,C3,N0-N5-2, N2-N5, 1
+6,C3,N0-N8-0, N0-N6, 2
+6,C3,N0-N8-0, N6-N8, 2
+6,C3,N0-N8-1, N0-N6, 1
+6,C3,N0-N8-1, N6-N8, 1
+6,C3,N0-N8-2, N0-N6, 2
+6,C3,N0-N8-2, N6-N8, 2
+6,C3,N0-N7-0, N0-N1, 1
+6,C3,N0-N7-0, N1-N7, 1
+6,C3,N0-N7-1, N0-N1, 2
+6,C3,N0-N7-1, N1-N7, 2
+6,C3,N0-N7-2, N0-N1, 2
+6,C3,N0-N7-2, N1-N7, 2
+6,C3,N0-N9-0, N0-N6, 2
+6,C3,N0-N9-0, N6-N9, 2
+6,C3,N0-N9-1, N0-N6, 2
+6,C3,N0-N9-1, N6-N9, 2
+6,C3,N0-N9-2, N0-N6, 2
+6,C3,N0-N9-2, N6-N9, 2
+6,C3,N5-N10-0, N5-N8, 2
+6,C3,N5-N10-0, N8-N10, 2
+6,C3,N5-N10-1, N5-N8, 2
+6,C3,N5-N10-1, N8-N10, 2
+6,C3,N5-N10-2, N5-N8, 3
+6,C3,N5-N10-2, N8-N10, 3
+6,C3,N5-N3-0, N5-N6, 2
+6,C3,N5-N3-0, N6-N3, 2
+6,C3,N5-N3-1, N5-N6, 3
+6,C3,N5-N3-1, N6-N3, 3
+6,C3,N5-N3-2, N5-N6, 2
+6,C3,N5-N3-2, N6-N3, 2
+6,C3,N5-N2-0, N5-N2, 3
+6,C3,N5-N2-1, N5-N2, 2
+6,C3,N5-N2-2, N5-N2, 1
+6,C3,N5-N1-0, N5-N4, 2
+6,C3,N5-N1-0, N4-N1, 2
+6,C3,N5-N1-1, N5-N4, 1
+6,C3,N5-N1-1, N4-N1, 1
+6,C3,N5-N1-2, N5-N4, 3
+6,C3,N5-N1-2, N4-N1, 3
+6,C3,N5-N0-0, N5-N2, 1
+6,C3,N5-N0-0, N2-N0, 1
+6,C3,N5-N0-1, N5-N2, 3
+6,C3,N5-N0-1, N2-N0, 3
+6,C3,N5-N0-2, N5-N2, 3
+6,C3,N5-N0-2, N2-N0, 3
+6,C3,N5-N7-0, N5-N4, 3
+6,C3,N5-N7-0, N4-N7, 3
+6,C3,N5-N7-1, N5-N4, 3
+6,C3,N5-N7-1, N4-N7, 3
+6,C3,N5-N7-2, N5-N4, 2
+6,C3,N5-N7-2, N4-N7, 2
+6,C3,N5-N6-0, N5-N6, 3
+6,C3,N5-N6-1, N5-N6, 2
+6,C3,N5-N6-2, N5-N6, 1
+6,C3,N5-N4-0, N5-N4, 2
+6,C3,N5-N4-1, N5-N4, 1
+6,C3,N5-N4-2, N5-N4, 1
+6,C3,N5-N9-0, N5-N6, 1
+6,C3,N5-N9-0, N6-N9, 1
+6,C3,N5-N9-1, N5-N6, 1
+6,C3,N5-N9-1, N6-N9, 1
+6,C3,N5-N9-2, N5-N6, 3
+6,C3,N5-N9-2, N6-N9, 3
+6,C3,N5-N8-0, N5-N8, 1
+6,C3,N5-N8-1, N5-N8, 3
+6,C3,N5-N8-2, N5-N8, 3
+6,C3,N7-N10-0, N7-N10, 3
+6,C3,N7-N10-1, N7-N10, 3
+6,C3,N7-N10-2, N7-N10, 2
+6,C6,N2-N0-0, N2-N0, 1
+6,C6,N2-N0-1, N2-N0, 2
+6,C6,N2-N0-2, N2-N0, 1
+6,C6,N2-N3-0, N2-N3, 2
+6,C6,N2-N3-1, N2-N3, 1
+6,C6,N2-N3-2, N2-N3, 1
+6,C6,N2-N4-0, N2-N5, 1
+6,C6,N2-N4-0, N5-N4, 1
+6,C6,N2-N4-1, N2-N5, 1
+6,C6,N2-N4-1, N5-N4, 1
+6,C6,N2-N4-2, N2-N5, 2
+6,C6,N2-N4-2, N5-N4, 2
+6,C6,N2-N1-0, N2-N1, 1
+6,C6,N2-N1-1, N2-N1, 2
+6,C6,N2-N1-2, N2-N1, 1
+6,C6,N8-N10-0, N8-N10, 2
+6,C6,N8-N10-1, N8-N10, 1
+6,C6,N8-N10-2, N8-N10, 1
+6,C6,N2-N7-0, N2-N1, 1
+6,C6,N2-N7-0, N1-N7, 1
+6,C6,N2-N7-1, N2-N1, 1
+6,C6,N2-N7-1, N1-N7, 1
+6,C6,N2-N7-2, N2-N1, 1
+6,C6,N2-N7-2, N1-N7, 1
+6,C6,N2-N8-0, N2-N5, 1
+6,C6,N2-N8-0, N5-N8, 1
+6,C6,N2-N8-1, N2-N5, 1
+6,C6,N2-N8-1, N5-N8, 1
+6,C6,N2-N8-2, N2-N5, 1
+6,C6,N2-N8-2, N5-N8, 1
+6,C6,N2-N5-0, N2-N5, 1
+6,C6,N2-N5-1, N2-N5, 1
+6,C6,N2-N5-2, N2-N5, 1
+6,C6,N2-N6-0, N2-N5, 1
+6,C6,N2-N6-0, N5-N6, 1
+6,C6,N2-N6-1, N2-N5, 1
+6,C6,N2-N6-1, N5-N6, 1
+6,C6,N2-N6-2, N2-N5, 2
+6,C6,N2-N6-2, N5-N6, 2
+6,C6,N2-N9-0, N2-N5, 1
+6,C6,N2-N9-0, N5-N6, 1
+6,C6,N2-N9-0, N6-N9, 1
+6,C6,N2-N9-1, N2-N5, 2
+6,C6,N2-N9-1, N5-N6, 2
+6,C6,N2-N9-1, N6-N9, 2
+6,C6,N2-N9-2, N2-N5, 2
+6,C6,N2-N9-2, N5-N6, 2
+6,C6,N2-N9-2, N6-N9, 2
+6,C6,N1-N10-0, N1-N7, 2
+6,C6,N1-N10-0, N7-N10, 2
+6,C6,N1-N10-1, N1-N7, 2
+6,C6,N1-N10-1, N7-N10, 2
+6,C6,N1-N10-2, N1-N7, 2
+6,C6,N1-N10-2, N7-N10, 2
+6,C6,N7-N0-0, N7-N1, 2
+6,C6,N7-N0-0, N1-N0, 2
+6,C6,N7-N0-1, N7-N1, 2
+6,C6,N7-N0-1, N1-N0, 2
+6,C6,N7-N0-2, N7-N1, 1
+6,C6,N7-N0-2, N1-N0, 1
+6,C6,N7-N1-0, N7-N1, 2
+6,C6,N7-N1-1, N7-N1, 1
+6,C6,N7-N1-2, N7-N1, 1
+6,C6,N7-N6-0, N7-N4, 1
+6,C6,N7-N6-0, N4-N5, 1
+6,C6,N7-N6-0, N5-N6, 1
+6,C6,N7-N6-1, N7-N4, 1
+6,C6,N7-N6-1, N4-N5, 1
+6,C6,N7-N6-1, N5-N6, 1
+6,C6,N7-N6-2, N7-N4, 1
+6,C6,N7-N6-2, N4-N5, 1
+6,C6,N7-N6-2, N5-N6, 1
+6,C6,N7-N8-0, N7-N4, 1
+6,C6,N7-N8-0, N4-N5, 1
+6,C6,N7-N8-0, N5-N8, 1
+6,C6,N7-N8-1, N7-N4, 1
+6,C6,N7-N8-1, N4-N5, 1
+6,C6,N7-N8-1, N5-N8, 1
+6,C6,N7-N8-2, N7-N4, 2
+6,C6,N7-N8-2, N4-N5, 2
+6,C6,N7-N8-2, N5-N8, 2
+6,C6,N7-N9-0, N7-N4, 1
+6,C6,N7-N9-0, N4-N5, 1
+6,C6,N7-N9-0, N5-N6, 1
+6,C6,N7-N9-0, N6-N9, 1
+6,C6,N7-N9-1, N7-N4, 2
+6,C6,N7-N9-1, N4-N5, 2
+6,C6,N7-N9-1, N5-N6, 2
+6,C6,N7-N9-1, N6-N9, 2
+6,C6,N7-N9-2, N7-N4, 1
+6,C6,N7-N9-2, N4-N5, 1
+6,C6,N7-N9-2, N5-N6, 1
+6,C6,N7-N9-2, N6-N9, 1
+6,C6,N7-N2-0, N7-N1, 2
+6,C6,N7-N2-0, N1-N2, 2
+6,C6,N7-N2-1, N7-N1, 1
+6,C6,N7-N2-1, N1-N2, 1
+6,C6,N7-N2-2, N7-N1, 2
+6,C6,N7-N2-2, N1-N2, 2
+6,C6,N7-N3-0, N7-N4, 1
+6,C6,N7-N3-0, N4-N5, 1
+6,C6,N7-N3-0, N5-N6, 1
+6,C6,N7-N3-0, N6-N3, 1
+6,C6,N7-N3-1, N7-N4, 2
+6,C6,N7-N3-1, N4-N5, 2
+6,C6,N7-N3-1, N5-N6, 2
+6,C6,N7-N3-1, N6-N3, 2
+6,C6,N7-N3-2, N7-N4, 2
+6,C6,N7-N3-2, N4-N5, 2
+6,C6,N7-N3-2, N5-N6, 2
+6,C6,N7-N3-2, N6-N3, 2
+6,C6,N7-N4-0, N7-N4, 2
+6,C6,N7-N4-1, N7-N4, 2
+6,C6,N7-N4-2, N7-N4, 1
+6,C6,N7-N5-0, N7-N4, 2
+6,C6,N7-N5-0, N4-N5, 2
+6,C6,N7-N5-1, N7-N4, 1
+6,C6,N7-N5-1, N4-N5, 1
+6,C6,N7-N5-2, N7-N4, 2
+6,C6,N7-N5-2, N4-N5, 2
+6,C6,N3-N10-0, N3-N6, 1
+6,C6,N3-N10-0, N6-N9, 1
+6,C6,N3-N10-0, N9-N10, 1
+6,C6,N3-N10-1, N3-N6, 2
+6,C6,N3-N10-1, N6-N9, 2
+6,C6,N3-N10-1, N9-N10, 2
+6,C6,N3-N10-2, N3-N6, 1
+6,C6,N3-N10-2, N6-N9, 1
+6,C6,N3-N10-2, N9-N10, 1
+6,C6,N4-N2-0, N4-N5, 2
+6,C6,N4-N2-0, N5-N2, 2
+6,C6,N4-N2-1, N4-N5, 1
+6,C6,N4-N2-1, N5-N2, 1
+6,C6,N4-N2-2, N4-N5, 1
+6,C6,N4-N2-2, N5-N2, 1
+6,C6,N4-N1-0, N4-N1, 1
+6,C6,N4-N1-1, N4-N1, 1
+6,C6,N4-N1-2, N4-N1, 1
+6,C6,N4-N0-0, N4-N1, 1
+6,C6,N4-N0-0, N1-N0, 1
+6,C6,N4-N0-1, N4-N1, 1
+6,C6,N4-N0-1, N1-N0, 1
+6,C6,N4-N0-2, N4-N1, 1
+6,C6,N4-N0-2, N1-N0, 1
+6,C6,N4-N10-0, N4-N10, 1
+6,C6,N4-N10-1, N4-N10, 1
+6,C6,N4-N10-2, N4-N10, 2
+6,C6,N4-N6-0, N4-N5, 1
+6,C6,N4-N6-0, N5-N6, 1
+6,C6,N4-N6-1, N4-N5, 2
+6,C6,N4-N6-1, N5-N6, 2
+6,C6,N4-N6-2, N4-N5, 1
+6,C6,N4-N6-2, N5-N6, 1
+6,C6,N4-N5-0, N4-N5, 2
+6,C6,N4-N5-1, N4-N5, 1
+6,C6,N4-N5-2, N4-N5, 1
+6,C6,N4-N3-0, N4-N5, 1
+6,C6,N4-N3-0, N5-N6, 1
+6,C6,N4-N3-0, N6-N3, 1
+6,C6,N4-N3-1, N4-N5, 1
+6,C6,N4-N3-1, N5-N6, 1
+6,C6,N4-N3-1, N6-N3, 1
+6,C6,N4-N3-2, N4-N5, 1
+6,C6,N4-N3-2, N5-N6, 1
+6,C6,N4-N3-2, N6-N3, 1
+6,C6,N4-N9-0, N4-N5, 1
+6,C6,N4-N9-0, N5-N6, 1
+6,C6,N4-N9-0, N6-N9, 1
+6,C6,N4-N9-1, N4-N5, 1
+6,C6,N4-N9-1, N5-N6, 1
+6,C6,N4-N9-1, N6-N9, 1
+6,C6,N4-N9-2, N4-N5, 1
+6,C6,N4-N9-2, N5-N6, 1
+6,C6,N4-N9-2, N6-N9, 1
+6,C6,N4-N8-0, N4-N5, 1
+6,C6,N4-N8-0, N5-N8, 1
+6,C6,N4-N8-1, N4-N5, 1
+6,C6,N4-N8-1, N5-N8, 1
+6,C6,N4-N8-2, N4-N5, 1
+6,C6,N4-N8-2, N5-N8, 1
+6,C6,N4-N7-0, N4-N7, 1
+6,C6,N4-N7-1, N4-N7, 1
+6,C6,N4-N7-2, N4-N7, 1
+6,C6,N6-N10-0, N6-N9, 1
+6,C6,N6-N10-0, N9-N10, 1
+6,C6,N6-N10-1, N6-N9, 1
+6,C6,N6-N10-1, N9-N10, 1
+6,C6,N6-N10-2, N6-N9, 2
+6,C6,N6-N10-2, N9-N10, 2
+6,C6,N9-N1-0, N9-N6, 1
+6,C6,N9-N1-0, N6-N5, 1
+6,C6,N9-N1-0, N5-N4, 1
+6,C6,N9-N1-0, N4-N1, 1
+6,C6,N9-N1-1, N9-N6, 2
+6,C6,N9-N1-1, N6-N5, 2
+6,C6,N9-N1-1, N5-N4, 2
+6,C6,N9-N1-1, N4-N1, 2
+6,C6,N9-N1-2, N9-N6, 1
+6,C6,N9-N1-2, N6-N5, 1
+6,C6,N9-N1-2, N5-N4, 1
+6,C6,N9-N1-2, N4-N1, 1
+6,C6,N10-N1-0, N10-N7, 2
+6,C6,N10-N1-0, N7-N1, 2
+6,C6,N10-N1-1, N10-N7, 1
+6,C6,N10-N1-1, N7-N1, 1
+6,C6,N10-N1-2, N10-N7, 2
+6,C6,N10-N1-2, N7-N1, 2
+6,C6,N9-N0-0, N9-N6, 1
+6,C6,N9-N0-0, N6-N0, 1
+6,C6,N9-N0-1, N9-N6, 2
+6,C6,N9-N0-1, N6-N0, 2
+6,C6,N9-N0-2, N9-N6, 1
+6,C6,N9-N0-2, N6-N0, 1
+6,C6,N10-N0-0, N10-N9, 2
+6,C6,N10-N0-0, N9-N6, 2
+6,C6,N10-N0-0, N6-N0, 2
+6,C6,N10-N0-1, N10-N9, 1
+6,C6,N10-N0-1, N9-N6, 1
+6,C6,N10-N0-1, N6-N0, 1
+6,C6,N10-N0-2, N10-N9, 1
+6,C6,N10-N0-2, N9-N6, 1
+6,C6,N10-N0-2, N6-N0, 1
+6,C6,N9-N3-0, N9-N6, 1
+6,C6,N9-N3-0, N6-N3, 1
+6,C6,N9-N3-1, N9-N6, 1
+6,C6,N9-N3-1, N6-N3, 1
+6,C6,N9-N3-2, N9-N6, 1
+6,C6,N9-N3-2, N6-N3, 1
+6,C6,N9-N2-0, N9-N6, 1
+6,C6,N9-N2-0, N6-N5, 1
+6,C6,N9-N2-0, N5-N2, 1
+6,C6,N9-N2-1, N9-N6, 1
+6,C6,N9-N2-1, N6-N5, 1
+6,C6,N9-N2-1, N5-N2, 1
+6,C6,N9-N2-2, N9-N6, 1
+6,C6,N9-N2-2, N6-N5, 1
+6,C6,N9-N2-2, N5-N2, 1
+6,C6,N10-N5-0, N10-N8, 1
+6,C6,N10-N5-0, N8-N5, 1
+6,C6,N10-N5-1, N10-N8, 1
+6,C6,N10-N5-1, N8-N5, 1
+6,C6,N10-N5-2, N10-N8, 1
+6,C6,N10-N5-2, N8-N5, 1
+6,C6,N10-N4-0, N10-N4, 1
+6,C6,N10-N4-1, N10-N4, 1
+6,C6,N10-N4-2, N10-N4, 2
+6,C6,N10-N3-0, N10-N9, 1
+6,C6,N10-N3-0, N9-N6, 1
+6,C6,N10-N3-0, N6-N3, 1
+6,C6,N10-N3-1, N10-N9, 2
+6,C6,N10-N3-1, N9-N6, 2
+6,C6,N10-N3-1, N6-N3, 2
+6,C6,N10-N3-2, N10-N9, 1
+6,C6,N10-N3-2, N9-N6, 1
+6,C6,N10-N3-2, N6-N3, 1
+6,C6,N10-N2-0, N10-N8, 2
+6,C6,N10-N2-0, N8-N5, 2
+6,C6,N10-N2-0, N5-N2, 2
+6,C6,N10-N2-1, N10-N8, 1
+6,C6,N10-N2-1, N8-N5, 1
+6,C6,N10-N2-1, N5-N2, 1
+6,C6,N10-N2-2, N10-N8, 1
+6,C6,N10-N2-2, N8-N5, 1
+6,C6,N10-N2-2, N5-N2, 1
+6,C6,N10-N9-0, N10-N9, 1
+6,C6,N10-N9-1, N10-N9, 1
+6,C6,N10-N9-2, N10-N9, 1
+6,C6,N9-N8-0, N9-N8, 1
+6,C6,N9-N8-1, N9-N8, 1
+6,C6,N9-N8-2, N9-N8, 2
+6,C6,N10-N8-0, N10-N8, 1
+6,C6,N10-N8-1, N10-N8, 2
+6,C6,N10-N8-2, N10-N8, 1
+6,C6,N10-N7-0, N10-N7, 2
+6,C6,N10-N7-1, N10-N7, 1
+6,C6,N10-N7-2, N10-N7, 2
+6,C6,N10-N6-0, N10-N9, 1
+6,C6,N10-N6-0, N9-N6, 1
+6,C6,N10-N6-1, N10-N9, 2
+6,C6,N10-N6-1, N9-N6, 2
+6,C6,N10-N6-2, N10-N9, 1
+6,C6,N10-N6-2, N9-N6, 1
+6,C6,N1-N2-0, N1-N2, 2
+6,C6,N1-N2-1, N1-N2, 1
+6,C6,N1-N2-2, N1-N2, 2
+6,C6,N9-N5-0, N9-N6, 1
+6,C6,N9-N5-0, N6-N5, 1
+6,C6,N9-N5-1, N9-N6, 2
+6,C6,N9-N5-1, N6-N5, 2
+6,C6,N9-N5-2, N9-N6, 1
+6,C6,N9-N5-2, N6-N5, 1
+6,C6,N1-N3-0, N1-N2, 2
+6,C6,N1-N3-0, N2-N3, 2
+6,C6,N1-N3-1, N1-N2, 1
+6,C6,N1-N3-1, N2-N3, 1
+6,C6,N1-N3-2, N1-N2, 1
+6,C6,N1-N3-2, N2-N3, 1
+6,C6,N9-N4-0, N9-N6, 1
+6,C6,N9-N4-0, N6-N5, 1
+6,C6,N9-N4-0, N5-N4, 1
+6,C6,N9-N4-1, N9-N6, 1
+6,C6,N9-N4-1, N6-N5, 1
+6,C6,N9-N4-1, N5-N4, 1
+6,C6,N9-N4-2, N9-N6, 1
+6,C6,N9-N4-2, N6-N5, 1
+6,C6,N9-N4-2, N5-N4, 1
+6,C6,N1-N0-0, N1-N0, 1
+6,C6,N1-N0-1, N1-N0, 1
+6,C6,N1-N0-2, N1-N0, 2
+6,C6,N9-N7-0, N9-N6, 1
+6,C6,N9-N7-0, N6-N5, 1
+6,C6,N9-N7-0, N5-N4, 1
+6,C6,N9-N7-0, N4-N7, 1
+6,C6,N9-N7-1, N9-N6, 2
+6,C6,N9-N7-1, N6-N5, 2
+6,C6,N9-N7-1, N5-N4, 2
+6,C6,N9-N7-1, N4-N7, 2
+6,C6,N9-N7-2, N9-N6, 1
+6,C6,N9-N7-2, N6-N5, 1
+6,C6,N9-N7-2, N5-N4, 1
+6,C6,N9-N7-2, N4-N7, 1
+6,C6,N9-N6-0, N9-N6, 2
+6,C6,N9-N6-1, N9-N6, 1
+6,C6,N9-N6-2, N9-N6, 1
+6,C6,N1-N6-0, N1-N4, 1
+6,C6,N1-N6-0, N4-N5, 1
+6,C6,N1-N6-0, N5-N6, 1
+6,C6,N1-N6-1, N1-N4, 1
+6,C6,N1-N6-1, N4-N5, 1
+6,C6,N1-N6-1, N5-N6, 1
+6,C6,N1-N6-2, N1-N4, 1
+6,C6,N1-N6-2, N4-N5, 1
+6,C6,N1-N6-2, N5-N6, 1
+6,C6,N1-N7-0, N1-N7, 1
+6,C6,N1-N7-1, N1-N7, 1
+6,C6,N1-N7-2, N1-N7, 1
+6,C6,N1-N4-0, N1-N4, 1
+6,C6,N1-N4-1, N1-N4, 1
+6,C6,N1-N4-2, N1-N4, 2
+6,C6,N1-N5-0, N1-N4, 1
+6,C6,N1-N5-0, N4-N5, 1
+6,C6,N1-N5-1, N1-N4, 2
+6,C6,N1-N5-1, N4-N5, 2
+6,C6,N1-N5-2, N1-N4, 1
+6,C6,N1-N5-2, N4-N5, 1
+6,C6,N1-N8-0, N1-N4, 2
+6,C6,N1-N8-0, N4-N5, 2
+6,C6,N1-N8-0, N5-N8, 2
+6,C6,N1-N8-1, N1-N4, 1
+6,C6,N1-N8-1, N4-N5, 1
+6,C6,N1-N8-1, N5-N8, 1
+6,C6,N1-N8-2, N1-N4, 2
+6,C6,N1-N8-2, N4-N5, 2
+6,C6,N1-N8-2, N5-N8, 2
+6,C6,N1-N9-0, N1-N4, 1
+6,C6,N1-N9-0, N4-N5, 1
+6,C6,N1-N9-0, N5-N6, 1
+6,C6,N1-N9-0, N6-N9, 1
+6,C6,N1-N9-1, N1-N4, 2
+6,C6,N1-N9-1, N4-N5, 2
+6,C6,N1-N9-1, N5-N6, 2
+6,C6,N1-N9-1, N6-N9, 2
+6,C6,N1-N9-2, N1-N4, 2
+6,C6,N1-N9-2, N4-N5, 2
+6,C6,N1-N9-2, N5-N6, 2
+6,C6,N1-N9-2, N6-N9, 2
+6,C6,N6-N0-0, N6-N0, 2
+6,C6,N6-N0-1, N6-N0, 2
+6,C6,N6-N0-2, N6-N0, 1
+6,C6,N6-N5-0, N6-N5, 2
+6,C6,N6-N5-1, N6-N5, 1
+6,C6,N6-N5-2, N6-N5, 1
+6,C6,N6-N7-0, N6-N5, 1
+6,C6,N6-N7-0, N5-N4, 1
+6,C6,N6-N7-0, N4-N7, 1
+6,C6,N6-N7-1, N6-N5, 1
+6,C6,N6-N7-1, N5-N4, 1
+6,C6,N6-N7-1, N4-N7, 1
+6,C6,N6-N7-2, N6-N5, 1
+6,C6,N6-N7-2, N5-N4, 1
+6,C6,N6-N7-2, N4-N7, 1
+6,C6,N6-N8-0, N6-N8, 1
+6,C6,N6-N8-1, N6-N8, 1
+6,C6,N6-N8-2, N6-N8, 1
+6,C6,N6-N1-0, N6-N5, 1
+6,C6,N6-N1-0, N5-N4, 1
+6,C6,N6-N1-0, N4-N1, 1
+6,C6,N6-N1-1, N6-N5, 1
+6,C6,N6-N1-1, N5-N4, 1
+6,C6,N6-N1-1, N4-N1, 1
+6,C6,N6-N1-2, N6-N5, 1
+6,C6,N6-N1-2, N5-N4, 1
+6,C6,N6-N1-2, N4-N1, 1
+6,C6,N6-N2-0, N6-N5, 1
+6,C6,N6-N2-0, N5-N2, 1
+6,C6,N6-N2-1, N6-N5, 1
+6,C6,N6-N2-1, N5-N2, 1
+6,C6,N6-N2-2, N6-N5, 2
+6,C6,N6-N2-2, N5-N2, 2
+6,C6,N6-N3-0, N6-N3, 1
+6,C6,N6-N3-1, N6-N3, 2
+6,C6,N6-N3-2, N6-N3, 1
+6,C6,N6-N4-0, N6-N5, 2
+6,C6,N6-N4-0, N5-N4, 2
+6,C6,N6-N4-1, N6-N5, 1
+6,C6,N6-N4-1, N5-N4, 1
+6,C6,N6-N4-2, N6-N5, 1
+6,C6,N6-N4-2, N5-N4, 1
+6,C6,N6-N9-0, N6-N9, 1
+6,C6,N6-N9-1, N6-N9, 1
+6,C6,N6-N9-2, N6-N9, 1
+6,C6,N0-N10-0, N0-N6, 1
+6,C6,N0-N10-0, N6-N9, 1
+6,C6,N0-N10-0, N9-N10, 1
+6,C6,N0-N10-1, N0-N6, 1
+6,C6,N0-N10-1, N6-N9, 1
+6,C6,N0-N10-1, N9-N10, 1
+6,C6,N0-N10-2, N0-N6, 2
+6,C6,N0-N10-2, N6-N9, 2
+6,C6,N0-N10-2, N9-N10, 2
+6,C6,N9-N10-0, N9-N10, 1
+6,C6,N9-N10-1, N9-N10, 2
+6,C6,N9-N10-2, N9-N10, 2
+6,C6,N3-N1-0, N3-N2, 2
+6,C6,N3-N1-0, N2-N1, 2
+6,C6,N3-N1-1, N3-N2, 2
+6,C6,N3-N1-1, N2-N1, 2
+6,C6,N3-N1-2, N3-N2, 1
+6,C6,N3-N1-2, N2-N1, 1
+6,C6,N3-N0-0, N3-N0, 2
+6,C6,N3-N0-1, N3-N0, 1
+6,C6,N3-N0-2, N3-N0, 2
+6,C6,N3-N5-0, N3-N6, 1
+6,C6,N3-N5-0, N6-N5, 1
+6,C6,N3-N5-1, N3-N6, 2
+6,C6,N3-N5-1, N6-N5, 2
+6,C6,N3-N5-2, N3-N6, 1
+6,C6,N3-N5-2, N6-N5, 1
+6,C6,N3-N4-0, N3-N6, 2
+6,C6,N3-N4-0, N6-N5, 2
+6,C6,N3-N4-0, N5-N4, 2
+6,C6,N3-N4-1, N3-N6, 1
+6,C6,N3-N4-1, N6-N5, 1
+6,C6,N3-N4-1, N5-N4, 1
+6,C6,N3-N4-2, N3-N6, 1
+6,C6,N3-N4-2, N6-N5, 1
+6,C6,N3-N4-2, N5-N4, 1
+6,C6,N3-N2-0, N3-N2, 1
+6,C6,N3-N2-1, N3-N2, 1
+6,C6,N3-N2-2, N3-N2, 2
+6,C6,N3-N9-0, N3-N6, 1
+6,C6,N3-N9-0, N6-N9, 1
+6,C6,N3-N9-1, N3-N6, 2
+6,C6,N3-N9-1, N6-N9, 2
+6,C6,N3-N9-2, N3-N6, 1
+6,C6,N3-N9-2, N6-N9, 1
+6,C6,N3-N8-0, N3-N6, 2
+6,C6,N3-N8-0, N6-N8, 2
+6,C6,N3-N8-1, N3-N6, 1
+6,C6,N3-N8-1, N6-N8, 1
+6,C6,N3-N8-2, N3-N6, 2
+6,C6,N3-N8-2, N6-N8, 2
+6,C6,N3-N7-0, N3-N6, 1
+6,C6,N3-N7-0, N6-N5, 1
+6,C6,N3-N7-0, N5-N4, 1
+6,C6,N3-N7-0, N4-N7, 1
+6,C6,N3-N7-1, N3-N6, 2
+6,C6,N3-N7-1, N6-N5, 2
+6,C6,N3-N7-1, N5-N4, 2
+6,C6,N3-N7-1, N4-N7, 2
+6,C6,N3-N7-2, N3-N6, 2
+6,C6,N3-N7-2, N6-N5, 2
+6,C6,N3-N7-2, N5-N4, 2
+6,C6,N3-N7-2, N4-N7, 2
+6,C6,N3-N6-0, N3-N6, 2
+6,C6,N3-N6-1, N3-N6, 2
+6,C6,N3-N6-2, N3-N6, 1
+6,C6,N2-N10-0, N2-N5, 2
+6,C6,N2-N10-0, N5-N8, 2
+6,C6,N2-N10-0, N8-N10, 2
+6,C6,N2-N10-1, N2-N5, 1
+6,C6,N2-N10-1, N5-N8, 1
+6,C6,N2-N10-1, N8-N10, 1
+6,C6,N2-N10-2, N2-N5, 1
+6,C6,N2-N10-2, N5-N8, 1
+6,C6,N2-N10-2, N8-N10, 1
+6,C6,N8-N0-0, N8-N6, 1
+6,C6,N8-N0-0, N6-N0, 1
+6,C6,N8-N0-1, N8-N6, 1
+6,C6,N8-N0-1, N6-N0, 1
+6,C6,N8-N0-2, N8-N6, 1
+6,C6,N8-N0-2, N6-N0, 1
+6,C6,N8-N2-0, N8-N5, 1
+6,C6,N8-N2-0, N5-N2, 1
+6,C6,N8-N2-1, N8-N5, 1
+6,C6,N8-N2-1, N5-N2, 1
+6,C6,N8-N2-2, N8-N5, 2
+6,C6,N8-N2-2, N5-N2, 2
+6,C6,N8-N1-0, N8-N5, 1
+6,C6,N8-N1-0, N5-N4, 1
+6,C6,N8-N1-0, N4-N1, 1
+6,C6,N8-N1-1, N8-N5, 2
+6,C6,N8-N1-1, N5-N4, 2
+6,C6,N8-N1-1, N4-N1, 2
+6,C6,N8-N1-2, N8-N5, 1
+6,C6,N8-N1-2, N5-N4, 1
+6,C6,N8-N1-2, N4-N1, 1
+6,C6,N8-N7-0, N8-N5, 2
+6,C6,N8-N7-0, N5-N4, 2
+6,C6,N8-N7-0, N4-N7, 2
+6,C6,N8-N7-1, N8-N5, 1
+6,C6,N8-N7-1, N5-N4, 1
+6,C6,N8-N7-1, N4-N7, 1
+6,C6,N8-N7-2, N8-N5, 1
+6,C6,N8-N7-2, N5-N4, 1
+6,C6,N8-N7-2, N4-N7, 1
+6,C6,N8-N9-0, N8-N9, 1
+6,C6,N8-N9-1, N8-N9, 1
+6,C6,N8-N9-2, N8-N9, 1
+6,C6,N8-N4-0, N8-N5, 1
+6,C6,N8-N4-0, N5-N4, 1
+6,C6,N8-N4-1, N8-N5, 1
+6,C6,N8-N4-1, N5-N4, 1
+6,C6,N8-N4-2, N8-N5, 2
+6,C6,N8-N4-2, N5-N4, 2
+6,C6,N8-N3-0, N8-N6, 1
+6,C6,N8-N3-0, N6-N3, 1
+6,C6,N8-N3-1, N8-N6, 2
+6,C6,N8-N3-1, N6-N3, 2
+6,C6,N8-N3-2, N8-N6, 1
+6,C6,N8-N3-2, N6-N3, 1
+6,C6,N0-N2-0, N0-N2, 2
+6,C6,N0-N2-1, N0-N2, 1
+6,C6,N0-N2-2, N0-N2, 1
+6,C6,N8-N6-0, N8-N6, 1
+6,C6,N8-N6-1, N8-N6, 1
+6,C6,N8-N6-2, N8-N6, 2
+6,C6,N0-N1-0, N0-N1, 1
+6,C6,N0-N1-1, N0-N1, 2
+6,C6,N0-N1-2, N0-N1, 2
+6,C6,N8-N5-0, N8-N5, 2
+6,C6,N8-N5-1, N8-N5, 2
+6,C6,N8-N5-2, N8-N5, 2
+6,C6,N0-N4-0, N0-N1, 2
+6,C6,N0-N4-0, N1-N4, 2
+6,C6,N0-N4-1, N0-N1, 2
+6,C6,N0-N4-1, N1-N4, 2
+6,C6,N0-N4-2, N0-N1, 1
+6,C6,N0-N4-2, N1-N4, 1
+6,C6,N0-N3-0, N0-N3, 2
+6,C6,N0-N3-1, N0-N3, 1
+6,C6,N0-N3-2, N0-N3, 2
+6,C6,N0-N6-0, N0-N6, 1
+6,C6,N0-N6-1, N0-N6, 2
+6,C6,N0-N6-2, N0-N6, 1
+6,C6,N0-N5-0, N0-N2, 2
+6,C6,N0-N5-0, N2-N5, 2
+6,C6,N0-N5-1, N0-N2, 1
+6,C6,N0-N5-1, N2-N5, 1
+6,C6,N0-N5-2, N0-N2, 1
+6,C6,N0-N5-2, N2-N5, 1
+6,C6,N0-N8-0, N0-N6, 1
+6,C6,N0-N8-0, N6-N8, 1
+6,C6,N0-N8-1, N0-N6, 1
+6,C6,N0-N8-1, N6-N8, 1
+6,C6,N0-N8-2, N0-N6, 1
+6,C6,N0-N8-2, N6-N8, 1
+6,C6,N0-N7-0, N0-N1, 1
+6,C6,N0-N7-0, N1-N7, 1
+6,C6,N0-N7-1, N0-N1, 1
+6,C6,N0-N7-1, N1-N7, 1
+6,C6,N0-N7-2, N0-N1, 1
+6,C6,N0-N7-2, N1-N7, 1
+6,C6,N0-N9-0, N0-N6, 1
+6,C6,N0-N9-0, N6-N9, 1
+6,C6,N0-N9-1, N0-N6, 1
+6,C6,N0-N9-1, N6-N9, 1
+6,C6,N0-N9-2, N0-N6, 1
+6,C6,N0-N9-2, N6-N9, 1
+6,C6,N5-N10-0, N5-N8, 1
+6,C6,N5-N10-0, N8-N10, 1
+6,C6,N5-N10-1, N5-N8, 1
+6,C6,N5-N10-1, N8-N10, 1
+6,C6,N5-N10-2, N5-N8, 2
+6,C6,N5-N10-2, N8-N10, 2
+6,C6,N5-N3-0, N5-N6, 1
+6,C6,N5-N3-0, N6-N3, 1
+6,C6,N5-N3-1, N5-N6, 2
+6,C6,N5-N3-1, N6-N3, 2
+6,C6,N5-N3-2, N5-N6, 1
+6,C6,N5-N3-2, N6-N3, 1
+6,C6,N5-N2-0, N5-N2, 2
+6,C6,N5-N2-1, N5-N2, 1
+6,C6,N5-N2-2, N5-N2, 1
+6,C6,N5-N1-0, N5-N4, 1
+6,C6,N5-N1-0, N4-N1, 1
+6,C6,N5-N1-1, N5-N4, 1
+6,C6,N5-N1-1, N4-N1, 1
+6,C6,N5-N1-2, N5-N4, 2
+6,C6,N5-N1-2, N4-N1, 2
+6,C6,N5-N0-0, N5-N2, 1
+6,C6,N5-N0-0, N2-N0, 1
+6,C6,N5-N0-1, N5-N2, 2
+6,C6,N5-N0-1, N2-N0, 2
+6,C6,N5-N0-2, N5-N2, 2
+6,C6,N5-N0-2, N2-N0, 2
+6,C6,N5-N7-0, N5-N4, 2
+6,C6,N5-N7-0, N4-N7, 2
+6,C6,N5-N7-1, N5-N4, 2
+6,C6,N5-N7-1, N4-N7, 2
+6,C6,N5-N7-2, N5-N4, 1
+6,C6,N5-N7-2, N4-N7, 1
+6,C6,N5-N6-0, N5-N6, 2
+6,C6,N5-N6-1, N5-N6, 1
+6,C6,N5-N6-2, N5-N6, 1
+6,C6,N5-N4-0, N5-N4, 1
+6,C6,N5-N4-1, N5-N4, 1
+6,C6,N5-N4-2, N5-N4, 1
+6,C6,N5-N9-0, N5-N6, 1
+6,C6,N5-N9-0, N6-N9, 1
+6,C6,N5-N9-1, N5-N6, 1
+6,C6,N5-N9-1, N6-N9, 1
+6,C6,N5-N9-2, N5-N6, 2
+6,C6,N5-N9-2, N6-N9, 2
+6,C6,N5-N8-0, N5-N8, 1
+6,C6,N5-N8-1, N5-N8, 2
+6,C6,N5-N8-2, N5-N8, 2
+6,C6,N7-N10-0, N7-N10, 2
+6,C6,N7-N10-1, N7-N10, 2
+6,C6,N7-N10-2, N7-N10, 1
+;
